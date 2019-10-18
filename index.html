@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="width:100%; height:100%;">sad</div>
+    <div class="box-1">
+        <img src="pics/water.png" class="water-lvl1">
+        <img src="pics/c1.png" class="cloud-1">
+        <img src="pics/c2.png" class="cloud-2">
+        <img src="pics/c3.png" class="cloud-3">
+    </div>
+    <div class="box-2">
+            <img src="pics/water1.png" class="water-lvl2">
+    </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js">
+
+        </script>
+</body>
+<script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            var positiontop = $(document).scrollTop();
+            console.log(positiontop);
+            if((positiontop > 0 ) && (positiontop < 700)){}
+        });
+    });</script>
+
+</html>
