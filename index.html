@@ -5,25 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
-<body>
-    <div style="width:100%; height:100%;">sad</div>
-    <div class="box-1">
-        <img src="pics/water.png" class="water-lvl1">
+<body style="font-family: 'Kanit', sans-serif;">
+   
+    <div class="box-1"> 
+        <div class="title"><center><h1>ใต้ทะเลลึก</h1></center></div>
         <img src="pics/c1.png" class="cloud-1">
         <img src="pics/c2.png" class="cloud-2">
         <img src="pics/c3.png" class="cloud-3">
-    </div>
-    <div class="box-2">
-        <img src="pics/water1.png" class="water-lvl2">
+        <div class="lifeundersea">
+                หลายๆ คนอาจคิดว่าโลกยุคปัจจุบันมีสิ่งมีชีวิตหลงสำรวจอยู่น้อยเต็มที นั่นเป็นความเข้าใจผิด เพราะ 
+                ยังมีสิ่งมีชีวิตที่มนุษย์ ยังไม่เคยเห็นอีกมากมาย โดยเฉพาะใต้ท้องทะเลลึก พื้นผิวโลกเป็นมหาสมุทรถึง 70% 
+                และมีความลึกโดยเฉลี่ย 4 กิโลเมตร เมื่อเปรียบเทียบกับที่อื่นๆ แล้วใต้ท้องทะเลลึกเป็นบริเวณ ที่หนาวเย็นมืดทึบและมีออกซิเจนน้อย 
+                สภาพแวดล้อมจึงเอื้อ ต่อการมีชีวิตน้อยมาก แต่ที่นี่กลับมีสิ่งมีชีวิต ที่หลากหลายและมีรูปลักษณ์แปลกๆ ท้องทะเลลึกมีสิ่งมีชีวิตขนาดใหญ่ 
+                ไปจนถึงขนาดเล็ก ตั้งแต่วาฬสเปิร์ม ปลาหมึกยักษ์ อาร์ชิทิวทิส ขนาด 13 เมตร 
+                ปลาหมึกยักษ์คอลอสซอล ขนาด 15 เมตร ปลาฉลามสลีปเปอร์ ไปจนกระทั่งถึง ปะการัง ปลาหมึกขนาดเล็ก หนอน และแบคทีเรีย
+        </div>
+    
         <img src="pics/co3.png" class="paka1">
         <img src="pics/co2.png" class="paka2">
         <img src="pics/co1.png" class="paka3">
     </div>
-
     <footer>
         <svg viewBox="0 0 120 28">
           <defs>
@@ -44,23 +49,35 @@
         $(window).scroll(function() {
             var positiontop = $(document).scrollTop();
             console.log(positiontop);
+            if((positiontop >= 0) && (positiontop < 1000)) {
+                $(".lifeundersea").animate({
+                    top: '400px',
+                    opacity: 1
+                } ,3000);
+            }
+            if((positiontop >= 0) && (positiontop < 1000)) {
+                $(".title").animate({
+                    top: '20px',
+                    opacity: 1
+                } ,3000);
+            }
             if ((positiontop >= 0) && (positiontop < 1000)) {
                 $(".cloud-3").animate({
-                    left: '+=1px',
+                    left: '100vw',
                     opacity: 1
-                });
+                },50000);
             }
             if ((positiontop >= 0) && (positiontop < 1000)) {
                 $(".cloud-2").animate({
-                    left: '+=2px',
+                    left: '100vw',
                     opacity: 1
-                });
+                },70000);
             }
             if ((positiontop >= 0) && (positiontop < 1000)) {
                 $(".cloud-1").animate({
-                    left: '+=1px',
+                    left: '100vw',
                     opacity: 1
-                });
+                },90000);
             }
             if ((positiontop > 1300) && (positiontop < 2000)) {
                 $(".paka1").animate({
