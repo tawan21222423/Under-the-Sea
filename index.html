@@ -24,6 +24,18 @@
         <img src="pics/co1.png" class="paka3">
     </div>
 
+    <footer>
+        <svg viewBox="0 0 120 28">
+          <defs>
+            <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+          </defs> 
+          <use id="wave4" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+          <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-1"></use>
+          <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+          <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1"></use>
+        </svg>
+    </footer>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js">
     </script>
 </body>
@@ -33,22 +45,40 @@
             var positiontop = $(document).scrollTop();
             console.log(positiontop);
             if ((positiontop >= 0) && (positiontop < 1000)) {
-                $(".cloud-3").animate({left: '+=1px' ,opacity:1});
+                $(".cloud-3").animate({
+                    left: '+=1px',
+                    opacity: 1
+                });
             }
             if ((positiontop >= 0) && (positiontop < 1000)) {
-                $(".cloud-2").animate({left: '+=2px' ,opacity:1});
+                $(".cloud-2").animate({
+                    left: '+=2px',
+                    opacity: 1
+                });
             }
             if ((positiontop >= 0) && (positiontop < 1000)) {
-                $(".cloud-1").animate({left: '+=1px' ,opacity:1});
+                $(".cloud-1").animate({
+                    left: '+=1px',
+                    opacity: 1
+                });
             }
             if ((positiontop > 1300) && (positiontop < 2000)) {
-                $(".paka1").animate({left: '-5%' ,opacity:1});
+                $(".paka1").animate({
+                    left: '-5%',
+                    opacity: 1
+                });
             }
             if ((positiontop > 1000) && (positiontop < 2000)) {
-                $(".paka2").animate({right: '-5%' ,opacity:1});
+                $(".paka2").animate({
+                    right: '-5%',
+                    opacity: 1
+                });
             }
             if ((positiontop > 1600) && (positiontop < 2000)) {
-                $(".paka3").animate({right: '-5%' ,opacity:1});
+                $(".paka3").animate({
+                    right: '-5%',
+                    opacity: 1
+                });
             }
         });
     });
