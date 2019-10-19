@@ -91,7 +91,7 @@ svg {
 }
 
 .wave {
-    animation: wave 5s linear;
+    animation: wave 20s linear;
     animation-iteration-count: infinite;
     fill: #2bd3eb;
 }
@@ -108,18 +108,18 @@ svg {
 }
 
 #wave2 {
-    animation-duration: 8s;
+    animation-duration: 25s;
     animation-direction: reverse;
     opacity: .6
 }
 
 #wave3 {
-    animation-duration: 10s;
+    animation-duration: 35s;
     opacity: .3;
 }
 
 #wave4 {
-    animation-duration: 12s;
+    animation-duration: 40s;
     opacity: .3;
 }
 
