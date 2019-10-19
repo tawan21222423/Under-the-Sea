@@ -19,6 +19,7 @@
     </div>
     <div class="box-2">
         <img src="pics/water1.png" class="water-lvl2">
+        <img src="pics/co3.png" class="paka1">
     </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js">
@@ -29,7 +30,18 @@
         $(window).scroll(function() {
             var positiontop = $(document).scrollTop();
             console.log(positiontop);
-            if ((positiontop > 0) && (positiontop < 700)) {}
+            if ((positiontop >= 0) && (positiontop < 1000)) {
+                $(".cloud-3").animate({left: '+=9px' ,opacity:1});
+            }
+            if ((positiontop >= 0) && (positiontop < 1000)) {
+                $(".cloud-2").animate({left: '+=5px' ,opacity:1});
+            }
+            if ((positiontop >= 0) && (positiontop < 1000)) {
+                $(".cloud-1").animate({left: '+=6px' ,opacity:1});
+            }
+            if ((positiontop > 1300) && (positiontop < 2000)) {
+                $(".paka1").animate({left: '0px' ,opacity:1});
+            }
         });
     });
 
