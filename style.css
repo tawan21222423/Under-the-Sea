@@ -191,12 +191,10 @@ svg {
         top: 1300px;
         transform: scale(-0.5, 0.5)
     }
-<<<<<<< HEAD
     100%{
         left: 30%;
         top:1300px;
-
-=======
+    }
     99% {
         transform: scale(-0.5, 0.5)
     }
@@ -204,7 +202,7 @@ svg {
         left: 5%;
         top: 1200px;
         transform: scale(0.5, 0.5);
->>>>>>> ea062c70b2500c5301ff4f3d9ffb666442f1d38b
+
     }
 }
 
@@ -345,7 +343,7 @@ svg {
         left: 80%;
     }
 }
-<<<<<<< HEAD
+
  #infotuna{
     width: 20%;
     border: 3px solid black;
@@ -360,7 +358,6 @@ svg {
     
   }
   
-=======
 
 @keyframes ccloud3 {
     from {
@@ -370,4 +367,3 @@ svg {
         left: 10%;
     }
 }
->>>>>>> ea062c70b2500c5301ff4f3d9ffb666442f1d38b
