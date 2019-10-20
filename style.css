@@ -78,27 +78,32 @@ body {
     position: absolute;
     top: 1100px;
     animation: tunavai1 30s alternate infinite;
-    transform: scale(0.5,0.5)
+    transform: scale(0.5,0.5);
+    opacity: 0;
+    
 }
 .platuna2{
     position: absolute;
     top: 1250px;
     left: -90px;
     animation: tunavai2 30s alternate infinite;
-    transform: scale(0.5,0.5)
+    transform: scale(0.5,0.5);
+    opacity: 0;
 }
 .platuna3{
     position: absolute;
     top: 1280px;
     left: +90px;
     animation: tunavai3 30s alternate infinite;
-    transform: scale(0.5,0.5)
+    transform: scale(0.5,0.5);
+    opacity: 0;
 }
 .platuna4{
     position: absolute;
     top: 1190px;
     animation: tunavai4 30s alternate infinite;
-    transform: scale(0.5,0.5)
+    transform: scale(0.5,0.5);
+    opacity: 0;
 }
 
 footer {
@@ -199,7 +204,7 @@ svg {
         top: 1800px;
 
     }
-    85%{
+    75%{
         left: 55%;
         top:1200px;
 

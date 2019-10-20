@@ -85,6 +85,11 @@
         $(window).scroll(function() {
             var positiontop = $(document).scrollTop();
             console.log(positiontop);
+            if ((positiontop >= 1000) && (positiontop < 2000)) {
+                $(".platuna1,.platuna2,.platuna3,.platuna4").animate({
+                    opacity: 1
+                }, 3000);
+            }
             if ((positiontop >= 0) && (positiontop < 1000)) {
                 $(".lifeundersea").animate({
                     top: '400px',
