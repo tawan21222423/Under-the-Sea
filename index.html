@@ -78,7 +78,18 @@
         </svg>
 
     </footer>
-    <div id="platuna" onclick="myinfo(1)">
+    <div id="planemo" onclick="myinfo(1,2)">
+        <img src="pics/f4.png" class="nemo1">
+        <img src="pics/f4.png" class="nemo2">
+        <span id="infonemo">
+            <h4>ปลาการ์ตูนส้มขาว</h4>
+            ที่ลำตัวตัวมีสีส้มเข้ม มีแถบสีขาว 3 แถบ พาดบริเวณส่วนหัว ลำตัวและบริเวณหาง ขอบของแถบสีขาวเป็นสีดำ
+             ขอบนอกของครีบเป็นสีขาวและขอบในเป็นสีดำ อาศัยในที่ลึก ตั้งแต่ 1-15 เมตร ขนาดตัวโตที่สุดประมาณ 10 เซนติเมตร
+             อาศัยอยู่กับดอกไม้ทะเลชนิด Heteractis magnifica และ Stichodactyla gigantea เป็นต้น ในดอกไม้ทะเลแต่ละกออาจพบอยู่ด้วยกัน 6-8 ตัว
+             </span>
+    </div>
+
+    <div id="platuna" onclick="myinfo(1,1)">
 
         <img src="pics/f1.png" class="platuna1">
         <img src="pics/f1.png" class="platuna2">
@@ -204,14 +215,20 @@
         }
     }
     let count = 0;
-    function myinfo(i){
+    function myinfo(i,pla){
         count += i;
-        if(count == 1){
+        if(count == 1 && pla == 1){
             document.getElementById("infotuna").style.visibility = "visible";
             count = -1;
             }
         else if(count == 0)
             document.getElementById("infotuna").style.visibility = "hidden";
+        if(count == 1 && pla == 2){
+            document.getElementById("infonemo").style.visibility = "visible";
+            count = -1;
+            }
+        else if(count == 0)
+            document.getElementById("infonemo").style.visibility = "hidden";
     }
 </script>
 
