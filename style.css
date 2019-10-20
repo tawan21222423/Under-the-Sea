@@ -63,7 +63,7 @@ body {
     position: absolute;
     opacity: 0;
     top: 1400px;
-    right: 0;
+    right: 5%;
 }
 
 .paka3 {
@@ -72,7 +72,33 @@ body {
     position: absolute;
     opacity: 0;
     top: 1900px;
-    right: 0;
+    right: 5%;
+}
+.platuna1{
+    position: absolute;
+    top: 1100px;
+    animation: tunavai1 30s alternate infinite;
+    transform: scale(0.5,0.5)
+}
+.platuna2{
+    position: absolute;
+    top: 1250px;
+    left: -90px;
+    animation: tunavai2 30s alternate infinite;
+    transform: scale(0.5,0.5)
+}
+.platuna3{
+    position: absolute;
+    top: 1280px;
+    left: +90px;
+    animation: tunavai3 30s alternate infinite;
+    transform: scale(0.5,0.5)
+}
+.platuna4{
+    position: absolute;
+    top: 1190px;
+    animation: tunavai4 30s alternate infinite;
+    transform: scale(0.5,0.5)
 }
 
 footer {
@@ -129,6 +155,115 @@ svg {
     opacity: .3;
 
 }
+@keyframes tunavai1{
+    0%{
+        left: 5%;
+        top: 1200px;
+        
+    }
+    25%{
+        left:80%;
+        top:1500px;
+
+    }
+    50%{
+        left: 25%;
+        top: 1900px;
+
+    }
+    75%{
+        left: 55%;
+        top:1300px;
+
+    }
+    100%{
+        left: 30%;
+        top:1100px;
+
+    }
+}
+
+@keyframes tunavai2{
+    0%{
+        left: 5%;
+        top: 1100px;
+        
+    }
+    40%{
+        left:80%;
+        top:1400px;
+
+    }
+    60%{
+        left: 25%;
+        top: 1800px;
+
+    }
+    85%{
+        left: 55%;
+        top:1200px;
+
+    }
+    100%{
+        left: 30%;
+        top:1000px;
+
+    }
+}
+@keyframes tunavai3{
+    0%{
+        left: 5%;
+        top: 1200px;
+        
+    }
+    10%{
+        left:80%;
+        top:1300px;
+
+    }
+    40%{
+        left: 25%;
+        top: 1900px;
+
+    }
+    65%{
+        left: 55%;
+        top:1300px;
+
+    }
+    100%{
+        left: 30%;
+        top:1100px;
+
+    }
+}
+@keyframes tunavai4{
+    0%{
+        left: 5%;
+        top: 1300px;
+        
+    }
+    30%{
+        left:80%;
+        top:1400px;
+
+    }
+    45%{
+        left: 25%;
+        top: 2000px;
+
+    }
+    85%{
+        left: 55%;
+        top:1400px;
+
+    }
+    100%{
+        left: 30%;
+        top:1200px;
+
+    }
+}
 
 @keyframes drop {
     0% {
@@ -166,15 +301,18 @@ svg {
 }
 .boat{
     position: absolute;
-    top:750px;
+    top:730px;
     left: 10%;
     animation: bboat  4s alternate infinite;
 }
 @keyframes bboat{
     from { 
-        transform: rotate(0deg); 
+        transform: rotate(0deg) scale(2, 2); 
+        
     } to { 
-        transform: rotate(-20deg); 
+        transform: rotate(-20deg) scale(2, 2); 
+        
+
     }
 }
 @keyframes ccloud1{
