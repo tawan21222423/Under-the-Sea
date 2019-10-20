@@ -372,12 +372,14 @@ svg {
     position: absolute;
     top:1000px;
     animation: nemovai1 30s linear infinite;
+    opacity: 0;
 }
 .nemo2{
     transform: scale(0.1,0.1);
     position: absolute;
     top:1000px;
     animation: nemovai2 34s linear infinite;
+    opacity: 0;
 
 }
 @keyframes nemovai1{
