@@ -9,8 +9,10 @@
     <title>Document</title>
 </head>
 
-<body style="font-family: 'Kanit', sans-serif;">
-
+<body style="font-family: 'Kanit', sans-serif; overflow-x: hidden;" onload="myFunction()">
+<div id="backload">
+    <div id="loader"></div>
+</div>
     <div class="box-1">
         <div class="title">
             <center>
@@ -84,9 +86,10 @@
         <span id="infonemo">
             <h4>ปลาการ์ตูนส้มขาว</h4>
             ที่ลำตัวตัวมีสีส้มเข้ม มีแถบสีขาว 3 แถบ พาดบริเวณส่วนหัว ลำตัวและบริเวณหาง ขอบของแถบสีขาวเป็นสีดำ
-             ขอบนอกของครีบเป็นสีขาวและขอบในเป็นสีดำ อาศัยในที่ลึก ตั้งแต่ 1-15 เมตร ขนาดตัวโตที่สุดประมาณ 10 เซนติเมตร
-             อาศัยอยู่กับดอกไม้ทะเลชนิด Heteractis magnifica และ Stichodactyla gigantea เป็นต้น ในดอกไม้ทะเลแต่ละกออาจพบอยู่ด้วยกัน 6-8 ตัว
-             </span>
+            ขอบนอกของครีบเป็นสีขาวและขอบในเป็นสีดำ อาศัยในที่ลึก ตั้งแต่ 1-15 เมตร ขนาดตัวโตที่สุดประมาณ 10 เซนติเมตร
+            อาศัยอยู่กับดอกไม้ทะเลชนิด Heteractis magnifica และ Stichodactyla gigantea เป็นต้น
+            ในดอกไม้ทะเลแต่ละกออาจพบอยู่ด้วยกัน 6-8 ตัว
+        </span>
     </div>
 
     <div id="platuna" onclick="myinfo(1,1)">
@@ -110,7 +113,7 @@
     </script>
 </body>
 <script>
-    
+
     $(document).ready(function () {
         $(window).scroll(function () {
             var positiontop = $(document).scrollTop();
@@ -220,20 +223,30 @@
         }
     }
     let count = 0;
-    function myinfo(i,pla){
+    function myinfo(i, pla) {
         count += i;
-        if(count == 1 && pla == 1){
+        if (count == 1 && pla == 1) {
             document.getElementById("infotuna").style.visibility = "visible";
             count = -1;
-            }
-        else if(count == 0)
+        }
+        else if (count == 0)
             document.getElementById("infotuna").style.visibility = "hidden";
-        if(count == 1 && pla == 2){
+        if (count == 1 && pla == 2) {
             document.getElementById("infonemo").style.visibility = "visible";
             count = -1;
-            }
-        else if(count == 0)
+        }
+        else if (count == 0)
             document.getElementById("infonemo").style.visibility = "hidden";
+    }
+    var myVar;
+
+    function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("backload").style.display = "none";
     }
 </script>
 
