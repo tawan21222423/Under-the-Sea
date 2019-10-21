@@ -87,6 +87,7 @@
             <h4>ปลาการ์ตูนส้มขาว</h4>
             <img src="pics/f4.png" class="nemopic">
             <h3 href="....">ข้อมูลเพิ่มเติม</h3>
+            
         </span>
     </div>
 
@@ -101,6 +102,8 @@
             <img src="pics/f1.png" alt="tunafish" class="tunapic">
             <h3 href="....">ข้อมูลเพิ่มเติม</h3>
         </span>
+        <iframe src="platuna.html" width="80%" height="80%" id="ifamtuna">
+            </iframe>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js">
     </script>
@@ -219,11 +222,11 @@
     function myinfo(i, pla) {
         count += i;
         if (count == 1 && pla == 1) {
-            document.getElementById("infotuna").style.visibility = "visible";
+            document.getElementById("ifamtuna").style.visibility = "visible";
             count = -1;
         }
         else if (count == 0)
-            document.getElementById("infotuna").style.visibility = "hidden";
+            document.getElementById("ifamtuna").style.visibility = "hidden";
         if (count == 1 && pla == 2) {
             document.getElementById("infonemo").style.visibility = "visible";
             count = -1;

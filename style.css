@@ -523,3 +523,11 @@ svg {
     }
 
 }
+#ifamtuna{
+    position: fixed;
+    border-radius: 25px;
+    border: 10px solid black;
+    left: 10%;
+    top:10%;
+    visibility: hidden;
+}
