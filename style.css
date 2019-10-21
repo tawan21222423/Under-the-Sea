@@ -530,4 +530,15 @@ svg {
     left: 10%;
     top:10%;
     visibility: hidden;
+    transition: 1s;
+    
 }
+
+
+#close{
+    position: fixed;
+    top:5%;
+    left: 87%;
+    visibility: hidden;
+}
+
