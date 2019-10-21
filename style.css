@@ -13,6 +13,7 @@
     height:100%;
     z-index: 1;
 }
+
 #loader {
     position: fixed;
     background-color: white;
@@ -426,6 +427,7 @@ svg {
 }
 
  #infotuna,#infonemo{
+    text-align: center;
     width: 20%;
     border: 3px solid black;
     border-radius: 20px;
@@ -438,8 +440,10 @@ svg {
     background-color: rgba(255,255,255,0.7);;
     
   }
+  .tunapic ,.nemopic{
+    width:90%;
+}
   
-
 @keyframes ccloud3 {
     from {
         left: 75%;
