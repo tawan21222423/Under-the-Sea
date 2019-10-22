@@ -523,22 +523,24 @@ svg {
     }
 
 }
-#ifamtuna{
+#ifamtuna,#ifamnemo{
     position: fixed;
     border-radius: 25px;
     border: 10px solid black;
     left: 10%;
     top:10%;
     visibility: hidden;
-    transition: 1s;
     
 }
-
+#ifamnemo{
+    z-index: 1;
+}
 
 #close{
     position: fixed;
     top:5%;
     left: 87%;
     visibility: hidden;
+    z-index: 1;
 }
 
