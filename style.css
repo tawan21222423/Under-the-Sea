@@ -485,12 +485,14 @@ svg {
     top: 5000px;
     left: 65%;
     animation: jellvai2 7s infinite alternate;
+    opacity: 0; 
 }
 .jellyfish2{
     position: absolute;
     top: 5000px;
     left: 35%;
     animation: jellvai1 5s infinite alternate;
+    opacity: 0;
 }
 @keyframes jellvai2{
     0%{
@@ -622,17 +624,15 @@ svg {
     }
 
 }
-#ifamtuna,#ifamnemo,#ifamangler{
+#ifamtuna,#ifamnemo,#ifamangler,#ifamjelly{
     position: fixed;
     border-radius: 25px;
     border: 10px solid black;
     left: 10%;
     top:10%;
     visibility: hidden;
-    
-}
-#ifamnemo{
     z-index: 1;
+    
 }
 
 #close{
@@ -640,6 +640,6 @@ svg {
     top:5%;
     left: 87%;
     visibility: hidden;
-    z-index: 1;
+    z-index: 2  ;
 }
 
