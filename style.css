@@ -564,7 +564,7 @@ svg {
     }
 
 }
-#ifamtuna,#ifamnemo{
+#ifamtuna,#ifamnemo,#ifamangler{
     position: fixed;
     border-radius: 25px;
     border: 10px solid black;
