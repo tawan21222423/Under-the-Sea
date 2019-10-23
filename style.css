@@ -480,6 +480,64 @@ svg {
     animation: anglervai 50s linear infinite;
     opacity: 0;
 }
+.jellyfish1{
+    position: absolute;
+    top: 5000px;
+    left: 65%;
+    animation: jellvai2 7s infinite alternate;
+}
+.jellyfish2{
+    position: absolute;
+    top: 5000px;
+    left: 35%;
+    animation: jellvai1 5s infinite alternate;
+}
+@keyframes jellvai2{
+    0%{
+        transform: scale(0.5,0.5);
+        top: 4950px;
+        left: 25%;
+
+    }
+    40%{
+        transform: scale(0.5,0.7);
+        top: 5000px;
+        left: 20%;
+    }
+    88%{
+        transform: scale(0.5,0.5);
+        top: 5000px;
+        left: 25%;
+    }
+    100%{
+        transform: scale(0.5,0.7);
+        top: 5000px;
+        left: 20%;
+    }
+}
+@keyframes jellvai1{
+    0%{
+        transform: scale(0.5,0.7);
+        top: 4950px;
+        left: 60%;
+
+    }
+    33%{
+        transform: scale(0.5,0.5);
+        top: 5000px;
+        left: 65%;
+    }
+    66%{
+        transform: scale(0.5,0.7);
+        top: 5000px;
+        left: 65%;
+    }
+    100%{
+        transform: scale(0.5,0.5);
+        top: 5000px;
+        left: 60%;
+    }
+}
 @keyframes anglervai{
     0%{
         top: 18000px;
