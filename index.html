@@ -127,6 +127,11 @@
                         0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path>
                         </svg>
     </div>
+
+    <div id="plaangler">
+        <img src="pics/f6.png" class="plaangler">
+
+    </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js">
     </script>
 </body>
@@ -193,6 +198,11 @@
                     right: '0%',
                     opacity: 0.3
                 });
+            }
+            if ((positiontop >= 17500) && (positiontop < 20000)) {
+                $(".plaangler").animate({
+                    opacity: 1
+                }, 3000);
             }
         });
     });
