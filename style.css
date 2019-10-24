@@ -474,7 +474,7 @@ svg {
 
 }
 .plaangler{
-    transform: scale(0.2,0.2);
+    transform: scale(0.5,0.5);
     position: absolute;
     top:18000px;
     animation: anglervai 50s linear infinite;
@@ -544,27 +544,27 @@ svg {
     0%{
         top: 18000px;
         left: -15%;
-        transform: scale(-0.2, 0.2);
+        transform: scale(-0.5, 0.5);
     }
     50%{
         top: 18000px;
         left: 50%;
-        transform: scale(-0.2, 0.2);
+        transform: scale(-0.5, 0.5);
     }
     51%{
         top: 18000px;
         left: 50%;
-        transform: scale(0.2, 0.2);
+        transform: scale(0.5, 0.5);
     }
     99%{
         top: 18000px;
         left: -15%;
-        transform: scale(0.2, 0.2);
+        transform: scale(0.5, 0.5);
     }
     100%{
         top: 18000px;
         left: -15%;
-        transform: scale(-0.2, 0.2);
+        transform: scale(-0.5, 0.5);
     }
 
 }
