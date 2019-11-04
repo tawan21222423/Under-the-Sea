@@ -10,8 +10,22 @@
 </head>
 
 <body style="font-family: 'Kanit', sans-serif; overflow-x: hidden;" onload="myFunction()">
+
 <div id="backload">
     <div id="loader"></div>
+</div>
+<div id="navbar">
+    <table >
+        <tr>
+            <th id="nav">1</th>
+            <th id="nav">2</th>
+            <th id="nav">3</th>
+            <th id="nav">4</th>
+        </tr>
+    </table>
+</div>
+<div id="navnavi" onclick="shownav()">
+    <h2>HOW TO!!</h2>
 </div>
     <div class="box-1">
         <div class="title">
@@ -23,7 +37,7 @@
         <img src="pics/c2.png" class="cloud-2">
         <img src="pics/c3.png" class="cloud-3">
 
-        <div class="lifeundersea">
+    <!-- <div class="lifeundersea">
             หลายๆ คนอาจคิดว่าโลกยุคปัจจุบันมีสิ่งมีชีวิตหลงสำรวจอยู่น้อยเต็มที นั่นเป็นความเข้าใจผิด เพราะ
             ยังมีสิ่งมีชีวิตที่มนุษย์ ยังไม่เคยเห็นอีกมากมาย โดยเฉพาะใต้ท้องทะเลลึก พื้นผิวโลกเป็นมหาสมุทรถึง 70%
             และมีความลึกโดยเฉลี่ย 4 กิโลเมตร เมื่อเปรียบเทียบกับที่อื่นๆ
@@ -33,12 +47,15 @@
             อาร์ชิทิวทิส ขนาด 13 เมตร ปลาหมึกยักษ์คอลอสซอล ขนาด 15 เมตร ปลาฉลามสลีปเปอร์ ไปจนกระทั่งถึง ปะการัง
             ปลาหมึกขนาดเล็ก หนอน และแบคทีเรีย
         </div>
+    -->
+        </div>
 
         <img src="pics/boat.png" class="boat">
         <img src="pics/co3.png" class="paka1">
         <img src="pics/co2.png" class="paka2">
         <img src="pics/co1.png" class="paka3">
-
+        <img src="pics/co4.png" class="paka4-1">
+        <img src="pics/co4.png" class="paka4-2">
     </div>
 
     <footer>
@@ -86,7 +103,7 @@
         <iframe src="placartoon.html" width="80%" height="80%" id="ifamnemo">
                 
         </iframe>
-        <svg fill="red" viewBox="0 0 500 500" id="close"> 
+        <svg fill="red" viewBox="0 0 900 900" id="close"> 
                     <path d="M31.708 
                     25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 
                     0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 
@@ -112,7 +129,7 @@
         <iframe src="platuna.html" width="80%" height="80%" id="ifamtuna">
                 
             </iframe>
-            <svg fill="red" viewBox="0 0 500 500" id="close"> 
+            <svg fill="red" viewBox="0 0 900 900" id="close"> 
                         <path d="M31.708 
                         25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 
                         0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 
@@ -133,7 +150,7 @@
         <iframe src="plaangler.html" width="80%" height="80%" id="ifamangler">
                 
             </iframe>
-            <svg fill="red" viewBox="0 0 500 500" id="close"> 
+            <svg fill="red" viewBox="0 0 900 900" id="close"> 
                         <path d="M31.708 
                         25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 
                         0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 
@@ -155,7 +172,7 @@
         <iframe src="jelly.html" width="80%" height="80%" id="ifamjelly">
                 
             </iframe>
-            <svg fill="red" viewBox="0 0 500 500" id="close"> 
+            <svg fill="red" viewBox="0 0 900 900" id="close"> 
                         <path d="M31.708 
                         25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 
                         0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 
@@ -197,12 +214,6 @@
                 }, 3000);
             }
             if ((positiontop >= 0) && (positiontop < 1000)) {
-                $(".title").animate({
-                    top: '20px',
-                    opacity: 1
-                }, 3000);
-            }
-            if ((positiontop >= 0) && (positiontop < 1000)) {
                 $(".cloud-3").animate({
                     left: '100vw',
                     opacity: 1
@@ -229,6 +240,16 @@
             if ((positiontop > 1000) && (positiontop < 2000)) {
                 $(".paka2").animate({
                     right: '0%',
+                    opacity: 0.3
+                });
+            }
+            if ((positiontop > 500) && (positiontop < 2000)) {
+                $(".paka4-1").animate({
+                    opacity: 0.3
+                });
+            }
+            if ((positiontop > 500) && (positiontop < 2000)) {
+                $(".paka4-2").animate({
                     opacity: 0.3
                 });
             }
@@ -348,6 +369,20 @@
     function showPage() {
         document.getElementById("loader").style.display = "none";
         document.getElementById("backload").style.display = "none";
+    }
+    let countse = 0;
+    function shownav(){
+        if(countse == 0){
+            document.getElementById("navnavi").style.top = "15%";
+            document.getElementById("navbar").style.top = "0%";
+            countse++;
+            console.log(countse);
+        }else if(countse == 1){
+            document.getElementById("navnavi").style.top = "0%";
+            document.getElementById("navbar").style.top = "-15%";
+            countse = 0;
+            console.log(countse);
+        }
     }
 </script>
 
