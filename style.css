@@ -1020,6 +1020,13 @@ svg {
     left: 50%;
     animation: vagvai_real 30s linear infinite;
 }
+.plavan2{
+    z-index: 55;
+    position: absolute;
+    top: 10500px; 
+    left: 50%;
+    animation: vagvai_real2 30s linear infinite;
+}
 .van1{
     position: absolute;
     top: 350px;
@@ -1037,11 +1044,38 @@ svg {
 .van3{
     position: absolute;
     top: 270px;
-    left: 350px;
+    left: 355px;
     z-index: 56;
     animation: vagvai3 5s alternate infinite;
 }
 .van4{
+    position: absolute;
+    top: 230px;
+    left: -200px;
+    z-index: 56;
+}
+.van11{
+    position: absolute;
+    top: 350px;
+    left: 200px;
+    z-index: 57;
+    animation: vagvai21 4s alternate infinite;
+}
+.van21{
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    z-index: 54;
+    animation: vagvai11 5s alternate infinite;
+}
+.van31{
+    position: absolute;
+    top: 270px;
+    left: 355px;
+    z-index: 56;
+    animation: vagvai31 5s alternate infinite;
+}
+.van41{
     position: absolute;
     top: 230px;
     left: -200px;
@@ -1061,6 +1095,48 @@ svg {
         transform-origin: 100% 0;
     }
 }
+@keyframes vagvai11{
+    0%{
+        transform: rotate(-20deg);
+        transform-origin: 100% 0;
+    }
+    60%{
+        transform: rotate(0deg);
+        transform-origin: 100% 0;
+    }
+    100%{
+        transform: rotate(-20deg);
+        transform-origin: 100% 0;
+    }
+}
+@keyframes vagvai21{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: 0% 0%;
+    }
+    60%{
+        transform: rotate(20deg);
+        transform-origin: 0% 0%;
+    }
+    100%{
+        transform: rotate( 0deg);
+        transform-origin: 0% 0%;
+    }
+}
+@keyframes vagvai21{
+    0%{
+        transform: rotate(-10deg);
+        transform-origin: 0% 0%;
+    }
+    50%{
+        transform: rotate(20deg);
+        transform-origin: 0% 0%;
+    }
+    100%{
+        transform: rotate(-10deg);
+        transform-origin: 0% 0%;
+    }
+}
 @keyframes vagvai2{
     0%{
         transform: rotate(20deg);
@@ -1072,6 +1148,20 @@ svg {
     }
     100%{
         transform: rotate(20deg);
+        transform-origin: 0% 0%;
+    }
+}
+@keyframes vagvai31{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: 0% 0%;
+    }
+    50%{
+        transform: rotate(10deg);
+        transform-origin: 0% 0%;
+    }
+    100%{
+        transform: rotate(0deg);
         transform-origin: 0% 0%;
     }
 }
@@ -1092,24 +1182,49 @@ svg {
 @keyframes vagvai_real{
     0%{
         left: 170%;
-        transform: scale(1.5, 1.5);
+        transform: scale(1.7, 1.7);
     }
     49%{
         left: -70%;
-        transform: scale(1.5, 1.5);
+        transform: scale(1.7, 1.7);
     }
     50%{
         left: -70%;
-        transform: scale(-1.5, 1.5);
+        transform: scale(-1.7, 1.7);
 
     }
     99%{
         left: 170%;
-        transform: scale(-1.5, 1.5);
+        transform: scale(-1.7, 1.7);
     }
     100%{
         left: 170%;
-        transform: scale(1.5, 1.5);
+        transform: scale(1.7, 1.7);
+    }
+
+
+}
+@keyframes vagvai_real2{
+    0%{
+        left: 170%;
+        transform: scale(0.9, 0.9);
+    }
+    53%{
+        left: -70%;
+        transform: scale(0.9, 0.9);
+    }
+    54%{
+        left: -70%;
+        transform: scale(-0.9, 0.9);
+
+    }
+    99%{
+        left: 170%;
+        transform: scale(-0.9, 0.9);
+    }
+    100%{
+        left: 170%;
+        transform: scale(0.9, 0.9);
     }
 
 
