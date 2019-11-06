@@ -78,11 +78,6 @@ body {
     width: 100%;
 }
 
-#full-size {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
 
 #backload {
     position: fixed;
@@ -196,7 +191,7 @@ body {
     position: absolute;
     opacity: 1;
     top: 960px;
-    right: -8%;
+    right: -11%;
     z-index: 60;
     opacity: 0;
     transform: rotate(-90deg);
@@ -208,7 +203,7 @@ body {
     position: absolute;
     opacity: 1;
     top: 960px;
-    left: -8%;
+    left: -11%;
     z-index: 60;
     opacity: 0;
     transform: rotate(90deg);
