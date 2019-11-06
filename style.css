@@ -150,7 +150,7 @@ body {
 
 .box-1 {
     z-index: 0;
-    width: 100%;
+    width: 100vw;
     height: 21600px;
     background-image: url("pics/seasky.png");
     position: absolute;
@@ -191,7 +191,7 @@ body {
     position: absolute;
     opacity: 1;
     top: 960px;
-    right: -11%;
+    right: -9%;
     z-index: 60;
     opacity: 0;
     transform: rotate(-90deg);
@@ -203,7 +203,7 @@ body {
     position: absolute;
     opacity: 1;
     top: 960px;
-    left: -11%;
+    left: -9%;
     z-index: 60;
     opacity: 0;
     transform: rotate(90deg);
@@ -923,7 +923,7 @@ svg {
         transform: scale(-0.2, 0.2);
     }
 
-    50% {
+    58% {
         top: 1200px;
         left: 70%;
         transform: scale(-0.2, 0.2);
@@ -936,7 +936,7 @@ svg {
     }
 
     60% {
-        top: 1300px;
+        top: 1200px;
         transform: scale(0.2, 0.2);
     }
 
@@ -1002,7 +1002,7 @@ svg {
 }
 
 #close {
-    position: fixed;
+    position: fixed; 
     top: 12%;
     left: 86%;
     visibility: hidden;
