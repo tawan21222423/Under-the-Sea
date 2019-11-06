@@ -4,26 +4,28 @@
     left: 30%;
     width: 40%;
     transition: 2s;
-    color:#333333;
+    color: #333333;
     animation: 0.5 slidedown linear;
 }
-#navbar{
-    width:100%;
+
+#navbar {
+    width: 100%;
     background-color: burlywood;
     z-index: 87;
     height: 15%;
     position: fixed;
-    top:-15%;
+    top: -15%;
     transition: 0.5s ease all;
 }
-#navnavi{
+
+#navnavi {
     width: 13vw;
-    height:10vh;
+    height: 8vh;
     background-color: burlywood;
     position: fixed;
     z-index: 87;
     left: 5%;
-    top:0%;
+    top: 0%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom: 2px solid black;
@@ -32,45 +34,61 @@
     text-align: center;
     transition: 0.5s ease all;
 }
-table{
+
+table {
     width: 100%;
     height: 100%;
 }
-th{
-    border:2px solid black;
+
+th {
+    border: 2px solid black;
 }
+
 .title:hover {
-    animation:1s colorch alternate infinite;
+    animation: 1s colorch alternate infinite;
 }
-@keyframes slidedown{
-    0%{
+
+@keyframes slidedown {
+    0% {
         top: 0px;
         opacity: 0;
     }
-    100%{
+
+    100% {
         top: 50px;
         opacity: 1;
     }
 }
-@keyframes colorch{
-    50%{
-        transform: scale(0.9,0.9);
+
+@keyframes colorch {
+    50% {
+        transform: scale(0.9, 0.9);
     }
-    100%{
-        transform: scale(1.1,1.1);
+
+    100% {
+        transform: scale(1.1, 1.1);
     }
 }
-html,body{ margin:0; padding:0; height:100%; width:100%; }
-#full-size{
-  height:100%;
-  width:100%;
-  overflow:hidden;
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
-#backload{
+
+#full-size {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#backload {
     position: fixed;
     background-color: white;
-    width:100vw;
-    height:100vh;
+    width: 100vw;
+    height: 100vh;
     z-index: 999;
 }
 
@@ -89,13 +107,19 @@ html,body{ margin:0; padding:0; height:100%; width:100%; }
     width: 120px;
     height: 120px;
     animation: spin 2s linear infinite;
-    
-  }
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-    
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 .cloud-1 {
     position: absolute;
@@ -165,7 +189,8 @@ body {
     top: 1900px;
     right: 5%;
 }
-.paka4-1{
+
+.paka4-1 {
     width: 30%;
     height: 300px;
     position: absolute;
@@ -176,7 +201,8 @@ body {
     opacity: 0;
     transform: rotate(-90deg);
 }
-.paka4-2{
+
+.paka4-2 {
     width: 30%;
     height: 300px;
     position: absolute;
@@ -223,17 +249,48 @@ body {
     opacity: 0;
 }
 
+.platewada {
+    position: absolute;
+    top: 1200px;
+    z-index: 40;
+    transform: scale(0.2, 0.2);
+    animation: tewadavai 15s linear infinite;
+}
+
 footer {
     width: 100%;
     position: absolute;
     top: 800px;
 }
-.plaangler:hover,.platuna1:hover,.platuna2:hover,.platuna3:hover,.platuna4:hover,.nemo1:hover,.nemo2:hover{
-    filter: opacity(50%);
+
+.plaangler:hover,
+.platuna1:hover,
+.platuna2:hover,
+.platuna3:hover,
+.platuna4:hover,
+.jellyfish3:hover,
+.jellyfish2:hover,
+.jellyfish1:hover,
+.platewada:hover,
+.nemo1:hover,
+.nemo2:hover {
+    filter: drop-shadow(0 0 50px crimson);
 }
-.plaangler,.platuna1,.platuna2,.platuna3,.platuna4,.nemo1,.nemo2{
+
+.plaangler,
+.platewada,
+.platuna1,
+.platuna2,
+.jellyfish1,
+.jellyfish2,
+.jellyfish3,
+.platuna3,
+.platuna4,
+.nemo1,
+.nemo2 {
     transition: .3s;
 }
+
 footer div {
     background-color: var(--col-deepblue);
     margin: -5px 0px 0px 0px;
@@ -286,33 +343,41 @@ svg {
         top: 1200px;
         transform: scale(0.5, 0.5);
     }
+
     24% {
         transform: scale(0.5, 0.5);
     }
+
     25% {
         left: 80%;
         top: 1500px;
         transform: scale(-0.5, 0.5);
     }
+
     49% {
         transform: scale(-0.5, 0.5);
     }
+
     50% {
         left: 25%;
         top: 1900px;
         transform: scale(0.5, 0.5);
     }
+
     74% {
         transform: scale(0.5, 0.5);
     }
+
     75% {
         left: 55%;
         top: 1300px;
         transform: scale(-0.5, 0.5);
     }
+
     99% {
         transform: scale(-0.5, 0.5);
     }
+
     100% {
         left: 5%;
         top: 1200px;
@@ -327,25 +392,31 @@ svg {
         top: 1300px;
         transform: scale(0.5, 0.5);
     }
+
     28% {
         transform: scale(0.5, 0.5);
     }
+
     29% {
         left: 70%;
         top: 1600px;
         transform: scale(-0.5, 0.5);
     }
+
     49% {
         transform: scale(-0.5, 0.5);
     }
+
     50% {
         left: 30%;
         top: 2000px;
         transform: scale(0.5, 0.5);
     }
+
     78% {
         transform: scale(0.5, 0.5);
     }
+
     79% {
         left: 60%;
         top: 1400px;
@@ -355,6 +426,7 @@ svg {
     99% {
         transform: scale(-0.5, 0.5);
     }
+
     100% {
         left: 9%;
         top: 1300px;
@@ -369,33 +441,41 @@ svg {
         top: 1200px;
         transform: scale(0.5, 0.5);
     }
+
     20% {
         transform: scale(0.5, 0.5);
     }
+
     21% {
         left: 74%;
         top: 1500px;
         transform: scale(-0.5, 0.5);
     }
+
     46% {
         transform: scale(-0.5, 0.5);
     }
+
     47% {
         left: 30%;
         top: 1900px;
         transform: scale(0.5, 0.5);
     }
+
     70% {
         transform: scale(0.5, 0.5);
     }
+
     71% {
         left: 60%;
         top: 1300px;
         transform: scale(-0.5, 0.5);
     }
+
     99% {
         transform: scale(-0.5, 0.5);
     }
+
     100% {
         left: 10%;
         top: 1200px;
@@ -410,33 +490,41 @@ svg {
         top: 1300px;
         transform: scale(0.5, 0.5);
     }
+
     29% {
         transform: scale(0.5, 0.5);
     }
+
     30% {
         left: 80%;
         top: 1400px;
         transform: scale(-0.5, 0.5);
     }
+
     55% {
         transform: scale(-0.5, 0.5);
     }
+
     56% {
         left: 25%;
         top: 1800px;
         transform: scale(0.5, 0.5);
     }
+
     77% {
         transform: scale(0.5, 0.5);
     }
+
     78% {
         left: 55%;
         top: 1200px;
         transform: scale(-0.5, 0.5);
     }
+
     99% {
         transform: scale(-0.5, 0.5);
     }
+
     100% {
         left: 5%;
         top: 1100px;
@@ -449,15 +537,19 @@ svg {
     0% {
         transform: translateY(25px);
     }
+
     30% {
         transform: translateY(-10px) scale(.1);
     }
+
     30.001% {
         transform: translateY(25px) scale(1);
     }
+
     70% {
         transform: translateY(25px);
     }
+
     100% {
         transform: translateY(-10px) scale(.1);
     }
@@ -491,6 +583,7 @@ svg {
     from {
         transform: rotate(0deg) scale(1.5, 1.5);
     }
+
     to {
         transform: rotate(-20deg) scale(1.5, 1.5);
     }
@@ -500,6 +593,7 @@ svg {
     from {
         left: 5%;
     }
+
     to {
         left: 60%;
     }
@@ -509,12 +603,14 @@ svg {
     from {
         left: 35%;
     }
+
     to {
         left: 80%;
     }
 }
 
- #infotuna,#infonemo{
+#infotuna,
+#infonemo {
     text-align: center;
     width: 20%;
     border: 3px solid black;
@@ -524,204 +620,396 @@ svg {
     margin-top: 10px;
     padding: 10px;
     position: fixed;
-    top:100px;
-    background-color: rgba(255,255,255,0.7);;
-    
-  }
-  .tunapic ,.nemopic{
-    width:90%;
+    top: 100px;
+    background-color: rgba(255, 255, 255, 0.7);
+    ;
+
 }
-  
+
+.tunapic,
+.nemopic {
+    width: 90%;
+}
+
 @keyframes ccloud3 {
     from {
         left: 75%;
     }
+
     to {
         left: 10%;
     }
 }
-.nemo1{
-    transform: scale(0.1,0.1);
+
+.nemo1 {
+    transform: scale(0.1, 0.1);
     position: absolute;
-    top:1000px;
+    top: 1000px;
     animation: nemovai1 30s linear infinite;
     opacity: 0;
 }
-.nemo2{
-    transform: scale(0.1,0.1);
+
+.nemo2 {
+    transform: scale(0.1, 0.1);
     position: absolute;
-    top:1000px;
+    top: 1000px;
     animation: nemovai2 34s linear infinite;
     opacity: 0;
 
 }
-.plaangler{
-    transform: scale(0.5,0.5);
+
+.plaangler {
+    transform: scale(0.5, 0.5);
     position: absolute;
-    top:18000px;
+    top: 18000px;
     animation: anglervai 50s linear infinite;
     opacity: 0;
 }
-.jellyfish1{
+
+.jellyfish1 {
     position: absolute;
-    top: 5000px;
+    top: 5200px;
     left: 65%;
-    animation: jellvai2 7s infinite alternate;
-    opacity: 0; 
+    animation: jellvai2 8s infinite ease alternate;
+    opacity: 0;
 }
-.jellyfish2{
+
+.jellyfish2 {
     position: absolute;
     top: 5000px;
     left: 35%;
-    animation: jellvai1 5s infinite alternate;
+    animation: jellvai1 9s infinite ease alternate;
     opacity: 0;
 }
-@keyframes jellvai2{
-    0%{
-        transform: scale(0.5,0.5);
-        top: 4950px;
-        left: 25%;
+
+.jellyfish3 {
+    position: absolute;
+    top: 4950px;
+    left: 80%;
+    animation: jellvai3 10s infinite ease alternate;
+    opacity: 0;
+}
+
+@keyframes jellvai2 {
+    0% {
+        transform: scale(0.5, 0.5);
+        top: 5000px;
+        left: 10%
+    }
+
+
+    12.5% {
+        transform: scale(0.5, 0.7);
 
     }
-    40%{
-        transform: scale(0.5,0.7);
+
+    25% {
+        transform: scale(0.5, 0.5);
         top: 5000px;
         left: 20%;
     }
-    88%{
-        transform: scale(0.5,0.5);
-        top: 5000px;
-        left: 25%;
+
+    37.5% {
+        transform: scale(0.5, 0.7);
+
     }
-    100%{
-        transform: scale(0.5,0.7);
+
+    50% {
+        transform: scale(0.5, 0.5);
+        top: 5000px;
+        left: 30%;
+    }
+
+    62.5% {
+        transform: scale(0.5, 0.7);
+
+    }
+
+    75% {
+        transform: scale(0.5, 0.5);
         top: 5000px;
         left: 20%;
     }
-}
-@keyframes jellvai1{
-    0%{
-        transform: scale(0.5,0.7);
-        top: 4950px;
-        left: 60%;
+
+    87.5% {
+        transform: scale(0.5, 0.7);
 
     }
-    33%{
-        transform: scale(0.5,0.5);
+
+    100% {
+        transform: scale(0.5, 0.5);
         top: 5000px;
-        left: 65%;
-    }
-    66%{
-        transform: scale(0.5,0.7);
-        top: 5000px;
-        left: 65%;
-    }
-    100%{
-        transform: scale(0.5,0.5);
-        top: 5000px;
-        left: 60%;
+        left: 10%;
     }
 }
-@keyframes anglervai{
-    0%{
+
+@keyframes jellvai1 {
+    0% {
+        transform: scale(0.5, 0.5);
+        top: 5200px;
+        left: 60%
+    }
+
+
+    12.5% {
+        transform: scale(0.5, 0.7);
+
+    }
+
+    25% {
+        transform: scale(0.5, 0.5);
+        top: 5200px;
+        left: 50%;
+    }
+
+    37.5% {
+        transform: scale(0.5, 0.7);
+
+    }
+
+    50% {
+        transform: scale(0.5, 0.5);
+        top: 5200px;
+        left: 40%;
+    }
+
+    62.5% {
+        transform: scale(0.5, 0.7);
+
+    }
+
+    75% {
+        transform: scale(0.5, 0.5);
+        top: 5200px;
+        left: 30%;
+    }
+
+    87.5% {
+        transform: scale(0.5, 0.7);
+
+    }
+
+    100% {
+        transform: scale(0.5, 0.5);
+        top: 5200px;
+        left: 20%;
+    }
+}
+
+@keyframes jellvai3 {
+    0% {
+        transform: scale(0.5, 0.5);
+        top: 4950px;
+        left: 80%
+    }
+
+
+    12.5% {
+        transform: scale(0.5, 0.7);
+
+    }
+
+    25% {
+        transform: scale(0.5, 0.5);
+        top: 4950px;
+        left: 60%;
+    }
+
+    37.5% {
+        transform: scale(0.5, 0.7);
+
+    }
+
+    50% {
+        transform: scale(0.5, 0.5);
+        top: 4950px;
+        left: 40%;
+    }
+
+    62.5% {
+        transform: scale(0.5, 0.7);
+
+    }
+
+    75% {
+        transform: scale(0.5, 0.5);
+        top: 4950px;
+        left: 60%;
+    }
+
+    87.5% {
+        transform: scale(0.5, 0.7);
+
+    }
+
+    100% {
+        transform: scale(0.5, 0.5);
+        top: 4950px;
+        left: 80%;
+    }
+}
+
+@keyframes anglervai {
+    0% {
         top: 18000px;
         left: -15%;
         transform: scale(-0.5, 0.5);
     }
-    50%{
+
+    50% {
         top: 18000px;
         left: 50%;
         transform: scale(-0.5, 0.5);
     }
-    51%{
+
+    51% {
         top: 18000px;
         left: 50%;
         transform: scale(0.5, 0.5);
     }
-    99%{
+
+    99% {
         top: 18000px;
         left: -15%;
         transform: scale(0.5, 0.5);
     }
-    100%{
+
+    100% {
         top: 18000px;
         left: -15%;
         transform: scale(-0.5, 0.5);
     }
 
 }
-@keyframes nemovai1{
-    0%{
+
+@keyframes nemovai1 {
+    0% {
         top: 800px;
         left: -15%;
         transform: scale(-0.1, 0.1);
     }
-    50%{
+
+    50% {
         top: 800px;
         left: 70%;
         transform: scale(-0.1, 0.1);
     }
-    51%{
+
+    51% {
         top: 800px;
         left: 70%;
         transform: scale(0.1, 0.1);
     }
-    99%{
+
+    99% {
         top: 800px;
         left: -15%;
         transform: scale(0.1, 0.1);
     }
-    100%{
+
+    100% {
         top: 800px;
         left: -15%;
         transform: scale(-0.1, 0.1);
     }
 
 }
-@keyframes nemovai2{
-    0%{
+
+@keyframes tewadavai {
+    0% {
+        top: 1300px;
+        left: 0%;
+        transform: scale(-0.2, 0.2);
+    }
+
+    20% {
+        top: 1000px;
+        left: 40%;
+        transform: scale(-0.2, 0.2);
+    }
+
+    50% {
+        top: 1200px;
+        left: 70%;
+        transform: scale(-0.2, 0.2);
+    }
+
+    59% {
+        top: 1200px;
+        left: 70%;
+        transform: scale(-0.2, 0.2);
+    }
+
+    60% {
+        top: 1300px;
+        transform: scale(0.2, 0.2);
+    }
+
+    99% {
+        top: 1300px;
+        left: 0%;
+        transform: scale(0.2, 0.2);
+    }
+
+    100% {
+        top: 1300px;
+        left: 0%;
+        transform: scale(-0.2, 0.2);
+    }
+
+}
+
+@keyframes nemovai2 {
+    0% {
         top: 750px;
         left: -13%;
         transform: scale(-0.1, 0.1);
     }
-    50%{
+
+    50% {
         top: 750px;
         left: 73%;
         transform: scale(-0.1, 0.1);
     }
-    51%{
+
+    51% {
         top: 750px;
         left: 73%;
         transform: scale(0.1, 0.1);
     }
-    99%{
+
+    99% {
         top: 750px;
         left: -13%;
         transform: scale(0.1, 0.1);
     }
-    100%{
+
+    100% {
         top: 750px;
         left: -13%;
         transform: scale(-0.1, 0.1);
     }
 
 }
-#ifamtuna,#ifamnemo,#ifamangler,#ifamjelly{
+
+#ifamtuna,
+#ifamnemo,
+#ifamangler,
+#ifamjelly {
     position: fixed;
     border-radius: 5px;
     border: 5px solid black;
     left: 10%;
-    top:10%;
+    top: 10%;
     visibility: hidden;
-    z-index: 1;
-    
+    z-index: 900;
+
 }
 
-#close{
+#close {
     position: fixed;
-    top:12%;
+    top: 12%;
     left: 86%;
     visibility: hidden;
-    z-index: 9;
+    z-index: 901;
 }
-
