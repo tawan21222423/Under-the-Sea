@@ -1037,7 +1037,7 @@ svg {
 .van3{
     position: absolute;
     top: 270px;
-    left: 340px;
+    left: 350px;
     z-index: 56;
     animation: vagvai3 5s alternate infinite;
 }
@@ -1081,7 +1081,7 @@ svg {
         transform-origin: 0% 0%;
     }
     50%{
-        transform: rotate(-10deg);
+        transform: rotate(0deg);
         transform-origin: 0% 0%;
     }
     100%{
