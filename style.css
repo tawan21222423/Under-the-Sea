@@ -255,6 +255,7 @@ body {
     z-index: 40;
     transform: scale(0.2, 0.2);
     animation: tewadavai 15s linear infinite;
+    opacity: 0;
 }
 
 footer {
@@ -1641,4 +1642,10 @@ svg {
         transform: scale(1, 1.1);
         left: 5%;
     }
+}
+.hill1{
+    width: 100%;
+    position: absolute;
+    top: 6000px;
+    opacity: 0; 
 }

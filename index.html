@@ -166,6 +166,9 @@
         </svg>
     
     </div>
+    <div class="hill">
+        <img src="pics/h1.png" class="hill1">
+    </div>
     <div class="krapun">
         <img src="pics/j3.png" class="krapun1">
         <img src="pics/j3.png" class="krapun2">
@@ -307,7 +310,16 @@
                     opacity: 1
                 }, 3000);
             }
-            
+            if ((positiontop >= 5000) && (positiontop < 6000)) {
+                $(".hill1").animate({
+                    opacity: 0.6
+                }, 3000);
+            }
+            if ((positiontop >= 1000) && (positiontop < 3000)) {
+                $(".platewada").animate({
+                    opacity: 1
+                }, 3000);
+            }
         });
     });
 
