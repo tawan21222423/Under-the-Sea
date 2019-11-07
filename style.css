@@ -1229,3 +1229,416 @@ svg {
 
 
 }
+.krapun1,.krapun2,.krapun3,.krapun4,.krapun5,.krapun6,.krapun7,.krapun8{
+    position: absolute;
+    z-index: 66;
+    width: 300px;
+    height: 400px;
+
+}
+
+.krapun{
+    position: absolute;
+    top:16000px;
+    width: 100%;
+}
+.krapun1{
+    position: absolute;
+    top: 100px;
+    left: 60%;
+    animation: krapunvai1 11s ease infinite;
+}
+.krapun2{
+    position: absolute;
+    top: 300px;
+    left: 80%;
+    animation: krapunvai2 8s ease infinite;
+}
+.krapun3{
+    position: absolute;
+    top: 50px;
+    left: 10%;
+    animation: krapunvai3 9s ease infinite;
+}
+.krapun4{
+    position: absolute;
+    top: 300px;
+    left: 40%;
+    animation: krapunvai4 10s ease infinite;
+}
+.krapun5{
+    position: absolute;
+    top: 600px;
+    left: 10%;
+    animation: krapunvai5 8s ease infinite;
+}
+.krapun6{
+    position: absolute;
+    top: -500px;
+    left: 70%;
+    animation: krapunvai6 10s ease infinite;
+}
+.krapun7{
+    position: absolute;
+    top: -300px;
+    left: 30%;
+    animation: krapunvai7 9s ease infinite;
+}
+.krapun8{
+    position: absolute;
+    top: -300px;
+    left: 0%;
+    animation: krapunvai8 7s ease infinite;
+}
+@keyframes krapunvai1 {
+    0% {
+        transform: scale(1, 1);
+        left: 70%
+    }
+    12.5% {
+        transform: scale(1, 1.1);
+    }
+
+    25% {
+        transform: scale(1, 1);
+        left: 65%;
+    }
+
+    37.5% {
+        transform: scale(1, 1.1);
+
+    }
+
+    50% {
+        transform: scale(1, 1);
+        left: 70%;
+    }
+
+    62.5% {
+        transform: scale(1, 1.1);
+
+    }
+
+    75% {
+        transform: scale(1, 1);
+        left: 65%;
+    }
+
+    87.5% {
+        transform: scale(1, 1.1);
+
+    }
+
+    100% {
+        transform: scale(1, 1);
+        left: 70%;
+    }
+}
+@keyframes krapunvai2 {
+    0% {
+        transform: scale(1, 1.1);
+        left: 75%
+    }
+    12.5% {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(1, 1.1);
+        left: 80%;
+    }
+
+    37.5% {
+        transform: scale(1, 1);
+
+    }
+
+    50% {
+        transform: scale(1, 1.1);
+        left: 75%;
+    }
+
+    62.5% {
+        transform: scale(1, 1);
+
+    }
+
+    75% {
+        transform: scale(1, 1.1);
+        left: 80%;
+    }
+
+    87.5% {
+        transform: scale(1, 1);
+
+    }
+
+    100% {
+        transform: scale(1, 1.1);
+        left: 75%;
+    }
+}
+@keyframes krapunvai3 {
+    0% {
+        transform: scale(1, 1);
+        left: 10%
+    }
+    12.5% {
+        transform: scale(1, 1.1);
+    }
+
+    25% {
+        transform: scale(1, 1);
+        left: 15%;
+    }
+
+    37.5% {
+        transform: scale(1, 1.1);
+
+    }
+
+    50% {
+        transform: scale(1, 1);
+        left: 10%;
+    }
+
+    62.5% {
+        transform: scale(1, 1.1);
+
+    }
+
+    75% {
+        transform: scale(1, 1);
+        left: 15%;
+    }
+
+    87.5% {
+        transform: scale(1, 1.1);
+
+    }
+
+    100% {
+        transform: scale(1, 1);
+        left: 10%;
+    }
+}
+@keyframes krapunvai4 {
+    0% {
+        transform: scale(1, 1);
+        left: 40%
+    }
+    12.5% {
+        transform: scale(1, 1.1);
+    }
+
+    25% {
+        transform: scale(1, 1);
+        left: 45%;
+    }
+
+    37.5% {
+        transform: scale(1, 1.1);
+
+    }
+
+    50% {
+        transform: scale(1, 1);
+        left: 40%;
+    }
+
+    62.5% {
+        transform: scale(1, 1.1);
+
+    }
+
+    75% {
+        transform: scale(1, 1);
+        left: 45%;
+    }
+
+    87.5% {
+        transform: scale(1, 1.1);
+
+    }
+
+    100% {
+        transform: scale(1, 1);
+        left: 40%;
+    }
+}
+@keyframes krapunvai5 {
+    0% {
+        transform: scale(1, 1.1);
+        left: 5%
+    }
+    12.5% {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(1, 1.1);
+        left: 10%;
+    }
+
+    37.5% {
+        transform: scale(1, 1);
+
+    }
+
+    50% {
+        transform: scale(1, 1.1);
+        left: 5%;
+    }
+
+    62.5% {
+        transform: scale(1, 1);
+
+    }
+
+    75% {
+        transform: scale(1, 1.1);
+        left: 10%;
+    }
+
+    87.5% {
+        transform: scale(1, 1);
+
+    }
+
+    100% {
+        transform: scale(1, 1.1);
+        left: 5%;
+    }
+}
+@keyframes krapunvai6 {
+    0% {
+        transform: scale(1, 1.1);
+        left: 65%
+    }
+    12.5% {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(1, 1.1);
+        left: 70%;
+    }
+
+    37.5% {
+        transform: scale(1, 1);
+
+    }
+
+    50% {
+        transform: scale(1, 1.1);
+        left: 65%;
+    }
+
+    62.5% {
+        transform: scale(1, 1);
+
+    }
+
+    75% {
+        transform: scale(1, 1.1);
+        left: 70%;
+    }
+
+    87.5% {
+        transform: scale(1, 1);
+
+    }
+
+    100% {
+        transform: scale(1, 1.1);
+        left: 65%;
+    }
+}
+@keyframes krapunvai7 {
+    0% {
+        transform: scale(1, 1);
+        left: 30%
+    }
+    12.5% {
+        transform: scale(1, 1.1);
+    }
+
+    25% {
+        transform: scale(1, 1);
+        left: 35%;
+    }
+
+    37.5% {
+        transform: scale(1, 1.1);
+
+    }
+
+    50% {
+        transform: scale(1, 1);
+        left: 30%;
+    }
+
+    62.5% {
+        transform: scale(1, 1.1);
+
+    }
+
+    75% {
+        transform: scale(1, 1);
+        left: 35%;
+    }
+
+    87.5% {
+        transform: scale(1, 1.1);
+
+    }
+
+    100% {
+        transform: scale(1, 1);
+        left: 30%;
+    }
+}
+@keyframes krapunvai8 {
+    0% {
+        transform: scale(1, 1.1);
+        left: 5%
+    }
+    12.5% {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(1, 1.1);
+        left: 0%;
+    }
+
+    37.5% {
+        transform: scale(1, 1);
+
+    }
+
+    50% {
+        transform: scale(1, 1.1);
+        left: 5%;
+    }
+
+    62.5% {
+        transform: scale(1, 1);
+
+    }
+
+    75% {
+        transform: scale(1, 1.1);
+        left: 0%;
+    }
+
+    87.5% {
+        transform: scale(1, 1);
+
+    }
+
+    100% {
+        transform: scale(1, 1.1);
+        left: 5%;
+    }
+}
