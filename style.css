@@ -166,8 +166,7 @@ body {
 }
 
 .paka1 {
-    width: 30%;
-    height: 300px;
+    width: 20%;
     position: absolute;
     opacity: 0;
     top: 1700px;
@@ -175,7 +174,7 @@ body {
 }
 
 .paka2 {
-    width: 30%;
+    width: 20%;
     height: 350px;
     position: absolute;
     opacity: 0;
@@ -184,8 +183,7 @@ body {
 }
 
 .paka3 {
-    width: 30%;
-    height: 300px;
+    width: 20%;
     position: absolute;
     opacity: 0;
     top: 1900px;
@@ -194,7 +192,6 @@ body {
 
 .paka4-1 {
     width: 30%;
-    height: 300px;
     position: absolute;
     opacity: 1;
     top: 960px;
@@ -206,7 +203,6 @@ body {
 
 .paka4-2 {
     width: 30%;
-    height: 300px;
     position: absolute;
     opacity: 1;
     top: 960px;
@@ -219,9 +215,9 @@ body {
 
 .platuna1 {
     position: absolute;
+    width:15%;
     top: 1100px;
     animation: tunavai1 30s infinite linear;
-    transform: scale(0.5, 0.5);
     opacity: 0;
 }
 
@@ -229,8 +225,8 @@ body {
     position: absolute;
     top: 1250px;
     left: -90px;
+    width:15%;
     animation: tunavai2 30s linear infinite;
-    transform: scale(0.5, 0.5);
     opacity: 0;
 }
 
@@ -238,16 +234,15 @@ body {
     position: absolute;
     top: 1280px;
     left: +90px;
+    width:15%;
     animation: tunavai3 30s linear infinite;
-    transform: scale(0.5, 0.5);
     opacity: 0;
 }
 
 .platuna4 {
     position: absolute;
-    top: 1190px;
+    width:15%;
     animation: tunavai4 30s linear infinite;
-    transform: scale(0.5, 0.5);
     opacity: 0;
 }
 
@@ -255,6 +250,7 @@ body {
     position: absolute;
     top: 1200px;
     z-index: 40;
+    width: 5%;
     transform: scale(0.2, 0.2);
     animation: tewadavai 15s linear infinite;
     opacity: 0;
@@ -263,7 +259,7 @@ body {
 footer {
     width: 100%;
     position: absolute;
-    top: 800px;
+    top:800px;
 }
 
 .plaangler:hover,
@@ -344,47 +340,47 @@ svg {
     0% {
         left: 5%;
         top: 1200px;
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
     }
 
     24% {
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
     }
 
     25% {
         left: 80%;
         top: 1500px;
-        transform: scale(-0.5, 0.5);
+        transform: scale(-1, 1);
     }
 
     49% {
-        transform: scale(-0.5, 0.5);
+        transform: scale(-1, 1);
     }
 
     50% {
         left: 25%;
         top: 1900px;
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
     }
 
     74% {
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
     }
 
     75% {
         left: 55%;
         top: 1300px;
-        transform: scale(-0.5, 0.5);
+        transform: scale(-1, 1);
     }
 
     99% {
-        transform: scale(-0.5, 0.5);
+        transform: scale(-1, 1);
     }
 
     100% {
         left: 5%;
         top: 1200px;
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
 
     }
 }
@@ -393,47 +389,47 @@ svg {
     0% {
         left: 9%;
         top: 1300px;
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
     }
 
     28% {
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
     }
 
     29% {
         left: 70%;
         top: 1600px;
-        transform: scale(-0.5, 0.5);
+        transform: scale(-1, 1);
     }
 
     49% {
-        transform: scale(-0.5, 0.5);
+        transform: scale(-1, 1);
     }
 
     50% {
         left: 30%;
         top: 2000px;
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
     }
 
     78% {
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
     }
 
     79% {
         left: 60%;
         top: 1400px;
-        transform: scale(-0.5, 0.5);
+        transform: scale(-1, 1);
     }
 
     99% {
-        transform: scale(-0.5, 0.5);
+        transform: scale(-1, 1);
     }
 
     100% {
         left: 9%;
         top: 1300px;
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
 
     }
 }
@@ -442,47 +438,47 @@ svg {
     0% {
         left: 10%;
         top: 1200px;
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
     }
 
     20% {
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
     }
 
     21% {
         left: 74%;
         top: 1500px;
-        transform: scale(-0.5, 0.5);
+        transform: scale(-1, 1);
     }
 
     46% {
-        transform: scale(-0.5, 0.5);
+        transform: scale(-1, 1);
     }
 
     47% {
         left: 30%;
         top: 1900px;
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
     }
 
     70% {
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
     }
 
     71% {
         left: 60%;
         top: 1300px;
-        transform: scale(-0.5, 0.5);
+        transform: scale(-1, 1);
     }
 
     99% {
-        transform: scale(-0.5, 0.5);
+        transform: scale(-1, 1);
     }
 
     100% {
         left: 10%;
         top: 1200px;
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
 
     }
 }
@@ -491,47 +487,47 @@ svg {
     0% {
         left: 5%;
         top: 1300px;
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
     }
 
     29% {
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
     }
 
     30% {
         left: 80%;
         top: 1400px;
-        transform: scale(-0.5, 0.5);
+        transform: scale(-1, 1);
     }
 
     55% {
-        transform: scale(-0.5, 0.5);
+        transform: scale(-1, 1);
     }
 
     56% {
         left: 25%;
         top: 1800px;
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
     }
 
     77% {
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
     }
 
     78% {
         left: 55%;
         top: 1200px;
-        transform: scale(-0.5, 0.5);
+        transform: scale(-1, 1);
     }
 
     99% {
-        transform: scale(-0.5, 0.5);
+        transform: scale(-1, 1);
     }
 
     100% {
         left: 5%;
-        top: 1100px;
-        transform: scale(0.5, 0.5);
+        top: 1300px;
+        transform: scale(1, 1);
 
     }
 }
@@ -629,10 +625,6 @@ svg {
 
 }
 
-.tunapic,
-.nemopic {
-    width: 90%;
-}
 
 @keyframes ccloud3 {
     from {
@@ -645,24 +637,24 @@ svg {
 }
 
 .nemo1 {
-    transform: scale(0.1, 0.1);
+    width: 5%;
     position: absolute;
-    top: 1000px;
+    top: 1100px;
     animation: nemovai1 30s linear infinite;
     opacity: 0;
 }
 
 .nemo2 {
-    transform: scale(0.1, 0.1);
+    width: 5%;
     position: absolute;
-    top: 1000px;
+    top: 1050px;
     animation: nemovai2 34s linear infinite;
     opacity: 0;
 
 }
 
 .plaangler {
-    transform: scale(0.5, 0.5);
+    width: 20%;
     position: absolute;
     top: 18000px;
     animation: anglervai 50s linear infinite;
@@ -856,64 +848,59 @@ svg {
     0% {
         top: 18000px;
         left: -15%;
-        transform: scale(-0.5, 0.5);
+        transform: scale(-1, 1);
     }
 
     50% {
         top: 18000px;
         left: 50%;
-        transform: scale(-0.5, 0.5);
+        transform: scale(-1, 1);
     }
 
     51% {
         top: 18000px;
         left: 50%;
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
     }
 
     99% {
         top: 18000px;
         left: -15%;
-        transform: scale(0.5, 0.5);
+        transform: scale(1, 1);
     }
 
     100% {
         top: 18000px;
         left: -15%;
-        transform: scale(-0.5, 0.5);
+        transform: scale(-1, 1);
     }
 
 }
 
 @keyframes nemovai1 {
     0% {
-        top: 800px;
         left: -15%;
-        transform: scale(-0.1, 0.1);
+        transform: scale(-1, 1);
     }
 
     50% {
-        top: 800px;
         left: 70%;
-        transform: scale(-0.1, 0.1);
+        transform: scale(-1, 1);
     }
 
     51% {
-        top: 800px;
         left: 70%;
-        transform: scale(0.1, 0.1);
+        transform: scale(1, 1);
     }
 
     99% {
-        top: 800px;
         left: -15%;
-        transform: scale(0.1, 0.1);
+        transform: scale(1, 1);
     }
 
     100% {
-        top: 800px;
         left: -15%;
-        transform: scale(-0.1, 0.1);
+        transform: scale(-1, 1);
     }
 
 }
@@ -922,75 +909,70 @@ svg {
     0% {
         top: 1300px;
         left: 0%;
-        transform: scale(-0.2, 0.2);
+        transform: scale(-1, 1);
     }
 
     20% {
         top: 1000px;
         left: 40%;
-        transform: scale(-0.2, 0.2);
+        transform: scale(-1, 1);
     }
 
     58% {
         top: 1200px;
         left: 70%;
-        transform: scale(-0.2, 0.2);
+        transform: scale(-1, 1);
     }
 
     59% {
         top: 1200px;
         left: 70%;
-        transform: scale(-0.2, 0.2);
+        transform: scale(-1, 1);
     }
 
     60% {
         top: 1200px;
-        transform: scale(0.2, 0.2);
+        transform: scale(1, 1);
     }
 
     99% {
         top: 1300px;
         left: 0%;
-        transform: scale(0.2, 0.2);
+        transform: scale(1, 1);
     }
 
     100% {
         top: 1300px;
         left: 0%;
-        transform: scale(-0.2, 0.2);
+        transform: scale(-1, 1);
     }
 
 }
 
 @keyframes nemovai2 {
     0% {
-        top: 750px;
         left: -13%;
-        transform: scale(-0.1, 0.1);
+        transform: scale(-1, 1);
     }
 
     50% {
-        top: 750px;
         left: 73%;
-        transform: scale(-0.1, 0.1);
+        transform: scale(-1, 1);
     }
 
     51% {
-        top: 750px;
         left: 73%;
-        transform: scale(0.1, 0.1);
+        transform: scale(1, 1);
     }
 
     99% {
-        top: 750px;
         left: -13%;
-        transform: scale(0.1, 0.1);
+        transform: scale(1, 1);
     }
 
     100% {
-        top: 750px;
         left: -13%;
-        transform: scale(-0.1, 0.1);
+        transform: scale(-1, 1);
     }
 
 }
