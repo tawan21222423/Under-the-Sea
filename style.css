@@ -166,7 +166,7 @@ body {
 }
 
 .paka1 {
-    width: 20%;
+    height: 300px;
     position: absolute;
     opacity: 0;
     top: 1700px;
@@ -174,8 +174,7 @@ body {
 }
 
 .paka2 {
-    width: 20%;
-    height: 350px;
+    height: 300px;
     position: absolute;
     opacity: 0;
     top: 1400px;
@@ -183,7 +182,7 @@ body {
 }
 
 .paka3 {
-    width: 20%;
+    height: 300px;
     position: absolute;
     opacity: 0;
     top: 1900px;
@@ -191,7 +190,7 @@ body {
 }
 
 .paka4-1 {
-    width: 30%;
+    height: 400px;
     position: absolute;
     opacity: 1;
     top: 960px;
@@ -202,7 +201,7 @@ body {
 }
 
 .paka4-2 {
-    width: 30%;
+    height: 400px;
     position: absolute;
     opacity: 1;
     top: 960px;
