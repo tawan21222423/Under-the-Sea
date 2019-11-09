@@ -7,7 +7,9 @@
     color: #333333;
     animation: 0.5 slidedown linear;
 }
-
+.warpper{
+    overflow-x: hidden;
+}
 #navbar {
     width: 100%;
     background-color: burlywood;
