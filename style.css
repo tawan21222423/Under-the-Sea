@@ -1235,9 +1235,7 @@ svg {
 .krapun1,.krapun2,.krapun3,.krapun4,.krapun5,.krapun6,.krapun7,.krapun8{
     position: absolute;
     z-index: 66;
-    width: 300px;
-    height: 400px;
-
+    width: 15%;
 }
 
 .krapun{
@@ -1652,49 +1650,37 @@ svg {
     opacity: 0; 
     z-index: 66;
 }
-.chalam{
-    z-index: 65;
-    position: absolute;
-    top: 6500px;
-    width: 100%;
-    left: 20%;
-    animation: chalamvai 20s linear infinite;
-}
+
 .chalam1{
-    width: 4%;
+    width: 40vw;
+    top: 6500px;
     position: absolute;
-    top:140px;
-    left: 12%;
     z-index: 60;
-}
-.chalam2{
-    width: 40%;
-    position: absolute;
-    z-index: 59;
+    animation: chalamvai 20s linear infinite;
 }
 @keyframes chalamvai{
     0% {
-        left: -15%;
+        left: -35%;
         transform: scale(-1, 1);
     }
 
     50% {
-        left: 70%;
+        left: 90%;
         transform: scale(-1, 1);
     }
 
     51% {
-        left: 70%;
+        left: 90%;
         transform: scale(1, 1);
     }
 
     99% {
-        left: -15%;
+        left: -35%;
         transform: scale(1, 1);
     }
 
     100% {
-        left: -15%;
+        left: -35%;
         transform: scale(-1, 1);
     }
 
