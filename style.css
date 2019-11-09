@@ -1650,4 +1650,52 @@ svg {
     position: absolute;
     top: 6000px;
     opacity: 0; 
+    z-index: 66;
+}
+.chalam{
+    z-index: 65;
+    position: absolute;
+    top: 6500px;
+    width: 100%;
+    left: 20%;
+    animation: chalamvai 20s linear infinite;
+}
+.chalam1{
+    width: 4%;
+    position: absolute;
+    top:140px;
+    left: 12%;
+    z-index: 60;
+}
+.chalam2{
+    width: 40%;
+    position: absolute;
+    z-index: 59;
+}
+@keyframes chalamvai{
+    0% {
+        left: -15%;
+        transform: scale(-1, 1);
+    }
+
+    50% {
+        left: 70%;
+        transform: scale(-1, 1);
+    }
+
+    51% {
+        left: 70%;
+        transform: scale(1, 1);
+    }
+
+    99% {
+        left: -15%;
+        transform: scale(1, 1);
+    }
+
+    100% {
+        left: -15%;
+        transform: scale(-1, 1);
+    }
+
 }
