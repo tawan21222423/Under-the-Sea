@@ -997,7 +997,6 @@ footer div {
     visibility: hidden;
     z-index: 900;
     -webkit-overflow-scrolling: touch;
-    overflow-y: scroll;
     transition: .5s ease-in-out;
 
 }
