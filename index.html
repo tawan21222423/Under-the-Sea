@@ -10,34 +10,34 @@
 </head>
 
 <body style="font-family: 'Kanit', sans-serif; overflow-x: hidden;" onload="myFunction()">
-<div class="warpper">
-    <div id="backload">
-        <div id="loader"></div>
-    </div>
-    <div id="navbar">
-        <table>
-            <tr>
-                <th id="nav">1</th>
-                <th id="nav">2</th>
-                <th id="nav">3</th>
-                <th id="nav">4</th>
-            </tr>
-        </table>
-    </div>
-    <div id="navnavi" onclick="shownav()">
-        <h2>HOW TO!!</h2>
-    </div>
-    <div class="box-1">
-        <div class="title">
-            <center>
-                <h1>ใต้ทะเลลึก</h1>
-            </center>
+    <div class="warpper">
+        <div id="backload">
+            <div id="loader"></div>
         </div>
-        <img src="pics/c1.png" class="cloud-1">
-        <img src="pics/c2.png" class="cloud-2">
-        <img src="pics/c3.png" class="cloud-3">
+        <div id="navbar">
+            <table>
+                <tr>
+                    <th id="nav">1</th>
+                    <th id="nav">2</th>
+                    <th id="nav">3</th>
+                    <th id="nav">4</th>
+                </tr>
+            </table>
+        </div>
+        <div id="navnavi" onclick="shownav()">
+            <h2>HOW TO!!</h2>
+        </div>
+        <div class="box-1">
+            <div class="title">
+                <center>
+                    <h1>ใต้ทะเลลึก</h1>
+                </center>
+            </div>
+            <img src="pics/c1.png" class="cloud-1">
+            <img src="pics/c2.png" class="cloud-2">
+            <img src="pics/c3.png" class="cloud-3">
 
-        <!-- <div class="lifeundersea">
+            <!-- <div class="lifeundersea">
             หลายๆ คนอาจคิดว่าโลกยุคปัจจุบันมีสิ่งมีชีวิตหลงสำรวจอยู่น้อยเต็มที นั่นเป็นความเข้าใจผิด เพราะ
             ยังมีสิ่งมีชีวิตที่มนุษย์ ยังไม่เคยเห็นอีกมากมาย โดยเฉพาะใต้ท้องทะเลลึก พื้นผิวโลกเป็นมหาสมุทรถึง 70%
             และมีความลึกโดยเฉลี่ย 4 กิโลเมตร เมื่อเปรียบเทียบกับที่อื่นๆ
@@ -48,14 +48,14 @@
             ปลาหมึกขนาดเล็ก หนอน และแบคทีเรีย
         </div>
     -->
-    </div>
+        </div>
 
-    <img src="pics/boat.png" class="boat">
-    <img src="pics/co3.png" class="paka1">
-    <img src="pics/co2.png" class="paka2">
-    <img src="pics/co1.png" class="paka3">
-    <img src="pics/co4.png" class="paka4-1">
-    <img src="pics/co4.png" class="paka4-2">
+        <img src="pics/boat.png" class="boat">
+        <img src="pics/co3.png" class="paka1">
+        <img src="pics/co2.png" class="paka2">
+        <img src="pics/co1.png" class="paka3">
+        <img src="pics/co4.png" class="paka4-1">
+        <img src="pics/co4.png" class="paka4-2">
     </div>
 
     <footer>
@@ -88,7 +88,7 @@
             235,2 235,4 240,4
 
             
-            v 30 h -250 z" />
+            v 45 h -350 z" />
             </defs>
             <use id="wave4" class="wave" xlink:href="#wave" x="0" y="-2"></use>
             <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-1"></use>
@@ -164,7 +164,7 @@
                         0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 
                         0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path>
         </svg>
-    
+
     </div>
     <div class="hill">
         <img src="pics/h1.png" class="hill1">
@@ -188,12 +188,12 @@
 
     </div>
     <div class="plavan2">
-            <img src="pics/whale/c1.png" class="van11">
-            <img src="pics/whale/c2.png" class="van21">
-            <img src="pics/whale/h.png" class="van31">
-            <img src="pics/whale/t.png" class="van41">
-    
-        </div>
+        <img src="pics/whale/c1.png" class="van11">
+        <img src="pics/whale/c2.png" class="van21">
+        <img src="pics/whale/h.png" class="van31">
+        <img src="pics/whale/t.png" class="van41">
+
+    </div>
     <div id="jellyfish" onclick="myinfo(1,4)">
         <img src="pics/j2.png" class="jellyfish1">
         <img src="pics/j2.png" class="jellyfish2">
@@ -225,8 +225,8 @@
     </div>
 </body>
 <script>
-    $(document).ready(function () {
-        $(window).scroll(function () {
+    $(document).ready(function() {
+        $(window).scroll(function() {
             var positiontop = $(document).scrollTop();
             console.log(positiontop);
             if ((positiontop >= 300) && (positiontop < 2000)) {
@@ -352,7 +352,7 @@
         goUp = delta > 0;
 
         if (interval == null) {
-            interval = setInterval(function () {
+            interval = setInterval(function() {
                 var scrollTop = $(window).scrollTop();
                 var step = Math.round((end - scrollTop) / scrollSpeed);
                 if (scrollTop <= 0 ||
@@ -428,7 +428,7 @@
             countse = 0;
             console.log(countse);
         }
-    }   
+    }
 </script>
 
 </html>
