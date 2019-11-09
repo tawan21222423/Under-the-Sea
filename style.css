@@ -997,9 +997,9 @@ footer div {
     visibility: hidden;
     z-index: 900;
     transition: .5s ease-in-out;
-
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
-
 #close {
     position: fixed; 
     top: 3%;
