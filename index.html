@@ -88,7 +88,7 @@
             235,2 235,4 240,4
 
             
-            v 45 h -350 z" />
+            v 95 h -350 z" />
             </defs>
             <use id="wave4" class="wave" xlink:href="#wave" x="0" y="-2"></use>
             <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-1"></use>
@@ -228,104 +228,6 @@
     </div>
 </body>
 <script>
-    $(document).ready(function() {
-        $(window).scroll(function() {
-            var positiontop = $(document).scrollTop();
-            console.log(positiontop);
-            if ((positiontop >= 300) && (positiontop < 2000)) {
-                $(".nemo1,.nemo2").animate({
-                    opacity: 1
-                }, 3000);
-            }
-            if ((positiontop >= 1000) && (positiontop < 2000)) {
-                $(".platuna1,.platuna2,.platuna3,.platuna4").animate({
-                    opacity: 1
-                }, 3000);
-            }
-            if ((positiontop >= 0) && (positiontop < 1000)) {
-                $(".lifeundersea").animate({
-                    top: '400px',
-                    opacity: 1
-                }, 3000);
-            }
-            if ((positiontop >= 0) && (positiontop < 1000)) {
-                $(".cloud-3").animate({
-                    left: '100vw',
-                    opacity: 1
-                }, 50000);
-            }
-            if ((positiontop >= 0) && (positiontop < 1000)) {
-                $(".cloud-2").animate({
-                    left: '100vw',
-                    opacity: 1
-                }, 70000);
-            }
-            if ((positiontop >= 0) && (positiontop < 1000)) {
-                $(".cloud-1").animate({
-                    left: '100vw',
-                    opacity: 1
-                }, 90000);
-            }
-            if ((positiontop > 1300) && (positiontop < 2000)) {
-                $(".paka1").animate({
-                    left: '-5%',
-                    opacity: 0.3
-                });
-            }
-            if ((positiontop > 1000) && (positiontop < 2000)) {
-                $(".paka2").animate({
-                    right: '0%',
-                    opacity: 0.3
-                });
-            }
-            if ((positiontop > 500) && (positiontop < 2000)) {
-                $(".paka4-1").animate({
-                    opacity: 0.3
-                });
-            }
-            if ((positiontop > 500) && (positiontop < 2000)) {
-                $(".paka4-2").animate({
-                    opacity: 0.3
-                });
-            }
-            if ((positiontop > 1600) && (positiontop < 2000)) {
-                $(".paka3").animate({
-                    right: '0%',
-                    opacity: 0.3
-                });
-            }
-            if ((positiontop >= 17500) && (positiontop < 20000)) {
-                $(".plaangler").animate({
-                    opacity: 1
-                }, 3000);
-            }
-            if ((positiontop >= 4000) && (positiontop < 6000)) {
-                $(".jellyfish1").animate({
-                    opacity: 1
-                }, 3000);
-            }
-            if ((positiontop >= 4000) && (positiontop < 6000)) {
-                $(".jellyfish2").animate({
-                    opacity: 1
-                }, 3000);
-            }
-            if ((positiontop >= 4000) && (positiontop < 6000)) {
-                $(".jellyfish3").animate({
-                    opacity: 1
-                }, 3000);
-            }
-            if ((positiontop >= 5000) && (positiontop < 6000)) {
-                $(".hill1").animate({
-                    opacity: 1
-                }, 3000);
-            }
-            if ((positiontop >= 1000) && (positiontop < 3000)) {
-                $(".platewada").animate({
-                    opacity: 1
-                }, 3000);
-            }
-        });
-    });
 
     if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
     window.onmousewheel = document.onmousewheel = wheel;
