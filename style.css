@@ -992,8 +992,8 @@ footer div {
     position: fixed;
     border-radius: 5px;
     border: 5px solid black;
-    left: 10%;
-    top: 10%;
+    left: 0%;
+    box-sizing: border-box;
     visibility: hidden;
     z-index: 900;
 
@@ -1001,8 +1001,8 @@ footer div {
 
 #close {
     position: fixed; 
-    top: 12%;
-    left: 86%;
+    top: 3%;
+    left: 95%;
     visibility: hidden;
     z-index: 901;
 }
@@ -1674,4 +1674,8 @@ footer div {
         transform: scale(-1, 1);
     }
 
+}
+iframe{
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
 }
