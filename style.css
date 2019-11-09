@@ -7,9 +7,11 @@
     color: #333333;
     animation: 0.5 slidedown linear;
 }
-.warpper{
+
+.warpper {
     overflow-x: hidden;
 }
+
 #navbar {
     width: 100%;
     background-color: burlywood;
@@ -55,7 +57,6 @@ th {
         top: 0px;
         opacity: 1;
     }
-
     100% {
         top: 50px;
         opacity: 1;
@@ -66,7 +67,6 @@ th {
     50% {
         transform: scale(0.9, 0.9);
     }
-
     100% {
         transform: scale(1.1, 1.1);
     }
@@ -80,9 +80,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     position: relative;
-
 }
-
 
 #backload {
     position: fixed;
@@ -91,11 +89,13 @@ body {
     height: 100%;
     z-index: 999;
 }
+
 #full-size {
     height: 100%;
     width: 100%;
     overflow: hidden;
 }
+
 #loader {
     position: fixed;
     background-color: white;
@@ -111,20 +111,16 @@ body {
     width: 120px;
     height: 120px;
     animation: spin 2s linear infinite;
-
 }
-
 
 @keyframes spin {
     0% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
     }
 }
-
 
 .cloud-1 {
     position: absolute;
@@ -171,7 +167,7 @@ body {
 .paka1 {
     width: 20%;
     position: absolute;
-    opacity:0.3;
+    opacity: 0.3;
     top: 1700px;
     left: -20;
     z-index: 34;
@@ -180,7 +176,7 @@ body {
 .paka2 {
     width: 20%;
     position: absolute;
-    opacity:0.3;
+    opacity: 0.3;
     top: 1400px;
     right: 0%;
     z-index: 34;
@@ -189,7 +185,7 @@ body {
 .paka3 {
     width: 20%;
     position: absolute;
-    opacity:0.3;
+    opacity: 0.3;
     top: 1900px;
     right: 0%;
     z-index: 34;
@@ -198,7 +194,7 @@ body {
 .paka4-1 {
     width: 30%;
     position: absolute;
-    opacity:0.3;
+    opacity: 0.3;
     top: 960px;
     right: -9%;
     z-index: 60;
@@ -208,17 +204,16 @@ body {
 .paka4-2 {
     width: 30%;
     position: absolute;
-    opacity:0.3;
+    opacity: 0.3;
     top: 960px;
     left: -9%;
     z-index: 60;
     transform: rotate(90deg);
 }
 
-
 .platuna1 {
     position: absolute;
-    width:15%;
+    width: 15%;
     top: 1100px;
     animation: tunavai1 30s infinite linear;
     opacity: 1;
@@ -228,7 +223,7 @@ body {
     position: absolute;
     top: 1250px;
     left: -90px;
-    width:15%;
+    width: 15%;
     animation: tunavai2 30s linear infinite;
     opacity: 1;
 }
@@ -237,14 +232,14 @@ body {
     position: absolute;
     top: 1280px;
     left: +90px;
-    width:15%;
+    width: 15%;
     animation: tunavai3 30s linear infinite;
     opacity: 1;
 }
 
 .platuna4 {
     position: absolute;
-    width:15%;
+    width: 15%;
     animation: tunavai4 30s linear infinite;
     opacity: 1;
 }
@@ -262,7 +257,7 @@ body {
 footer {
     width: 100%;
     position: absolute;
-    top:800px;
+    top: 800px;
 }
 
 .plaangler:hover,
@@ -302,15 +297,23 @@ footer div {
     z-index: 33;
 }
 
-.wawa {
+.svg {
     width: 100%;
     overflow: visible;
+    z-index: -5;
 }
 
 .wave {
     animation: wave 20s linear;
     animation-iteration-count: infinite;
     fill: #2bd3eb;
+}
+
+#fade {
+    width: 1920px;
+    height: 500px;
+    background: linear-gradient(180deg, rgba(43, 211, 235, 1) 80%, rgba(43, 235, 59, 0) 100%);
+    z-index: -4;
 }
 
 .drop {
@@ -346,46 +349,37 @@ footer div {
         top: 1200px;
         transform: scale(1, 1);
     }
-
     24% {
         transform: scale(1, 1);
     }
-
     25% {
         left: 80%;
         top: 1500px;
         transform: scale(-1, 1);
     }
-
     49% {
         transform: scale(-1, 1);
     }
-
     50% {
         left: 25%;
         top: 1900px;
         transform: scale(1, 1);
     }
-
     74% {
         transform: scale(1, 1);
     }
-
     75% {
         left: 55%;
         top: 1300px;
         transform: scale(-1, 1);
     }
-
     99% {
         transform: scale(-1, 1);
     }
-
     100% {
         left: 5%;
         top: 1200px;
         transform: scale(1, 1);
-
     }
 }
 
@@ -395,46 +389,37 @@ footer div {
         top: 1300px;
         transform: scale(1, 1);
     }
-
     28% {
         transform: scale(1, 1);
     }
-
     29% {
         left: 70%;
         top: 1600px;
         transform: scale(-1, 1);
     }
-
     49% {
         transform: scale(-1, 1);
     }
-
     50% {
         left: 30%;
         top: 2000px;
         transform: scale(1, 1);
     }
-
     78% {
         transform: scale(1, 1);
     }
-
     79% {
         left: 60%;
         top: 1400px;
         transform: scale(-1, 1);
     }
-
     99% {
         transform: scale(-1, 1);
     }
-
     100% {
         left: 9%;
         top: 1300px;
         transform: scale(1, 1);
-
     }
 }
 
@@ -444,46 +429,37 @@ footer div {
         top: 1200px;
         transform: scale(1, 1);
     }
-
     20% {
         transform: scale(1, 1);
     }
-
     21% {
         left: 74%;
         top: 1500px;
         transform: scale(-1, 1);
     }
-
     46% {
         transform: scale(-1, 1);
     }
-
     47% {
         left: 30%;
         top: 1900px;
         transform: scale(1, 1);
     }
-
     70% {
         transform: scale(1, 1);
     }
-
     71% {
         left: 60%;
         top: 1300px;
         transform: scale(-1, 1);
     }
-
     99% {
         transform: scale(-1, 1);
     }
-
     100% {
         left: 10%;
         top: 1200px;
         transform: scale(1, 1);
-
     }
 }
 
@@ -493,46 +469,37 @@ footer div {
         top: 1300px;
         transform: scale(1, 1);
     }
-
     29% {
         transform: scale(1, 1);
     }
-
     30% {
         left: 80%;
         top: 1400px;
         transform: scale(-1, 1);
     }
-
     55% {
         transform: scale(-1, 1);
     }
-
     56% {
         left: 25%;
         top: 1800px;
         transform: scale(1, 1);
     }
-
     77% {
         transform: scale(1, 1);
     }
-
     78% {
         left: 55%;
         top: 1200px;
         transform: scale(-1, 1);
     }
-
     99% {
         transform: scale(-1, 1);
     }
-
     100% {
         left: 5%;
         top: 1300px;
         transform: scale(1, 1);
-
     }
 }
 
@@ -540,19 +507,15 @@ footer div {
     0% {
         transform: translateY(25px);
     }
-
     30% {
         transform: translateY(-10px) scale(.1);
     }
-
     30.001% {
         transform: translateY(25px) scale(1);
     }
-
     70% {
         transform: translateY(25px);
     }
-
     100% {
         transform: translateY(-10px) scale(.1);
     }
@@ -587,7 +550,6 @@ footer div {
     from {
         transform: rotate(0deg) scale(1, 1);
     }
-
     to {
         transform: rotate(-20deg) scale(1, 1);
     }
@@ -597,7 +559,6 @@ footer div {
     from {
         left: 5%;
     }
-
     to {
         left: 60%;
     }
@@ -607,7 +568,6 @@ footer div {
     from {
         left: 35%;
     }
-
     to {
         left: 80%;
     }
@@ -627,15 +587,12 @@ footer div {
     top: 100px;
     background-color: rgba(255, 255, 255, 0.7);
     ;
-
 }
-
 
 @keyframes ccloud3 {
     from {
         left: 75%;
     }
-
     to {
         left: 10%;
     }
@@ -655,7 +612,6 @@ footer div {
     top: 1050px;
     animation: nemovai2 34s linear infinite;
     opacity: 1;
-
 }
 
 .plaangler {
@@ -699,46 +655,33 @@ footer div {
         top: 5000px;
         left: 10%
     }
-
-
     12.5% {
         transform: scale(1, 1.2);
-
     }
-
     25% {
         transform: scale(1, 1);
         top: 5000px;
         left: 20%;
     }
-
     37.5% {
         transform: scale(1, 1.2);
-
     }
-
     50% {
         transform: scale(1, 1);
         top: 5000px;
         left: 30%;
     }
-
     62.5% {
         transform: scale(1, 1.2);
-
     }
-
     75% {
         transform: scale(1, 1);
         top: 5000px;
         left: 20%;
     }
-
     87.5% {
         transform: scale(1, 1.2);
-
     }
-
     100% {
         transform: scale(1, 1);
         top: 5000px;
@@ -752,46 +695,33 @@ footer div {
         top: 5200px;
         left: 60%
     }
-
-
     12.5% {
         transform: scale(1, 1.2);
-
     }
-
     25% {
         transform: scale(1, 1);
         top: 5200px;
         left: 50%;
     }
-
     37.5% {
         transform: scale(1, 1.2);
-
     }
-
     50% {
         transform: scale(1, 1);
         top: 5200px;
         left: 40%;
     }
-
     62.5% {
         transform: scale(1, 1.2);
-
     }
-
     75% {
         transform: scale(1, 1);
         top: 5200px;
         left: 30%;
     }
-
     87.5% {
         transform: scale(1, 1.2);
-
     }
-
     100% {
         transform: scale(1, 1);
         top: 5200px;
@@ -805,46 +735,33 @@ footer div {
         top: 4950px;
         left: 80%
     }
-
-
     12.5% {
         transform: scale(1, 1.2);
-
     }
-
     25% {
         transform: scale(1, 1);
         top: 4950px;
         left: 60%;
     }
-
     37.5% {
         transform: scale(1, 1.2);
-
     }
-
     50% {
         transform: scale(1, 1);
         top: 4950px;
         left: 40%;
     }
-
     62.5% {
         transform: scale(1, 1.2);
-
     }
-
     75% {
         transform: scale(1, 1);
         top: 4950px;
         left: 60%;
     }
-
     87.5% {
         transform: scale(1, 1.2);
-
     }
-
     100% {
         transform: scale(1, 1);
         top: 4950px;
@@ -858,31 +775,26 @@ footer div {
         left: -15%;
         transform: scale(-1, 1);
     }
-
     50% {
         top: 18000px;
         left: 50%;
         transform: scale(-1, 1);
     }
-
     51% {
         top: 18000px;
         left: 50%;
         transform: scale(1, 1);
     }
-
     99% {
         top: 18000px;
         left: -15%;
         transform: scale(1, 1);
     }
-
     100% {
         top: 18000px;
         left: -15%;
         transform: scale(-1, 1);
     }
-
 }
 
 @keyframes nemovai1 {
@@ -890,27 +802,22 @@ footer div {
         left: -15%;
         transform: scale(-1, 1);
     }
-
     50% {
         left: 70%;
         transform: scale(-1, 1);
     }
-
     51% {
         left: 70%;
         transform: scale(1, 1);
     }
-
     99% {
         left: -15%;
         transform: scale(1, 1);
     }
-
     100% {
         left: -15%;
         transform: scale(-1, 1);
     }
-
 }
 
 @keyframes tewadavai {
@@ -919,42 +826,35 @@ footer div {
         left: 0%;
         transform: scale(-1, 1);
     }
-
     20% {
         top: 1000px;
         left: 40%;
         transform: scale(-1, 1);
     }
-
     58% {
         top: 1200px;
         left: 70%;
         transform: scale(-1, 1);
     }
-
     59% {
         top: 1200px;
         left: 70%;
         transform: scale(-1, 1);
     }
-
     60% {
         top: 1200px;
         transform: scale(1, 1);
     }
-
     99% {
         top: 1300px;
         left: 0%;
         transform: scale(1, 1);
     }
-
     100% {
         top: 1300px;
         left: 0%;
         transform: scale(-1, 1);
     }
-
 }
 
 @keyframes nemovai2 {
@@ -962,27 +862,22 @@ footer div {
         left: -13%;
         transform: scale(-1, 1);
     }
-
     50% {
         left: 73%;
         transform: scale(-1, 1);
     }
-
     51% {
         left: 73%;
         transform: scale(1, 1);
     }
-
     99% {
         left: -13%;
         transform: scale(1, 1);
     }
-
     100% {
         left: -13%;
         transform: scale(-1, 1);
     }
-
 }
 
 #ifamtuna,
@@ -1000,288 +895,319 @@ footer div {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
+
 #close {
-    position: fixed; 
+    position: fixed;
     top: 3%;
     left: 95%;
     visibility: hidden;
     z-index: 901;
 }
-.plavan{
+
+.plavan {
     z-index: 55;
     position: absolute;
-    top: 10000px; 
+    top: 10000px;
     left: 50%;
     animation: vagvai_real 30s linear infinite;
 }
-.plavan2{
+
+.plavan2 {
     z-index: 55;
     position: absolute;
-    top: 10500px; 
+    top: 10500px;
     left: 50%;
     animation: vagvai_real2 30s linear infinite;
 }
-.van1{
+
+.van1 {
     position: absolute;
     top: 350px;
     left: 200px;
     z-index: 57;
     animation: vagvai2 4s alternate infinite;
 }
-.van2{
+
+.van2 {
     position: absolute;
     top: 300px;
     left: 100px;
     z-index: 54;
     animation: vagvai 5s alternate infinite;
 }
-.van3{
+
+.van3 {
     position: absolute;
     top: 270px;
     left: 355px;
     z-index: 56;
     animation: vagvai3 5s alternate infinite;
 }
-.van4{
+
+.van4 {
     position: absolute;
     top: 230px;
     left: -200px;
     z-index: 56;
 }
-.van11{
+
+.van11 {
     position: absolute;
     top: 350px;
     left: 200px;
     z-index: 57;
     animation: vagvai21 4s alternate infinite;
 }
-.van21{
+
+.van21 {
     position: absolute;
     top: 300px;
     left: 100px;
     z-index: 54;
     animation: vagvai11 5s alternate infinite;
 }
-.van31{
+
+.van31 {
     position: absolute;
     top: 270px;
     left: 355px;
     z-index: 56;
     animation: vagvai31 5s alternate infinite;
 }
-.van41{
+
+.van41 {
     position: absolute;
     top: 230px;
     left: -200px;
     z-index: 56;
 }
-@keyframes vagvai{
-    0%{
+
+@keyframes vagvai {
+    0% {
         transform: rotate(0deg);
         transform-origin: 100% 0;
     }
-    50%{
+    50% {
         transform: rotate(-20deg);
         transform-origin: 100% 0;
     }
-    100%{
+    100% {
         transform: rotate(0deg);
         transform-origin: 100% 0;
     }
 }
-@keyframes vagvai11{
-    0%{
+
+@keyframes vagvai11 {
+    0% {
         transform: rotate(-20deg);
         transform-origin: 100% 0;
     }
-    60%{
+    60% {
         transform: rotate(0deg);
         transform-origin: 100% 0;
     }
-    100%{
+    100% {
         transform: rotate(-20deg);
         transform-origin: 100% 0;
     }
 }
-@keyframes vagvai21{
-    0%{
+
+@keyframes vagvai21 {
+    0% {
         transform: rotate(0deg);
         transform-origin: 0% 0%;
     }
-    60%{
+    60% {
         transform: rotate(20deg);
         transform-origin: 0% 0%;
     }
-    100%{
+    100% {
         transform: rotate( 0deg);
         transform-origin: 0% 0%;
     }
 }
-@keyframes vagvai21{
-    0%{
+
+@keyframes vagvai21 {
+    0% {
         transform: rotate(-10deg);
         transform-origin: 0% 0%;
     }
-    50%{
+    50% {
         transform: rotate(20deg);
         transform-origin: 0% 0%;
     }
-    100%{
+    100% {
         transform: rotate(-10deg);
         transform-origin: 0% 0%;
     }
 }
-@keyframes vagvai2{
-    0%{
+
+@keyframes vagvai2 {
+    0% {
         transform: rotate(20deg);
         transform-origin: 0% 0%;
     }
-    50%{
+    50% {
         transform: rotate(-10deg);
         transform-origin: 0% 0%;
     }
-    100%{
+    100% {
         transform: rotate(20deg);
         transform-origin: 0% 0%;
     }
 }
-@keyframes vagvai31{
-    0%{
+
+@keyframes vagvai31 {
+    0% {
         transform: rotate(0deg);
         transform-origin: 0% 0%;
     }
-    50%{
+    50% {
         transform: rotate(10deg);
         transform-origin: 0% 0%;
     }
-    100%{
+    100% {
         transform: rotate(0deg);
         transform-origin: 0% 0%;
     }
 }
-@keyframes vagvai3{
-    0%{
+
+@keyframes vagvai3 {
+    0% {
         transform: rotate(10deg);
         transform-origin: 0% 0%;
     }
-    50%{
+    50% {
         transform: rotate(0deg);
         transform-origin: 0% 0%;
     }
-    100%{
+    100% {
         transform: rotate(10deg);
         transform-origin: 0% 0%;
     }
 }
-@keyframes vagvai_real{
-    0%{
+
+@keyframes vagvai_real {
+    0% {
         left: 170%;
         transform: scale(1.7, 1.7);
     }
-    49%{
+    49% {
         left: -70%;
         transform: scale(1.7, 1.7);
     }
-    50%{
+    50% {
         left: -70%;
         transform: scale(-1.7, 1.7);
-
     }
-    99%{
+    99% {
         left: 170%;
         transform: scale(-1.7, 1.7);
     }
-    100%{
+    100% {
         left: 170%;
         transform: scale(1.7, 1.7);
     }
-
-
 }
-@keyframes vagvai_real2{
-    0%{
+
+@keyframes vagvai_real2 {
+    0% {
         left: 170%;
         transform: scale(0.9, 0.9);
     }
-    53%{
+    53% {
         left: -70%;
         transform: scale(0.9, 0.9);
     }
-    54%{
+    54% {
         left: -70%;
         transform: scale(-0.9, 0.9);
-
     }
-    99%{
+    99% {
         left: 170%;
         transform: scale(-0.9, 0.9);
     }
-    100%{
+    100% {
         left: 170%;
         transform: scale(0.9, 0.9);
     }
-
-
 }
-.krapun1,.krapun2,.krapun3,.krapun4,.krapun5,.krapun6,.krapun7,.krapun8{
+
+.krapun1,
+.krapun2,
+.krapun3,
+.krapun4,
+.krapun5,
+.krapun6,
+.krapun7,
+.krapun8 {
     position: absolute;
     z-index: 66;
     width: 15%;
 }
 
-.krapun{
+.krapun {
     position: absolute;
-    top:16000px;
+    top: 16000px;
     width: 100%;
 }
-.krapun1{
+
+.krapun1 {
     position: absolute;
     top: 100px;
     left: 60%;
     animation: krapunvai1 11s ease infinite;
 }
-.krapun2{
+
+.krapun2 {
     position: absolute;
     top: 300px;
     left: 80%;
     animation: krapunvai2 8s ease infinite;
 }
-.krapun3{
+
+.krapun3 {
     position: absolute;
     top: 50px;
     left: 10%;
     animation: krapunvai3 9s ease infinite;
 }
-.krapun4{
+
+.krapun4 {
     position: absolute;
     top: 300px;
     left: 40%;
     animation: krapunvai4 10s ease infinite;
 }
-.krapun5{
+
+.krapun5 {
     position: absolute;
     top: 600px;
     left: 10%;
     animation: krapunvai5 8s ease infinite;
 }
-.krapun6{
+
+.krapun6 {
     position: absolute;
     top: -500px;
     left: 70%;
     animation: krapunvai6 10s ease infinite;
 }
-.krapun7{
+
+.krapun7 {
     position: absolute;
     top: -300px;
     left: 30%;
     animation: krapunvai7 9s ease infinite;
 }
-.krapun8{
+
+.krapun8 {
     position: absolute;
     top: -300px;
     left: 0%;
     animation: krapunvai8 7s ease infinite;
 }
+
 @keyframes krapunvai1 {
     0% {
         transform: scale(1, 1);
@@ -1290,42 +1216,33 @@ footer div {
     12.5% {
         transform: scale(1, 1.1);
     }
-
     25% {
         transform: scale(1, 1);
         left: 65%;
     }
-
     37.5% {
         transform: scale(1, 1.1);
-
     }
-
     50% {
         transform: scale(1, 1);
         left: 70%;
     }
-
     62.5% {
         transform: scale(1, 1.1);
-
     }
-
     75% {
         transform: scale(1, 1);
         left: 65%;
     }
-
     87.5% {
         transform: scale(1, 1.1);
-
     }
-
     100% {
         transform: scale(1, 1);
         left: 70%;
     }
 }
+
 @keyframes krapunvai2 {
     0% {
         transform: scale(1, 1.1);
@@ -1334,42 +1251,33 @@ footer div {
     12.5% {
         transform: scale(1, 1);
     }
-
     25% {
         transform: scale(1, 1.1);
         left: 80%;
     }
-
     37.5% {
         transform: scale(1, 1);
-
     }
-
     50% {
         transform: scale(1, 1.1);
         left: 75%;
     }
-
     62.5% {
         transform: scale(1, 1);
-
     }
-
     75% {
         transform: scale(1, 1.1);
         left: 80%;
     }
-
     87.5% {
         transform: scale(1, 1);
-
     }
-
     100% {
         transform: scale(1, 1.1);
         left: 75%;
     }
 }
+
 @keyframes krapunvai3 {
     0% {
         transform: scale(1, 1);
@@ -1378,42 +1286,33 @@ footer div {
     12.5% {
         transform: scale(1, 1.1);
     }
-
     25% {
         transform: scale(1, 1);
         left: 15%;
     }
-
     37.5% {
         transform: scale(1, 1.1);
-
     }
-
     50% {
         transform: scale(1, 1);
         left: 10%;
     }
-
     62.5% {
         transform: scale(1, 1.1);
-
     }
-
     75% {
         transform: scale(1, 1);
         left: 15%;
     }
-
     87.5% {
         transform: scale(1, 1.1);
-
     }
-
     100% {
         transform: scale(1, 1);
         left: 10%;
     }
 }
+
 @keyframes krapunvai4 {
     0% {
         transform: scale(1, 1);
@@ -1422,42 +1321,33 @@ footer div {
     12.5% {
         transform: scale(1, 1.1);
     }
-
     25% {
         transform: scale(1, 1);
         left: 45%;
     }
-
     37.5% {
         transform: scale(1, 1.1);
-
     }
-
     50% {
         transform: scale(1, 1);
         left: 40%;
     }
-
     62.5% {
         transform: scale(1, 1.1);
-
     }
-
     75% {
         transform: scale(1, 1);
         left: 45%;
     }
-
     87.5% {
         transform: scale(1, 1.1);
-
     }
-
     100% {
         transform: scale(1, 1);
         left: 40%;
     }
 }
+
 @keyframes krapunvai5 {
     0% {
         transform: scale(1, 1.1);
@@ -1466,42 +1356,33 @@ footer div {
     12.5% {
         transform: scale(1, 1);
     }
-
     25% {
         transform: scale(1, 1.1);
         left: 10%;
     }
-
     37.5% {
         transform: scale(1, 1);
-
     }
-
     50% {
         transform: scale(1, 1.1);
         left: 5%;
     }
-
     62.5% {
         transform: scale(1, 1);
-
     }
-
     75% {
         transform: scale(1, 1.1);
         left: 10%;
     }
-
     87.5% {
         transform: scale(1, 1);
-
     }
-
     100% {
         transform: scale(1, 1.1);
         left: 5%;
     }
 }
+
 @keyframes krapunvai6 {
     0% {
         transform: scale(1, 1.1);
@@ -1510,42 +1391,33 @@ footer div {
     12.5% {
         transform: scale(1, 1);
     }
-
     25% {
         transform: scale(1, 1.1);
         left: 70%;
     }
-
     37.5% {
         transform: scale(1, 1);
-
     }
-
     50% {
         transform: scale(1, 1.1);
         left: 65%;
     }
-
     62.5% {
         transform: scale(1, 1);
-
     }
-
     75% {
         transform: scale(1, 1.1);
         left: 70%;
     }
-
     87.5% {
         transform: scale(1, 1);
-
     }
-
     100% {
         transform: scale(1, 1.1);
         left: 65%;
     }
 }
+
 @keyframes krapunvai7 {
     0% {
         transform: scale(1, 1);
@@ -1554,42 +1426,33 @@ footer div {
     12.5% {
         transform: scale(1, 1.1);
     }
-
     25% {
         transform: scale(1, 1);
         left: 35%;
     }
-
     37.5% {
         transform: scale(1, 1.1);
-
     }
-
     50% {
         transform: scale(1, 1);
         left: 30%;
     }
-
     62.5% {
         transform: scale(1, 1.1);
-
     }
-
     75% {
         transform: scale(1, 1);
         left: 35%;
     }
-
     87.5% {
         transform: scale(1, 1.1);
-
     }
-
     100% {
         transform: scale(1, 1);
         left: 30%;
     }
 }
+
 @keyframes krapunvai8 {
     0% {
         transform: scale(1, 1.1);
@@ -1598,81 +1461,68 @@ footer div {
     12.5% {
         transform: scale(1, 1);
     }
-
     25% {
         transform: scale(1, 1.1);
         left: 0%;
     }
-
     37.5% {
         transform: scale(1, 1);
-
     }
-
     50% {
         transform: scale(1, 1.1);
         left: 5%;
     }
-
     62.5% {
         transform: scale(1, 1);
-
     }
-
     75% {
         transform: scale(1, 1.1);
         left: 0%;
     }
-
     87.5% {
         transform: scale(1, 1);
-
     }
-
     100% {
         transform: scale(1, 1.1);
         left: 5%;
     }
 }
-.hill1{
+
+.hill1 {
     width: 100%;
     position: absolute;
     top: 6000px;
-    opacity: 1; 
+    opacity: 1;
     z-index: 66;
 }
 
-.chalam1{
+.chalam1 {
     width: 40vw;
     top: 6500px;
     position: absolute;
     z-index: 60;
     animation: chalamvai 20s linear infinite;
 }
-@keyframes chalamvai{
+
+@keyframes chalamvai {
     0% {
         left: -35%;
         transform: scale(-1, 1);
     }
-
     50% {
         left: 90%;
         transform: scale(-1, 1);
     }
-
     51% {
         left: 90%;
         transform: scale(1, 1);
     }
-
     99% {
         left: -35%;
         transform: scale(1, 1);
     }
-
     100% {
         left: -35%;
         transform: scale(-1, 1);
     }
-
 }
