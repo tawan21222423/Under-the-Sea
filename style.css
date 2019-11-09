@@ -996,7 +996,6 @@ footer div {
     box-sizing: border-box;
     visibility: hidden;
     z-index: 900;
-    -webkit-overflow-scrolling: touch;
     transition: .5s ease-in-out;
 
 }
