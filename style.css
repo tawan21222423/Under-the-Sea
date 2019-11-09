@@ -1675,7 +1675,3 @@ footer div {
     }
 
 }
-iframe{
-    -webkit-overflow-scrolling: touch;
-    overflow-y: scroll;
-}
