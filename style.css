@@ -195,7 +195,7 @@ body {
     width: 30%;
     position: absolute;
     opacity: 0.3;
-    top: 960px;
+    top: 900px;
     right: -9%;
     z-index: 60;
     transform: rotate(-90deg);
@@ -205,7 +205,7 @@ body {
     width: 30%;
     position: absolute;
     opacity: 0.3;
-    top: 960px;
+    top: 900px;
     left: -9%;
     z-index: 60;
     transform: rotate(90deg);
@@ -883,7 +883,8 @@ footer div {
 #ifamtuna,
 #ifamnemo,
 #ifamangler,
-#ifamjelly {
+#ifamjelly,
+#ifamvan {
     position: fixed;
     border-radius: 5px;
     border: 5px solid black;
@@ -895,7 +896,10 @@ footer div {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
-
+iframe{
+    width: 100%;
+    height: 100%;
+}
 #close {
     position: fixed;
     top: 3%;
@@ -1573,5 +1577,113 @@ footer div {
     100% {
         left: 90%;
         transform: scale(0.6, 0.6);
+    }
+}
+.loma{
+    position: absolute;
+    top: 2300px ;
+    
+    animation: lomavai 20s linear infinite;
+}
+.loma11{
+    position: absolute;
+    top: 2700px ;
+    filter: blur(10px);
+    animation: lomavaiblur 20s linear infinite;
+}
+.loma22{
+    position: absolute;
+    top: 2900px ;
+    animation: lomavai22 25s linear infinite;
+}
+.loma1{
+    position: absolute;
+    width: 50vw;
+    top: 7vh;
+    animation: lomavai1 2s alternate infinite;
+}
+.loma2{
+    position: absolute;
+    width: 50vw;
+    top: 7vh;
+}
+@keyframes lomavai1{
+    0% {
+        transform: rotate(20deg);
+        transform-origin: 60% 60%;
+    }
+    50% {
+        transform: rotate(0deg);
+        transform-origin: 60% 60%;
+    }
+    100% {
+        transform: rotate(20deg);
+        transform-origin: 60% 60%;
+    }
+}
+@keyframes lomavai {
+    0% {
+        left: 120%;
+        transform: scale(1, 1);
+    }
+    50% {
+        left: -35%;
+        transform: scale(1, 1);
+    }
+    51% {
+        left: -35%;
+        transform: scale(-1, 1);
+    }
+    99% {
+        left: 120%;
+        transform: scale(-1, 1);
+    }
+    100% {
+        left: 120%;
+        transform: scale(1, 1);
+    }
+}
+@keyframes lomavaiblur {
+    0% {
+        left: -35%;
+        transform: scale(-0.6, 0.6);
+    }
+    50% {
+        left: 120%;
+        transform: scale(-0.6, 0.6);
+    }
+    51% {
+        left: 120%;
+        transform: scale(0.6, 0.6);
+    }
+    99% {
+        left: -35%;
+        transform: scale(0.6, 0.6);
+    }
+    100% {
+        left: -35%;
+        transform: scale(-0.6, 0.6);
+    }
+}
+@keyframes lomavai22 {
+    0% {
+        left: -35%;
+        transform: scale(-1, 1);
+    }
+    50% {
+        left: 120%;
+        transform: scale(-1, 1);
+    }
+    51% {
+        left: 120%;
+        transform: scale(1, 1);
+    }
+    99% {
+        left: -35%;
+        transform: scale(1, 1);
+    }
+    100% {
+        left: -35%;
+        transform: scale(-1, 1);
     }
 }
