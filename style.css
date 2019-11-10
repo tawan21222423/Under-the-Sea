@@ -1090,46 +1090,46 @@ footer div {
 @keyframes vagvai_real {
     0% {
         left: 170%;
-        transform: scale(1.7, 1.7);
+        transform: scale(1.4, 1.4);
     }
     49% {
         left: -70%;
-        transform: scale(1.7, 1.7);
+        transform: scale(1.4, 1.4);
     }
     50% {
         left: -70%;
-        transform: scale(-1.7, 1.7);
+        transform: scale(-1.4, 1.4);
     }
     99% {
         left: 170%;
-        transform: scale(-1.7, 1.7);
+        transform: scale(-1.4, 1.4);
     }
     100% {
         left: 170%;
-        transform: scale(1.7, 1.7);
+        transform: scale(1.4, 1.4);
     }
 }
 
 @keyframes vagvai_real2 {
     0% {
         left: 170%;
-        transform: scale(0.9, 0.9);
+        transform: scale(0.7, 0.7);
     }
     53% {
         left: -70%;
-        transform: scale(0.9, 0.9);
+        transform: scale(0.7, 0.7);
     }
     54% {
         left: -70%;
-        transform: scale(-0.9, 0.9);
+        transform: scale(-0.7, 0.7);
     }
     99% {
         left: 170%;
-        transform: scale(-0.9, 0.9);
+        transform: scale(-0.7, 0.7);
     }
     100% {
         left: 170%;
-        transform: scale(0.9, 0.9);
+        transform: scale(0.7, 0.7);
     }
 }
 
@@ -1490,6 +1490,7 @@ footer div {
 
 .hill1 {
     width: 100%;
+    height: 1700px;
     position: absolute;
     top: 6000px;
     opacity: 1;
@@ -1502,6 +1503,32 @@ footer div {
     position: absolute;
     z-index: 60;
     animation: chalamvai 20s linear infinite;
+}
+
+.chalam2 {
+    width: 40vw;
+    top: 6700px;
+    position: absolute;
+    z-index: 60;
+    animation: chalamvai2 20s linear infinite;
+    filter: blur(10px);
+}
+
+.chalam3 {
+    width: 40vw;
+    top: 6900px;
+    position: absolute;
+    z-index: 60;
+    animation: chalamvai 23s linear infinite;
+}
+
+.chalam4 {
+    width: 40vw;
+    top: 7200px;
+    position: absolute;
+    z-index: 60;
+    animation: chalamvai2 24s linear infinite;
+    filter: blur(10px);
 }
 
 @keyframes chalamvai {
@@ -1524,5 +1551,27 @@ footer div {
     100% {
         left: -35%;
         transform: scale(-1, 1);
+    }
+}
+@keyframes chalamvai2 {
+    0% {
+        left: 90%;
+        transform: scale(0.6, 0.6);
+    }
+    50% {
+        left: -35%;
+        transform: scale(0.6, 0.6);
+    }
+    51% {
+        left: -35%;
+        transform: scale(-0.6, 0.6);
+    }
+    99% {
+        left: 90%;
+        transform: scale(-0.6, 0.6);
+    }
+    100% {
+        left: 90%;
+        transform: scale(0.6, 0.6);
     }
 }
