@@ -655,19 +655,21 @@ footer div {
 }
 
 .nemo1 {
-    width: 5%;
+    width: 50px;
     position: absolute;
-    top: 1100px;
-    animation: nemovai1 30s linear infinite;
+    top: 4100px;
+    animation: nemovai1 11s linear infinite;
     opacity: 1;
+    transform: scale(-1,1);
 }
 
 .nemo2 {
-    width: 5%;
+    width: 50px;
     position: absolute;
-    top: 1050px;
-    animation: nemovai2 34s linear infinite;
+    top: 4050px;
+    animation: nemovai2 9s linear infinite;
     opacity: 1;
+    transform: scale(-1,1);
 }
 
 .plaangler {
@@ -855,24 +857,20 @@ footer div {
 
 @keyframes nemovai1 {
     0% {
-        left: -15%;
-        transform: scale(-1, 1);
+        left: 200px;
+        top: 4100px;
     }
-    50% {
-        left: 70%;
-        transform: scale(-1, 1);
+    25% {
+        left: 210px;
+        top: 4000px;
     }
-    51% {
-        left: 70%;
-        transform: scale(1, 1);
-    }
-    99% {
-        left: -15%;
-        transform: scale(1, 1);
+    75% {
+        left: 170px;
+        top: 4200px;
     }
     100% {
-        left: -15%;
-        transform: scale(-1, 1);
+        left: 200px;
+        top: 4100px;
     }
 }
 
@@ -915,24 +913,20 @@ footer div {
 
 @keyframes nemovai2 {
     0% {
-        left: -13%;
-        transform: scale(-1, 1);
+        left: 200px;
+        top: 4100px;
     }
-    50% {
-        left: 73%;
-        transform: scale(-1, 1);
+    25% {
+        left: 180px;
+        top: 4200px;
     }
-    51% {
-        left: 73%;
-        transform: scale(1, 1);
-    }
-    99% {
-        left: -13%;
-        transform: scale(1, 1);
+    75% {
+        left: 220px;
+        top: 4000px;
     }
     100% {
-        left: -13%;
-        transform: scale(-1, 1);
+        left: 200px;
+        top: 4100px;
     }
 }
 
@@ -1561,11 +1555,10 @@ iframe{
 .hill2 {
     height: 1000px;
     position: absolute;
-    top: 4000px;
+    top: 3800px;
     opacity: 1;
     z-index: 66;
 }
-
 
 .chalam1 {
     width: 40vw;
