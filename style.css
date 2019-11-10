@@ -313,7 +313,14 @@ footer {
 .jellyfish1:hover,
 .platewada:hover,
 .nemo1:hover,
-.nemo2:hover {
+.nemo2:hover,
+.plavan:hover,
+.plavan2:hover,
+.chalam1:hover,
+.chalam3:hover,
+.loma:hover,
+.loma22:hover
+{
     filter: drop-shadow(0 0 50px crimson);
 }
 
@@ -327,7 +334,13 @@ footer {
 .platuna3,
 .platuna4,
 .nemo1,
-.nemo2 {
+.nemo2,
+.chalam1,
+.chalam3,
+.plavan,
+.plavan2,
+.loma,
+.loma22 {
     transition: .3s;
 }
 
@@ -1635,7 +1648,6 @@ iframe{
 .loma{
     position: absolute;
     top: 2300px ;
-    
     animation: lomavai 20s linear infinite;
 }
 .loma11{
