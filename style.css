@@ -1,8 +1,8 @@
 .title {
-    font-size: 3em;
+    font-size: 78px;
     position: absolute;
-    left: 30%;
-    width: 40%;
+    left: 10%;
+    width: 80%;
     transition: 2s;
     color: #333333;
     animation: 0.5 slidedown linear;
