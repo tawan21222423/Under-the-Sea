@@ -22,95 +22,98 @@
 <body style="font-family: 'Kanit', sans-serif; overflow-x: hidden;">
     <style>
         body {
-                    font: 18px sans-serif;
-                    margin-bottom: 5%;
-                    background-color:rgb(231, 229, 229);
-                }
-        
-                .nemofish {
-                    width: 80vw;
-                    position: relative;
-                    left: 10%;
-                    background-color: white;
-                    padding-left: 10%;
-                    padding-right: 10%;
-                    border-radius: 20px;
-                }
-        
-                .pragob {
-                    width: 86%;
-                    position: relative;
-                    left: 7%;
-                    border-radius: 5px;
-                }
-        
-                .title {
-                    width: 100vw;
-                    position: relative;
-                    height: 100vh;
-                    display: table-cell;
-                    vertical-align: middle;
-                    margin-top: 10%;
-                    color: rgb(63, 63, 63);
-                    font-size: 100px;
-                    text-align: center;
-                }
-        
-                .card {
-                    margin-top: 5%;
-                }
-        
-                footer div {
-                    background-color: var(--col-deepblue);
-                    margin: -5px 0px 0px 0px;
-                    padding: 0px;
-                    color: #fff;
-                    text-align: center;
-                    z-index: 33;
-                    
-                }
-                .svg {
-                    width: 100%;
-                    overflow: visible;
-                    z-index: -5;
-                    
-                }
-                .wawa{
-                    top:80%;
-                    position: fixed;
-                }
-                .wave {
-                    animation: wave 20s linear;
-                    animation-iteration-count: infinite;
-                    fill: #2bd3eb;
-                }
-        
-                #wave2 {
-                    animation-duration: 25s;
-                    animation-direction: reverse;
-                    opacity: .6;
-                }
-        
-                #wave3 {
-                    animation-duration: 35s;
-                    opacity: .3;
-                }
-        
-                #wave4 {
-                    animation-duration: 40s;
-                    opacity: .3;
-                }
-        
-                @keyframes wave {
-                    to {
-                        transform: translateX(-100%);
-                    }
-                }
-            </style> 
-            <footer>
-                    <svg viewBox="0 0 80 998" class="wawa">
-                        <defs>
-                            <path id="wave" d="M 0,6 C
+            font: 18px sans-serif;
+            margin-bottom: 5%;
+            background-color: rgb(231, 229, 229);
+        }
+
+        .nemofish {
+            width: 80vw;
+            position: relative;
+            left: 10%;
+            background-color: white;
+            padding-left: 10%;
+            padding-right: 10%;
+            border-radius: 20px;
+        }
+
+        .pragob {
+            width: 86%;
+            position: relative;
+            left: 7%;
+            border-radius: 5px;
+        }
+
+        .title {
+            width: 100vw;
+            position: relative;
+            height: 100vh;
+            display: table-cell;
+            vertical-align: middle;
+            margin-top: 10%;
+            color: rgb(63, 63, 63);
+            font-size: 100px;
+            text-align: center;
+        }
+
+        .card {
+            margin-top: 5%;
+        }
+
+        footer div {
+            background-color: var(--col-deepblue);
+            margin: -5px 0px 0px 0px;
+            padding: 0px;
+            color: #fff;
+            text-align: center;
+            z-index: 33;
+
+        }
+
+        .svg {
+            width: 100%;
+            overflow: visible;
+            z-index: -5;
+
+        }
+
+        .wawa {
+            top: 80%;
+            position: fixed;
+        }
+
+        .wave {
+            animation: wave 20s linear;
+            animation-iteration-count: infinite;
+            fill: #2bd3eb;
+        }
+
+        #wave2 {
+            animation-duration: 25s;
+            animation-direction: reverse;
+            opacity: .6;
+        }
+
+        #wave3 {
+            animation-duration: 35s;
+            opacity: .3;
+        }
+
+        #wave4 {
+            animation-duration: 40s;
+            opacity: .3;
+        }
+
+        @keyframes wave {
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+    <footer>
+        <svg viewBox="0 0 80 998" class="wawa">
+            <defs>
+                <path id="wave" d="M 0,6 C
                             20,4 20,6 40,6
                             60,4 60,6 80,6
                             100,4 100,6 120,6
@@ -120,89 +123,108 @@
                 
                 
                             v 95 h -350 z" />
-                        </defs>
-                        <use id="wave4" class="wave" xlink:href="#wave" x="0" y="-4"></use>
-                        <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
-                        <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
-                        <use id="wave1" class="wave" xlink:href="#wave" x="0" y="2"></use>
-                    </svg>
-                    <div id="fade"></div>
-            
-                </footer>
-        <div class="title">
-            ปลาฉลามขาว
-        </div>
-        <div class=" container mx-auto">
-        <div class="card">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="pics/Shark.jpg" class="card-img">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <p class="card-text">
-        ปลาฉลามขาว มีชื่อวิทยาศาสตร์ว่า Carcharodon carcharias ปลาฉลามขาวอาศัยอยู่ตามแถบทะเลชายฝั่งเกือบทั่วทุกมุมโลก ที่มีอุณหภูมิระหว่าง 12 – 24 องศาเซลเซียส 
-        แต่จะอาศัยอยู่หนาแน่นบริเวณอ่าวประเทศออสเตรเลีย ทางตอนใต้ของทวีปแอฟริกา แคลิฟอเนีย และตอนกลางของทะเลเมดิเตอร์เรเนียน 
-        แต่ที่หนึ่งที่หนาแน่นที่สุดอยู่ที่ ไดร์เออร์ ไอร์แลนด์ (Dyer Island, South Africa) ที่แอฟริกาใต้ ทั้งยังสามารพบได้ในเขตร้อนแถบทะเลเมดิเตอร์เรเนียน 
-        ปลาฉลามขาวเป็นปลาน้ำลึก แต่ที่บันทึกจำนวน ส่วนมากจะมาจากการสำรวจแถบทะเลชายฝั่ง บริเวณที่มีสิงโตทะเล แมวน้ำ โลมาอาศัยอยู่ 
-        ได้มีความพยายามที่จะสำรวจในบริเวณน้ำลึก ถึงระดับ 1280 เมตร ผลปรากฏว่าจะพบมากบริเวณผิวน้ำมากกว่า
+            </defs>
+            <use id="wave4" class="wave" xlink:href="#wave" x="0" y="-4"></use>
+            <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+            <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+            <use id="wave1" class="wave" xlink:href="#wave" x="0" y="2"></use>
+        </svg>
+        <div id="fade"></div>
 
-    </p>
-</div>
-</div>
-</div>
-</div>
-<div class="card">
-<div class="row no-gutters">
-<div class="col-md-4">
-        <img src="pics/Shark1.jpg" class="card-img">
-</div>
-<div class="col-md-8">
-    <div class="card-body">
-        <p class="card-text">
-        <h3>ลักษณะทั่วไป</h3>
-        ปลาฉลามขาว สืบทอดเผ่าพันธุ์มาจากปลากระดูกอ่อนยุคดึกดำบรรพ์ โดยมีบรรพบุรุษร่วมกับกับปลาฉนาก ปลาโรนัน และปลากระเบน ฉลามขาวยักษ์เมื่อโตเต็มที่อาจยาวอาจมีความยาวถึง 7 เมตร และหนักถึงสามตัน 
-        สีลำตัวด้านหลังออกเป็นสีเทา ส่วนหน้าท้องจะมีสีขาว บริเวณด้านข้างลำตัวใกล้ศีรษะ จะมีแผงเหงือกสำหรับใช้หายใจ 
-        ช่วงชีวิตของฉลามขาวจะมีฟันหลายชุด และเมื่อฟันซี่ใดซี่หนึ่งหัก รากฟันจะฝ่อไป และฟันซี่ใหม่จะงอกขึ้นในเวลาสองสัปดาห์ 
-        ทั้งนี้นับเป็นลักษณะเฉพาะสำหรับสัตว์นักล่าที่บางครั้ง อาจต้องล่าสัตว์ที่กระดองแข็งหนาจนทำให้ฟันเกิดความเสียหาย
-    </p>
-</div>
-</div>
-</div>
-</div>
-<div class="card">
-<div class="row no-gutters">
-<div class="col-md-4">
-        <img src="pics/Shark2.jpg" class="card-img">
-</div>
-<div class="col-md-8">
-    <div class="card-body">
-        <p class="card-text">
-        <h3>อาหารและการล่า</h3>
-        ฉลามขาวมักจะโจมตีเหยื่อที่อยู่บริเวณผิวน้ำ และนี่เองเป็นสาเหตุที่ปลาฉลามขาวโจมตีมนุษย์ที่ว่ายน้ำอยู่ เนื่องจากการเคลื่อนไหวของมนุษย์บนผิวน้ำนั้น ทำให้พวกมันเข้าใจว่าเป็นสิงโตทะเลอาหารหลักของมัน 
-        ทุกครั้งที่ฉลามขาวกัดเหยื่อ มันจะปกป้องดวงตาของมันโดยการกลับลูกตาไว้ด้านใน ทำให้เห็นลูกตาเป็นสีดำ ฉลามขาวมีประสาทรับกลิ่นที่ไวมาก ทันทีที่ได้กลิ่นคาวเลือด พวกมันจะมา และโจมตีเหยื่อซึ่งไม่เว้นแม้กระทั่งพวกเดียวกันที่บาดเจ็บ
-    </p>
-</div>
-</div>
-</div>
-</div>
-<div class="card">
-<div class="row no-gutters">
-<div class="col-md-4">
-        <img src="pics/Shark3.jpg" class="card-img">
-</div>
-<div class="col-md-8">
-    <div class="card-body">
-        <p class="card-text">
-        <h3>การสืบพันธุ์</h3>
-        ฉลามเป็นปลาที่มีการปฏิสนธิภายใน นั่นคือ ตัวผู้สอดใส่อวัยวะนำสเปิร์มข้างใดข้างหนึ่ง (clasper) เข้าไปช่องสืบพันธุ์ของตัวเมีย โดยเริ่มแรกพวกมันต้องยึดกันให้ติดก่อน
-        “ฉลามตัวผู้จะกัดครีบของตัวเมียเอาไว้ เพื่อให้มั่นใจว่า ในขณะผสมพันธุ์จะไม่หลุดออกจากกัน” เบร็นนันบอก ฉลามตัวเมียจะมีผิวหนังที่หนากว่าตัวผู้ ทำให้มันสามารถรับมือกับฟันอันแหลมคมของตัวผู้ได้
-        นอกจากนี้ ฉลามยังจำเป็นต้องเคลื่อนตัวตลอดเวลาเพื่อการหายใจ ดังนั้น ในขณะเข้าคู่กัน พวกมันจึงเลือกทำกิจกรรมในกระแสน้ำที่แรงพอจะไหลผ่านช่องเหงือก เพื่อป้องกันการขาดอากาศหายใจ
-    </p>
-</div>
-</div>
-</div>
-</div>
+    </footer>
+    <div class="title">
+        ปลาฉลามขาว
+    </div>
+    <div class=" container mx-auto">
+        <div class="card">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="pics/Shark.jpg" class="card-img">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text">
+                            ปลาฉลามขาว มีชื่อวิทยาศาสตร์ว่า Carcharodon carcharias
+                            ปลาฉลามขาวอาศัยอยู่ตามแถบทะเลชายฝั่งเกือบทั่วทุกมุมโลก ที่มีอุณหภูมิระหว่าง 12 – 24
+                            องศาเซลเซียส
+                            แต่จะอาศัยอยู่หนาแน่นบริเวณอ่าวประเทศออสเตรเลีย ทางตอนใต้ของทวีปแอฟริกา แคลิฟอเนีย
+                            และตอนกลางของทะเลเมดิเตอร์เรเนียน
+                            แต่ที่หนึ่งที่หนาแน่นที่สุดอยู่ที่ ไดร์เออร์ ไอร์แลนด์ (Dyer Island, South Africa)
+                            ที่แอฟริกาใต้ ทั้งยังสามารพบได้ในเขตร้อนแถบทะเลเมดิเตอร์เรเนียน
+                            ปลาฉลามขาวเป็นปลาน้ำลึก แต่ที่บันทึกจำนวน ส่วนมากจะมาจากการสำรวจแถบทะเลชายฝั่ง
+                            บริเวณที่มีสิงโตทะเล แมวน้ำ โลมาอาศัยอยู่
+                            ได้มีความพยายามที่จะสำรวจในบริเวณน้ำลึก ถึงระดับ 1280 เมตร
+                            ผลปรากฏว่าจะพบมากบริเวณผิวน้ำมากกว่า
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="pics/Shark1.jpg" class="card-img">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <h3>ลักษณะทั่วไป</h3>
+                            ปลาฉลามขาว สืบทอดเผ่าพันธุ์มาจากปลากระดูกอ่อนยุคดึกดำบรรพ์ โดยมีบรรพบุรุษร่วมกับกับปลาฉนาก
+                            ปลาโรนัน และปลากระเบน ฉลามขาวยักษ์เมื่อโตเต็มที่อาจยาวอาจมีความยาวถึง 7 เมตร
+                            และหนักถึงสามตัน
+                            สีลำตัวด้านหลังออกเป็นสีเทา ส่วนหน้าท้องจะมีสีขาว บริเวณด้านข้างลำตัวใกล้ศีรษะ
+                            จะมีแผงเหงือกสำหรับใช้หายใจ
+                            ช่วงชีวิตของฉลามขาวจะมีฟันหลายชุด และเมื่อฟันซี่ใดซี่หนึ่งหัก รากฟันจะฝ่อไป
+                            และฟันซี่ใหม่จะงอกขึ้นในเวลาสองสัปดาห์
+                            ทั้งนี้นับเป็นลักษณะเฉพาะสำหรับสัตว์นักล่าที่บางครั้ง
+                            อาจต้องล่าสัตว์ที่กระดองแข็งหนาจนทำให้ฟันเกิดความเสียหาย
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="pics/Shark2.jpg" class="card-img">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <h3>อาหารและการล่า</h3>
+                            ฉลามขาวมักจะโจมตีเหยื่อที่อยู่บริเวณผิวน้ำ
+                            และนี่เองเป็นสาเหตุที่ปลาฉลามขาวโจมตีมนุษย์ที่ว่ายน้ำอยู่
+                            เนื่องจากการเคลื่อนไหวของมนุษย์บนผิวน้ำนั้น ทำให้พวกมันเข้าใจว่าเป็นสิงโตทะเลอาหารหลักของมัน
+                            ทุกครั้งที่ฉลามขาวกัดเหยื่อ มันจะปกป้องดวงตาของมันโดยการกลับลูกตาไว้ด้านใน
+                            ทำให้เห็นลูกตาเป็นสีดำ ฉลามขาวมีประสาทรับกลิ่นที่ไวมาก ทันทีที่ได้กลิ่นคาวเลือด พวกมันจะมา
+                            และโจมตีเหยื่อซึ่งไม่เว้นแม้กระทั่งพวกเดียวกันที่บาดเจ็บ
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="pics/Shark3.jpg" class="card-img">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <h3>การสืบพันธุ์</h3>
+                            ฉลามเป็นปลาที่มีการปฏิสนธิภายใน นั่นคือ ตัวผู้สอดใส่อวัยวะนำสเปิร์มข้างใดข้างหนึ่ง (clasper)
+                            เข้าไปช่องสืบพันธุ์ของตัวเมีย โดยเริ่มแรกพวกมันต้องยึดกันให้ติดก่อน
+                            “ฉลามตัวผู้จะกัดครีบของตัวเมียเอาไว้ เพื่อให้มั่นใจว่า ในขณะผสมพันธุ์จะไม่หลุดออกจากกัน”
+                            เบร็นนันบอก ฉลามตัวเมียจะมีผิวหนังที่หนากว่าตัวผู้
+                            ทำให้มันสามารถรับมือกับฟันอันแหลมคมของตัวผู้ได้
+                            นอกจากนี้ ฉลามยังจำเป็นต้องเคลื่อนตัวตลอดเวลาเพื่อการหายใจ ดังนั้น ในขณะเข้าคู่กัน
+                            พวกมันจึงเลือกทำกิจกรรมในกระแสน้ำที่แรงพอจะไหลผ่านช่องเหงือก เพื่อป้องกันการขาดอากาศหายใจ
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
