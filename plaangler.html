@@ -22,41 +22,144 @@
 <body style="font-family: 'Kanit', sans-serif; overflow-x: hidden;">
     <style>
         body {
-            background-color: #6fbaec;
-            font: 1em sans-serif;
+                    font: 18px sans-serif;
+                    margin-bottom: 5%;
+                    background-color:rgb(231, 229, 229);
+                }
+        
+                .nemofish {
+                    width: 80vw;
+                    position: relative;
+                    left: 10%;
+                    background-color: white;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    border-radius: 20px;
+                }
+        
+                .pragob {
+                    width: 86%;
+                    position: relative;
+                    left: 7%;
+                    border-radius: 5px;
+                }
+        
+                .title {
+                    width: 100vw;
+                    position: relative;
+                    height: 100vh;
+                    display: table-cell;
+                    vertical-align: middle;
+                    margin-top: 10%;
+                    color: rgb(63, 63, 63);
+                    font-size: 100px;
+                    text-align: center;
+                }
+        
+                .card {
+                    margin-top: 5%;
+                }
+        
+                footer div {
+                    background-color: var(--col-deepblue);
+                    margin: -5px 0px 0px 0px;
+                    padding: 0px;
+                    color: #fff;
+                    text-align: center;
+                    z-index: 33;
+                    
+                }
+                .svg {
+                    width: 100%;
+                    overflow: visible;
+                    z-index: -5;
+                    
+                }
+                .wawa{
+                    top:80%;
+                    position: fixed;
+                }
+                .wave {
+                    animation: wave 20s linear;
+                    animation-iteration-count: infinite;
+                    fill: #2bd3eb;
+                }
+        
+                #wave2 {
+                    animation-duration: 25s;
+                    animation-direction: reverse;
+                    opacity: .6;
+                }
+        
+                #wave3 {
+                    animation-duration: 35s;
+                    opacity: .3;
+                }
+        
+                #wave4 {
+                    animation-duration: 40s;
+                    opacity: .3;
+                }
+        
+                @keyframes wave {
+                    to {
+                        transform: translateX(-100%);
+                    }
+                }
+            </style> 
+            <footer>
+                    <svg viewBox="0 0 80 998" class="wawa">
+                        <defs>
+                            <path id="wave" d="M 0,6 C
+                            20,4 20,6 40,6
+                            60,4 60,6 80,6
+                            100,4 100,6 120,6
+                            140,4 140,6 160,6
+                            180,4 180,6 200,6
+                            220,4 220,6 240,6
+                
+                
+                            v 95 h -350 z" />
+                        </defs>
+                        <use id="wave4" class="wave" xlink:href="#wave" x="0" y="-4"></use>
+                        <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+                        <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+                        <use id="wave1" class="wave" xlink:href="#wave" x="0" y="2"></use>
+                    </svg>
+                    <div id="fade"></div>
             
-        }
-
-        .nemofish {
-            width: 60vw;
-            position: absolute;
-            left: 20%;
-            padding-bottom: 9%;
-        }
-
-        img {
-            width: 35%;
-            position: relative;
-            left: 30%;
-            border-radius: 5%;
-            border: 2px solid black;
-        }
-    </style>
-    <div class="nemofish">
-        <h2>
-            <center>ปลาแองเกลอร์</center>
-        </h2>
-        <img src="pics/angler.jpg">
-        <br>
-        <br>
+                </footer>
+    <div class="title">>
+        ปลาแองเกลอร์
+    </div>
+    <div class=" container mx-auto">
+        <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="pics/nemo.jpg" class="card-img">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text">
         (อังกฤษ: anglerfish ; ชื่อวิทยาศาสตร์: Melenocetus johnsonii)
 
         ภายใต้ท้องทะเลที่ลึกลงไปจากพื้นผิวน้ำ ลึกมากจนแสงอาทิตย์ไม่สามารถที่จะส่องถึงได้
         จะมีใครรู้บ้างว่ามีสิ่งมีชีวิตที่ทั้งประหลาดและมหัศจรรย์อาศัยอยู่ นั่นก็คือ ปลาแองเกลอร์ (Angler fish)
         ด้วยลักษณะที่แปลกประหลาด ทำให้ปลาชนิดนี้มีความน่าสนใจว่าทำไมปลาจึงมีลักษณะเช่นนั้น
         และสามารถใช้ชีวิตอยู่ในทะเลลึกที่มืดมิดได้อย่างไร
-        <br>
-        <br>
+    </p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="row no-gutters">
+<div class="col-md-4">
+        <img src="pics/neme.jpg" class="card-img">
+</div>
+<div class="col-md-8">
+    <div class="card-body">
+        <p class="card-text">
         ปลาแองเกลอร์ เป็นปลาที่มีมากกว่า 200 ชนิด อาศัยอยู่ในน้ำลึกมากกว่า 200 เมตร ส่วนใหญ่พบในบริเวณมหาสมุทรแอตแลนติก
         และแอนตาร์กติก ปลาชนิดนี้มีลักษณะหัวใหญ่ ฟันคม ลำตัวมีสีเทาเข้มจนถึงน้ำตาลเข้ม
         เราสามารถแยกเพศของปลาชนิดนี้ได้ไม่ยากนัก เพราะมีเพียงปลาเพศเมียเท่านั้น ที่มีลักษณะหน้าตาน่ากลัวเช่นนี้
@@ -65,8 +168,19 @@
         fischeri) ใช้ในการล่อเหยื่อให้มาติดกับดัก เมื่อเหยื่อว่ายน้ำมาใกล้ ๆ
         ก็จะกินเหยื่อเป็นอาหารทันทีซึ่งเป็นที่มาของชื่อ Angler ซึ่งหมายถึงคนตกปลา กระดูกของปลาแองเกลอร์มีความยืดหยุ่นสูง
         จึงสามารถขยายขนาดของกรามและกระเพาะอาหารได้ ปลาแองเกลอร์จึงสามารถกินอาหารที่ใหญ่กว่าตัวเอง
-        <br>
-        <br>
+    </p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="row no-gutters">
+<div class="col-md-4">
+        <img src="pics/neme.jpg" class="card-img">
+</div>
+<div class="col-md-8">
+    <div class="card-body">
+        <p class="card-text">
         นอกจากนี้ยังมีฟันหน้าที่แทงกลับหลังเข้าไปภายในปาก และยังมีฟันอีกชุดหนึ่งอยู่ในลำคอ เพื่อป้องกันไม่ให้เหยื่อ
         (ที่หายาก) หลบหนีไปได้ ปลาแองเกลอร์เพศผู้ จะมีขนาดเล็กมากเมื่อเทียบกับเพศเมีย ปลาเพศผู้จะมีดวงตาที่โต
         และโพรงจมูกที่ไวต่อกลิ่นมาก ทำให้ได้กลิ่นของเพศเมียได้ง่าย
@@ -76,6 +190,11 @@
         ปลาจะเปลี่ยนตัวเองให้กลายเป็นเพศเมียแทน และเริ่มขยายขนาดร่างกายให้ใหญ่ขึ้นจะเห็นได้ว่า
         ปลาแอลงเกลอร์นี้มีทั้งหน้าตาและลักษณะที่แปลกประหลาด แต่ในขณะเดียวกันก็มีความมหัศจรรย์ที่น่าสนใจซ่อนอยู่
         และภายใต้ท้องทะเลที่มืดและลึกนี้ ยังมีสิ่งมีชีวิตอีกหลายชนิดที่น่าสนใจรอการค้นหาอยู่อีกมาก
+    </p>
+</div>
+</div>
+</div>
+</div>
     </div>
 </body>
 
