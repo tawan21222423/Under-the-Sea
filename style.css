@@ -323,7 +323,7 @@ footer {
 .chalam3:hover,
 .loma:hover,
 .loma22:hover,
-.sun1:hover,
+.plasun1:hover,
 .lion1:hover
 {
     filter: drop-shadow(0 0 50px crimson);
@@ -346,7 +346,7 @@ footer {
 .plavan2,
 .loma,
 .loma22,
-.sun1,
+.plasun1,
 .lion1 {
     transition: .3s;
 }
