@@ -4,50 +4,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body style="font-family: 'Kanit', sans-serif; overflow-x: hidden;">
         <style>
                 body {
-                    background-color: #6fbaec;
-                    font: 1em sans-serif;
+                    font: 18px sans-serif;
+                    margin-bottom: 5%;
+                    background-color:rgb(231, 229, 229);
                 }
         
                 .nemofish {
-                    width: 60vw;
-                    position: absolute;
-                    left: 20%;
-                    padding-bottom: 9%;
+                    width: 80vw;
+                    position: relative;
+                    left: 10%;
+                    background-color: white;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    border-radius: 20px;
                 }
         
-                img {
-                    width: 35%;
+                .pragob {
+                    width: 86%;
                     position: relative;
-                    left: 30%;
-                    border-radius: 5%;
-                    border: 2px solid black;
+                    left: 7%;
+                    border-radius: 5px;
                 }
-            </style>
-        <div class="nemofish">
-        <h2><center>ปลาการ์ตูนส้มขาว</center></h2> 
-        <img src="pics/nemo.jpg">
-        <br>
-        <br>
-        (อังกฤษ: ocellaris clownfish, clown anemonefish, clownfish, false percula clownfish; ชื่อวิทยาศาสตร์: Amphiprion ocellaris) 
+        
+                .title {
+                    width: 100vw;
+                    position: relative;
+                    height: 100vh;
+                    display: table-cell;
+                    vertical-align: middle;
+                    margin-top: 10%;
+                    color: rgb(63, 63, 63);
+                    font-size: 100px;
+                    text-align: center;
+                }
+        
+                .card {
+                    margin-top: 5%;
+                }
+        
+                footer div {
+                    background-color: var(--col-deepblue);
+                    margin: -5px 0px 0px 0px;
+                    padding: 0px;
+                    color: #fff;
+                    text-align: center;
+                    z-index: 33;
+                    
+                }
+                .svg {
+                    width: 100%;
+                    overflow: visible;
+                    z-index: -5;
+                    
+                }
+                .wawa{
+                    top:80%;
+                    position: fixed;
+                }
+                .wave {
+                    animation: wave 20s linear;
+                    animation-iteration-count: infinite;
+                    fill: #2bd3eb;
+                }
+        
+                #wave2 {
+                    animation-duration: 25s;
+                    animation-direction: reverse;
+                    opacity: .6;
+                }
+        
+                #wave3 {
+                    animation-duration: 35s;
+                    opacity: .3;
+                }
+        
+                #wave4 {
+                    animation-duration: 40s;
+                    opacity: .3;
+                }
+        
+                @keyframes wave {
+                    to {
+                        transform: translateX(-100%);
+                    }
+                }
+            </style> 
+            <footer>
+                    <svg viewBox="0 0 80 998" class="wawa">
+                        <defs>
+                            <path id="wave" d="M 0,6 C
+                            20,4 20,6 40,6
+                            60,4 60,6 80,6
+                            100,4 100,6 120,6
+                            140,4 140,6 160,6
+                            180,4 180,6 200,6
+                            220,4 220,6 240,6
+                
+                
+                            v 95 h -350 z" />
+                        </defs>
+                        <use id="wave4" class="wave" xlink:href="#wave" x="0" y="-4"></use>
+                        <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+                        <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+                        <use id="wave1" class="wave" xlink:href="#wave" x="0" y="2"></use>
+                    </svg>
+                    <div id="fade"></div>
+            
+                </footer>
+            <div class="title">
+            ปลาการ์ตูนส้มขาว
+        </div>
+        <div class=" container mx-auto">
+        <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="pics/nemo.jpg" class="card-img">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text">(อังกฤษ: ocellaris clownfish, clown anemonefish, clownfish, false percula clownfish; ชื่อวิทยาศาสตร์: Amphiprion ocellaris) 
 
-        เป็นปลาการ์ตูนชนิดหนึ่ง
+                            เป็นปลาการ์ตูนชนิดหนึ่ง
 
         ที่ลำตัวตัวมีสีส้มเข้ม มีแถบสีขาว 3 แถบ พาดบริเวณส่วนหัว ลำตัวและบริเวณหาง ขอบของแถบสีขาวเป็นสีดำ ขอบนอกของครีบเป็นสีขาวและขอบในเป็นสีดำ 
         อาศัยในที่ลึก ตั้งแต่ 1-15 เมตร ขนาดตัวโตที่สุดประมาณ 10 เซนติเมตร อาศัยอยู่กับดอกไม้ทะเลชนิด Heteractis magnifica และ Stichodactyla gigantea เป็นต้น ในดอกไม้ทะเลแต่ละกออาจพบอยู่ด้วยกัน 6-8 ตัว
         มีการกระจายพันธุ์ในแถบอินโด-แปซิฟิก, มหาสมุทรอินเดีย, หมู่เกาะอันดามันและนิโคบาร์, ทะเลฟิลิปปิน, อินโดนีเซีย หายากที่เกาะโอะกินะวะและเกาะไต้หวัน 
         ส่วนในน่านน้ำไทยจะไม่พบในด้านอ่าวไทย แต่จะพบได้ในฝั่งทะเลอันดามัน โดยอาศัยอยู่เป็นครอบครัวใหญ่
-        ปลาการ์ตูนส้มขาวนับเป็นปลาการ์ตูนชนิดที่รู้จักกันดีและคุ้นเคยเป็นอย่างดี และถือเป็นตัวละครเอกในภาพยนตร์การ์ตูนเรื่อง Finding Nemo ของพิกซาร์ ในปี ค.ศ. 2003 จนได้รับการเรียกขานเล่น ๆ ว่า "ปลานีโม"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                                <img src="pics/neme.jpg" class="card-img">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    ปลาการ์ตูนส้มขาวนับเป็นปลาการ์ตูนชนิดที่รู้จักกันดีและคุ้นเคยเป็นอย่างดี และถือเป็นตัวละครเอกในภาพยนตร์การ์ตูนเรื่อง Finding Nemo ของพิกซาร์ ในปี ค.ศ. 2003 จนได้รับการเรียกขานเล่น ๆ ว่า "ปลานีโม"
         เป็นปลาที่ได้รับความนิยมเป็นอย่างยิ่งในการเลี้ยงเป็นปลาสวยงาม ซึ่งในปัจจุบันสามารถเพาะขยายพันธุ์ได้แล้วในสถานที่เลี้ยง โดยสถานที่แรกที่สามารถเพาะขยายพันธุ์ได้สำเร็จ
          คือ สถาบันวิทยาศาสตร์ทางทะเล มหาวิทยาลัยบูรพา จังหวัดชลบุรี ในประเทศไทย และยังสามารถเพาะขยายพันธุ์ได้อีกจากภาคเอกชนต่าง ๆ จนในปัจจุบัน ปลาการ์ตูนส้มขาวที่มีจำหน่ายในตลาดปลาสวยงามในประเทศไทย
           เกิดจากการเพาะขยายพันธุ์ทั้งสิ้น แต่ก็ยังมีความต้องการปลาจากธรรมชาติอยู่อีก โดยถูกจับมาจากทะเลฟิลิปปิน และอินโดนีเซีย เนื่องจากมีสีสันที่สวยงามกว่านั่นเอง
         นอกจากนี้แล้ว ยังมีชนิดย่อยของปลาการ์ตูนส้มขาวอีกชนิดหนึ่ง คือ "ปลาการ์ตูนดำ" ซึ่งจะพบได้ในถิ่นเฉพาะคือทางเหนือของออสเตรเลียเท่านั้น และพบได้น้อยมาก 
         ซึ่งมีขนาดและลวดลายเหมือนเช่นปลาการ์ตูนส้มขาวชนิดธรรมดา แต่ส่วนที่เป็นสีส้มนั้นจะเป็นสีดำ ซึ่งในช่วงแรกนั้นมีราคาซื้อขายที่สูงมากถึงคู่ละ 5,000-6,000 บาท โดยเป็นปลาที่นำจากประเทศอังกฤษ 
         แต่ต่อมาไม่นานก็ได้มีการเพาะขยายพันธุ์ได้มากขึ้น จนในปัจจุบันราคาขายปลาการ์ตูนดำอยู่ที่คู่ละ 600-700 บาท เท่านั้น
-    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</div>
+
+        
+       
 </body>
 </html>
