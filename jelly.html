@@ -5,38 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body style="font-family: 'Kanit', sans-serif; overflow-x: hidden;">
     <style>
         body {
-            background-color: #6fbaec;
-            font: 1em sans-serif;
-        }
-
-        .nemofish {
-            width: 60vw;
-            height: 60%;
-            position: absolute;
-            left: 20%;
-        }
-
-        img {
-            width: 35%;
-            position: relative;
-            left: 30%;
-            border-radius: 5%;
-            border: 2px solid black;
-        }
-    </style>
-    <div class="nemofish">
-        <h2>
-            <center>แมงกะพรุน</center>
-        </h2>
-        <img src="pics/jellyfisho.jpg">
-        <br>
-        <br>
+                    font: 18px sans-serif;
+                    margin-bottom: 5%;
+                    background-color:rgb(231, 229, 229);
+                }
+        
+                .nemofish {
+                    width: 80vw;
+                    position: relative;
+                    left: 10%;
+                    background-color: white;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    border-radius: 20px;
+                }
+        
+                .pragob {
+                    width: 86%;
+                    position: relative;
+                    left: 7%;
+                    border-radius: 5px;
+                }
+        
+                .title {
+                    width: 100vw;
+                    position: relative;
+                    height: 100vh;
+                    display: table-cell;
+                    vertical-align: middle;
+                    margin-top: 10%;
+                    color: rgb(63, 63, 63);
+                    font-size: 100px;
+                    text-align: center;
+                }
+        
+                .card {
+                    margin-top: 5%;
+                }
+        
+                footer div {
+                    background-color: var(--col-deepblue);
+                    margin: -5px 0px 0px 0px;
+                    padding: 0px;
+                    color: #fff;
+                    text-align: center;
+                    z-index: 33;
+                    
+                }
+                .svg {
+                    width: 100%;
+                    overflow: visible;
+                    z-index: -5;
+                    
+                }
+                .wawa{
+                    top:80%;
+                    position: fixed;
+                }
+                .wave {
+                    animation: wave 20s linear;
+                    animation-iteration-count: infinite;
+                    fill: #2bd3eb;
+                }
+        
+                #wave2 {
+                    animation-duration: 25s;
+                    animation-direction: reverse;
+                    opacity: .6;
+                }
+        
+                #wave3 {
+                    animation-duration: 35s;
+                    opacity: .3;
+                }
+        
+                #wave4 {
+                    animation-duration: 40s;
+                    opacity: .3;
+                }
+        
+                @keyframes wave {
+                    to {
+                        transform: translateX(-100%);
+                    }
+                }
+            </style> 
+            <footer>
+                    <svg viewBox="0 0 80 998" class="wawa">
+                        <defs>
+                            <path id="wave" d="M 0,6 C
+                            20,4 20,6 40,6
+                            60,4 60,6 80,6
+                            100,4 100,6 120,6
+                            140,4 140,6 160,6
+                            180,4 180,6 200,6
+                            220,4 220,6 240,6
+                
+                
+                            v 95 h -350 z" />
+                        </defs>
+                        <use id="wave4" class="wave" xlink:href="#wave" x="0" y="-4"></use>
+                        <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+                        <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+                        <use id="wave1" class="wave" xlink:href="#wave" x="0" y="2"></use>
+                    </svg>
+                    <div id="fade"></div>
+            
+                </footer>
+                <div class="title">
+                    แมงกะพรุน
+                </div>
+                <div class=" container mx-auto">
+                <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="pics/jellyfisho.jpg" class="card-img">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <p class="card-text">
         แมงกะพรุน หรือ กะพรุน จัดอยู่ในประเภทสัตว์ไม่มีกระดูกสันหลัง ไฟลัมไนดาเรีย ไฟลัมย่อยเมดูโซซัว
         แบ่งออกเป็นอันดับได้ 5 อันดับ (ดูในตาราง)
         ลักษณะลำตัวใสและนิ่มมีโพรงทำหน้าที่เป็นทางเดินอาหารมีเข็มพิษที่บริเวณหนวดที่อยู่ด้านล่าง
@@ -46,8 +150,19 @@
         แมงกะพรุนส่วนใหญ่จัดอยู่ในอันดับไซโฟซัว แต่ก็บางประเภทที่อยู่ในอันดับไฮโดรซัว อาทิ แมงกะพรุนไฟหมวกโปรตุเกส
         (Physalia physalis) ซึ่งเป็นแมงกะพรุนที่มีพิษร้ายแรงที่สุดในโลก และแมงกะพรุนอิรุคันจิ (Malo kingi)
         ที่อยู่ในอันดับคูโบซัว ก็ถูกเรียกว่าแมงกะพรุนเช่นกัน
-        <br>
-        <br>
+    </p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="row no-gutters">
+<div class="col-md-4">
+        <img src="pics/jellyfisho1.jpg" class="card-img">
+</div>
+<div class="col-md-8">
+    <div class="card-body">
+        <p class="card-text">
         <h3>รูปร่าง</h3>
         แมงกะพรุนเป็นสัตว์ที่มีลำตัวโปร่งใส ร่างกายประกอบด้วยเจลาตินเป็นส่วนใหญ่ สามารถมองเห็นเข้าไปได้ถึงอวัยวะภายใน
         เป็นสัตว์ที่ไม่มีทั้งสมองหรือหัวใจ ลำตัวด้านบนของแมงกะพรุนมีลักษณะคล้ายร่ม เรียกว่า "เมดูซา"
@@ -56,6 +171,11 @@
         แมงกะพรุนเป็นสัตว์ที่ถือกำเนิดขึ้นมาแล้วกว่า 505 หรือ 600 ล้านปี โดยถือกำเนิดก่อนไดโนเสาร์ถึง 230 ล้านปี
         หรือก่อนมนุษย์ราว 500,000 ปี โดยถือได้ว่าเป็นสัตว์ที่ถือกำเนิดมานานแล้วจำพวกหนึ่งที่มีวิวัฒนาการสูงสุด
         มีวงจรชีวิตที่ขยายพันธุ์ได้ทั้งแบบอาศัยเพศและไม่อาศัยเพศ
+    </p>
+</div>
+</div>
+</div>
+</div>
     </div>
 </body>
 
