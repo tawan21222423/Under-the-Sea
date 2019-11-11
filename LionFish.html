@@ -1,0 +1,189 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body style="font-family: 'Kanit', sans-serif; overflow-x: hidden;">
+    <style>
+        body {
+                    font: 18px sans-serif;
+                    margin-bottom: 5%;
+                    background-color:rgb(231, 229, 229);
+                }
+        
+                .nemofish {
+                    width: 80vw;
+                    position: relative;
+                    left: 10%;
+                    background-color: white;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    border-radius: 20px;
+                }
+        
+                .pragob {
+                    width: 86%;
+                    position: relative;
+                    left: 7%;
+                    border-radius: 5px;
+                }
+        
+                .title {
+                    width: 100vw;
+                    position: relative;
+                    height: 100vh;
+                    display: table-cell;
+                    vertical-align: middle;
+                    margin-top: 10%;
+                    color: rgb(63, 63, 63);
+                    font-size: 100px;
+                    text-align: center;
+                }
+        
+                .card {
+                    margin-top: 5%;
+                }
+        
+                footer div {
+                    background-color: var(--col-deepblue);
+                    margin: -5px 0px 0px 0px;
+                    padding: 0px;
+                    color: #fff;
+                    text-align: center;
+                    z-index: 33;
+                    
+                }
+                .svg {
+                    width: 100%;
+                    overflow: visible;
+                    z-index: -5;
+                    
+                }
+                .wawa{
+                    top:80%;
+                    position: fixed;
+                }
+                .wave {
+                    animation: wave 20s linear;
+                    animation-iteration-count: infinite;
+                    fill: #2bd3eb;
+                }
+        
+                #wave2 {
+                    animation-duration: 25s;
+                    animation-direction: reverse;
+                    opacity: .6;
+                }
+        
+                #wave3 {
+                    animation-duration: 35s;
+                    opacity: .3;
+                }
+        
+                #wave4 {
+                    animation-duration: 40s;
+                    opacity: .3;
+                }
+        
+                @keyframes wave {
+                    to {
+                        transform: translateX(-100%);
+                    }
+                }
+            </style> 
+            <footer>
+                    <svg viewBox="0 0 80 998" class="wawa">
+                        <defs>
+                            <path id="wave" d="M 0,6 C
+                            20,4 20,6 40,6
+                            60,4 60,6 80,6
+                            100,4 100,6 120,6
+                            140,4 140,6 160,6
+                            180,4 180,6 200,6
+                            220,4 220,6 240,6
+                
+                
+                            v 95 h -350 z" />
+                        </defs>
+                        <use id="wave4" class="wave" xlink:href="#wave" x="0" y="-4"></use>
+                        <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+                        <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+                        <use id="wave1" class="wave" xlink:href="#wave" x="0" y="2"></use>
+                    </svg>
+                    <div id="fade"></div>
+            
+                </footer>
+    <div class="title">
+        ปลาสิงโต
+    </div>
+    <div class=" container mx-auto">
+        <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="pics/Lion.jpg" class="card-img">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text">
+        Common name: Lionfish, Turkeyfish, Firefish, Butterfly-cod อยู่ในวงศ์ ปลาแมงป่อง (Scorpaenidae)<br>
+        <b>ลักษณะทั่วไป</b><br>
+        ปลาสิงโตมีลำตัวยาวปานกลางแบนข้างเล็กน้อยมีหัวขนาดใหญ่ ลำตัวและหัวมีแถบสีน้ำตาลเข้มสลับกับสีน้ำตาลอ่อนและสีขาว ชื่อปลาสิงโตอาจจะมาจากครีบอกและครีบหลังที่แผ่ออกซึ่งแล้วคล้ายกับแผงคอของสิงโต 
+        แต่ครีบที่แผ่ออกมาแต่ละครีบนั้นประกอบด้วยก้านครีบที่เป็นหนามและมีต่อมพิษที่ก้านครีบแข็งทุกก้านและมีต่อมพิษจำนวนมากอยู่ใต้ผิวหนัง มักว่ายช้า ๆ หรือลอยตัวนิ่ง ๆ ตามแนวปะการัง และบริเวณแนวหินในเขตน้ำตื้นชายฝั่งทั่วไป
+    </p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="row no-gutters">
+<div class="col-md-4">
+        <img src="pics/Lion1.jpg" class="card-img">
+</div>
+<div class="col-md-8">
+    <div class="card-body">
+        <p class="card-text">
+            โดยทั่วไปมักพบปลาสิงโตว่ายน้ำช้าๆตามแนวปะการัง กองหินหรือตามเสาสะพานท่าเทียบเรือ ซึ่งการที่มันว่ายน้ำช้าทำให้นักดำน้ำมือใหม่ที่ยังไม่มีประสบการณ์บางคนพยายามจับปลาสิงโตด้วยมือเปล่า 
+            ซึ่งจะเขาได้รับประสบการณ์ที่เจ็บปวดจากหนามพิษของปลาสิงโต พิษของปลาสิงโตเป็นสารประกอบโปรตีนเมื่อแทงเข้าไปในร่างการจะทำให้ผู้ถูกพิษมีอาการปวดแสบปวดร้อนอย่างมาก 
+            บางรายอาจมีอาการคอแห้ง ซึมเพ้อ ปวดเมื่อยตามข้อ นอกจากนี้อาจทำให้เกิดอาการอัมพาตชั่วคราว หรืออาจเสียชีวิตได้
+            วิธีแก้ไขเมื่อถูกพิษจากหนามของปลาสิงโต แช่แผลในน้ำร้อนที่พอทนได้ประมาณ 30-60 นาที อาการปวดจะทุเลาลง หากมีอาการรุนแรงให้รีบนำส่งแพทย์
+    </p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="row no-gutters">
+<div class="col-md-4">
+        <img src="pics/Lion2.jpg" class="card-img">
+</div>
+<div class="col-md-8">
+    <div class="card-body">
+        <p class="card-text">
+        <b>อาหารการกิน</b><br>
+        กินกุ้งหรือปลาขนาดเล็กชนิดอื่นเป็นอาหาร ด้วยการกางครีบแล้วไล่ต้อนให้จนมุม แล้วใช้ปากฮุบกินไปทั้งตัว ขากรรไกรขยายออกถึงร้อยละ 40 นอกจากนี้แล้วครีบต่าง ๆ 
+        นั้นยังใช้สำหรับกางเพื่อขู่ศัตรูได้ด้วยนอกจากนี้แล้วปลาสิงโตยังถือเป็นปลาที่ฮุบกินอาหารได้เร็วมากจนตาเปล่าไม่อาจมองทัน ต้องใช้กล้องถ่ายภาพความเร็วสูงที่มีความเร็ว 2,000 เฟรม/วินาที จึงจะจับภาพทัน
+    </p>
+</div>
+</div>
+</div>
+</div>
+    </div>
+</body>
+
+</html>
