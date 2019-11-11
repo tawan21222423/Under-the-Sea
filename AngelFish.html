@@ -22,52 +22,183 @@
 <body style="font-family: 'Kanit', sans-serif; overflow-x: hidden;">
     <style>
         body {
-            background-color: #6fbaec;
-            font: 1em sans-serif;
-        }
-
-        .nemofish {
-            width: 60vw;
-            height: 60%;
-            position: absolute;
-            left: 20%;
-        }
-
-        img {
-            width: 35%;
-            position: relative;
-            left: 30%;
-            border-radius: 5%;
-            border: 2px solid black;
-        }
-    </style>
-    <div class="nemofish">
-        <h2>
-            <center>ปลาเทวดา</center>
-        </h2>
-        <img src="pics/Angle.jpg">
-        <br>
-        <br>
+                    font: 18px sans-serif;
+                    margin-bottom: 5%;
+                    background-color:rgb(231, 229, 229);
+                }
+        
+                .nemofish {
+                    width: 80vw;
+                    position: relative;
+                    left: 10%;
+                    background-color: white;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    border-radius: 20px;
+                }
+        
+                .pragob {
+                    width: 86%;
+                    position: relative;
+                    left: 7%;
+                    border-radius: 5px;
+                }
+        
+                .title {
+                    width: 100vw;
+                    position: relative;
+                    height: 100vh;
+                    display: table-cell;
+                    vertical-align: middle;
+                    margin-top: 10%;
+                    color: rgb(63, 63, 63);
+                    font-size: 100px;
+                    text-align: center;
+                }
+        
+                .card {
+                    margin-top: 5%;
+                }
+        
+                footer div {
+                    background-color: var(--col-deepblue);
+                    margin: -5px 0px 0px 0px;
+                    padding: 0px;
+                    color: #fff;
+                    text-align: center;
+                    z-index: 33;
+                    
+                }
+                .svg {
+                    width: 100%;
+                    overflow: visible;
+                    z-index: -5;
+                    
+                }
+                .wawa{
+                    top:80%;
+                    position: fixed;
+                }
+                .wave {
+                    animation: wave 20s linear;
+                    animation-iteration-count: infinite;
+                    fill: #2bd3eb;
+                }
+        
+                #wave2 {
+                    animation-duration: 25s;
+                    animation-direction: reverse;
+                    opacity: .6;
+                }
+        
+                #wave3 {
+                    animation-duration: 35s;
+                    opacity: .3;
+                }
+        
+                #wave4 {
+                    animation-duration: 40s;
+                    opacity: .3;
+                }
+        
+                @keyframes wave {
+                    to {
+                        transform: translateX(-100%);
+                    }
+                }
+            </style> 
+            <footer>
+                    <svg viewBox="0 0 80 998" class="wawa">
+                        <defs>
+                            <path id="wave" d="M 0,6 C
+                            20,4 20,6 40,6
+                            60,4 60,6 80,6
+                            100,4 100,6 120,6
+                            140,4 140,6 160,6
+                            180,4 180,6 200,6
+                            220,4 220,6 240,6
+                
+                
+                            v 95 h -350 z" />
+                        </defs>
+                        <use id="wave4" class="wave" xlink:href="#wave" x="0" y="-4"></use>
+                        <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+                        <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+                        <use id="wave1" class="wave" xlink:href="#wave" x="0" y="2"></use>
+                    </svg>
+                    <div id="fade"></div>
+            
+                </footer>
+    <div class="title">
+        ปลาเทวดา
+    </div>
+    <div class=" container mx-auto">
+    <div class="card">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="pics/Angle.jpg" class="card-img">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text">
         ปลาเทวดา (Angel fish) ชื่อสามัญเรียกชื่อปลาน้ำจืดในสกุล Pterophyllum ในวงศ์ปลาหมอสี (Cichlidae) มีรูปร่างโดยรวมเป็นรูปสี่เหลี่ยมรูปว่าว ลำตัวแบนข้างมาก มีปากขนาดเล็ก 
         ครีบหลังเป็นกระโดงสูงอยู่ค่อนไปทางด้านหาง ครีบหลังบานยาวออกมาจากลำตัว ครีบท้องมีอยู่หนึ่งคู่เรียวเล็กและปลายชี้แหลม
         ทั้งนี้ ปลาเทวดา มีถิ่นกำเนิดดั้งเดิมที่อเมริกาใต้ แถบลุ่มน้ำโอริโนโก ลุ่มน้ำอเมซอน และลุ่มแม่น้ำใกล้เคียง โดย ปลาเทวดา นิยมอยู่เป็นฝูงในถิ่นที่มีพืชพรรณไม้น้ำขึ้นหนาแน่น และสภาพน้ำมีความเป็นกรดประมาณ 5-5.5
 
-        <br><br>
+    </p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="row no-gutters">
+<div class="col-md-4">
+        <img src="pics/Angle1.jpg" class="card-img">
+</div>
+<div class="col-md-8">
+    <div class="card-body">
+        <p class="card-text">
         <h3>ลักษณะทั่วไป</h3>
         ปลาเทวดา เป็นปลาแบนข้าง ลำตัวกว้างลึก ครีบหลังเป็นกระโดงสูงอยู่ค่อนไปทางด้านหาง ครีบด้านท้องก็ทำนองเดียวกัน ครีบหางแบนเป็นแพนใหญ่ 
         รูปทรงเป็นสามเหลี่ยมมุมฉากริมฝีปากค่อนข้างเล็กดวงตากลมโต ปลาเทวดามีหลายสี ตามสายพันธุ์แตกต่างกันออกไป เช่น เทวดาดำ เทวดาหินอ่อน เทวดาขาว เป็นต้น
-        <br>
-        <br>
+    </p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="row no-gutters">
+<div class="col-md-4">
+        <img src="pics/Angle2.jpg" class="card-img">
+</div>
+<div class="col-md-8">
+    <div class="card-body">
+        <p class="card-text">
         <h3>อุปนิสัยของปลาเทวดา</h3>
         ปลาเทวดา เป็นปลาที่แปลก บางครั้งก็เป็นปลารักสงบ ชอบอยู่นิ่ง ๆ ไม่ตื่นตกใจง่าย แต่ในทางตรงกันข้าม บางครั้ง ปลาเทวดา ก็มีนิสัยก้าวร้าว หวาดระแวงขี้ตื่นตกใจ 
         ปลาเทวดา บางตัวเลี้ยงให้คุ้นเคยได้ง่าย แต่บางตัวคุ้นเคยยาก ไม่ยอมกินอาหารและเป็นปลาที่ค่อนข้างใจเสาะ เสียชีวิตง่าย ถ้าการดูแลเอาใจใส่ไม่ดี ถ้าน้ำในตู้เสียและผิดปกติไป 
         ปลาเทวดา ก็จะแสดงอาการไม่ปกติทันที
-        <br>
-        <br>
+    </p>
+</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="row no-gutters">
+<div class="col-md-4">
+        <img src="pics/Angle3.jpg" class="card-img">
+</div>
+<div class="col-md-8">
+    <div class="card-body">
+        <p class="card-text">>
         <h3>การดูแล เลี้ยงดูปลาเทวดา</h3>
         โดยทั่วไป ปลาเทวดา เป็นปลารักสงบ พอจะปล่อยเลี้ยงรวมกันหลาย ๆ ตัวได้ในตู้กระจกที่กว้างขวางพอ และมีพันธุ์ไม้เป็นที่หลบอาศัยบ้าง ปลาเทวดา เมื่อจับคู่กัน 
         แม่จะวางไข่ติดกับวัสดุในน้ำ เช่น ใบไม้ รากไม้ หรือแผ่นหิน สำหรับอาหารที่ให้ได้แก่ ไรน้ำ ลูกน้ำ เนื้อกุ้งสับ และอาหารเม็ดสำเร็จรูป เป็นต้น
-        <br><br>
+    </p>
+</div>
+</div>
+</div>
+</div>
     </div>
 </body>
 
