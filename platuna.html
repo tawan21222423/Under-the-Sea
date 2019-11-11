@@ -23,13 +23,9 @@
 <body style="font-family: 'Kanit', sans-serif; overflow-x: hidden;">
     <style>
         body {
-            background-color: #6fbaec;
             font: 18px sans-serif;
-            background-image: url("pics/title.jpg");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
             margin-bottom: 5%;
+            background-color:rgb(231, 229, 229);
         }
 
         .tunafish {
@@ -56,7 +52,7 @@
             display: table-cell;
             vertical-align: middle;
             margin-top: 10%;
-            color: rgb(230, 230, 230);
+            color: rgb(63, 63, 63);
             font-size: 100px;
             text-align: center;
         }
@@ -64,7 +60,76 @@
         .card {
             margin-top: 5%;
         }
+
+        footer div {
+            background-color: var(--col-deepblue);
+            margin: -5px 0px 0px 0px;
+            padding: 0px;
+            color: #fff;
+            text-align: center;
+            z-index: 33;
+            
+        }
+        .svg {
+            width: 100%;
+            overflow: visible;
+            z-index: -5;
+            
+        }
+        .wawa{
+            top:80%;
+            position: fixed;
+        }
+        .wave {
+            animation: wave 20s linear;
+            animation-iteration-count: infinite;
+            fill: #2bd3eb;
+        }
+
+        #wave2 {
+            animation-duration: 25s;
+            animation-direction: reverse;
+            opacity: .6;
+        }
+
+        #wave3 {
+            animation-duration: 35s;
+            opacity: .3;
+        }
+
+        #wave4 {
+            animation-duration: 40s;
+            opacity: .3;
+        }
+
+        @keyframes wave {
+            to {
+                transform: translateX(-100%);
+            }
+        }
     </style>
+    <footer>
+        <svg viewBox="0 0 80 998" class="wawa">
+            <defs>
+                <path id="wave" d="M 0,6 C
+                20,4 20,6 40,6
+                60,4 60,6 80,6
+                100,4 100,6 120,6
+                140,4 140,6 160,6
+                180,4 180,6 200,6
+                220,4 220,6 240,6
+    
+    
+                v 95 h -350 z" />
+            </defs>
+            <use id="wave4" class="wave" xlink:href="#wave" x="0" y="-4"></use>
+            <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+            <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+            <use id="wave1" class="wave" xlink:href="#wave" x="0" y="2"></use>
+        </svg>
+        <div id="fade"></div>
+
+    </footer>
     <div class="title text-center">
         ปลาทูน่า
     </div>
