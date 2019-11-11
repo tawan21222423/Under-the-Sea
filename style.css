@@ -191,14 +191,13 @@ body {
         transform: scale(-1, 1);
     }
 }
-}
 body {
     background-size: auto;
     cursor: url(bc.cur), auto;
 }
 
 .box-1 {
-    z-index: 0;
+    z-index: -1;
     width: 100%;
     height: 21600px;
     background-image: url("pics/seasky.png");
@@ -240,7 +239,7 @@ body {
     opacity: 0.3;
     top: 900px;
     right: -9%;
-    z-index: 60;
+    z-index: 3;
     transform: rotate(-90deg);
 }
 
@@ -250,7 +249,7 @@ body {
     opacity: 0.3;
     top: 900px;
     left: -9%;
-    z-index: 60;
+    z-index: 3;
     transform: rotate(90deg);
 }
 
@@ -260,6 +259,7 @@ body {
     top: 1100px;
     animation: tunavai1 30s infinite linear;
     opacity: 1;
+    z-index: 40;
 }
 
 .platuna2 {
@@ -269,6 +269,7 @@ body {
     width: 15%;
     animation: tunavai2 30s linear infinite;
     opacity: 1;
+    z-index: 40;
 }
 
 .platuna3 {
@@ -278,6 +279,7 @@ body {
     width: 15%;
     animation: tunavai3 30s linear infinite;
     opacity: 1;
+    z-index: 40;
 }
 
 .platuna4 {
@@ -285,6 +287,7 @@ body {
     width: 15%;
     animation: tunavai4 30s linear infinite;
     opacity: 1;
+    z-index: 40;
 }
 
 .platewada {
@@ -660,6 +663,7 @@ footer div {
     top: 4100px;
     animation: nemovai1 11s linear infinite;
     opacity: 1;
+    z-index: 89;
     transform: scale(-1,1);
 }
 
@@ -669,6 +673,7 @@ footer div {
     top: 4050px;
     animation: nemovai2 9s linear infinite;
     opacity: 1;
+    z-index: 89;
     transform: scale(-1,1);
 }
 
@@ -936,7 +941,8 @@ footer div {
 #ifamjelly,
 #ifamvan,
 #ifamangel,
-#ifamchalam {
+#ifamchalam,
+#ifamdol {
     position: fixed;
     border-radius: 5px;
     border: 5px solid black;
@@ -1830,5 +1836,57 @@ iframe{
         top: 8700px;
         left: 0%;
         transform: scale(-0.6, 0.6);
+    }
+}
+.muklight1{
+    position: absolute;
+    top: 20000px;
+    width: 10%;
+    animation: mukpung 20s  infinite ease;
+    transform: rotate(-45deg);
+}
+@keyframes mukpung{
+    0% {
+        transform: scale(-1.4, 1) rotate(-45deg);
+        left: 5%;
+    }
+    12.5% {
+        transform: scale(-1, 1) rotate(-45deg);
+    }
+    24%{
+        transform: scale(-1.4, 1) rotate(-45deg);
+    }
+    25% {
+        transform: scale(1.4, 1) rotate(-45deg);
+        left: 80%;
+    }
+    37.5% {
+        transform: scale(1, 1) rotate(-45deg);
+    }
+    49%{
+        transform: scale(1.4, 1) rotate(-45deg);
+    }
+    50% {
+        transform: scale(-1.4, 1) rotate(-45deg);
+        left: 5%;
+    }
+    
+    62.5% {
+        transform: scale(-1, 1) rotate(-45deg);
+    }
+    74%{
+        transform: scale(-1.4, 1) rotate(-45deg);
+    }
+    75% {
+        transform: scale(1.4, 1) rotate(-45deg);
+        left: 80%;
+    }
+    
+    87.5% {
+        transform: scale(1, 1) rotate(-45deg);
+    }
+    100% {
+        transform: scale(1.4, 1) rotate(-45deg);
+        left: 5%;
     }
 }
