@@ -322,7 +322,9 @@ footer {
 .chalam1:hover,
 .chalam3:hover,
 .loma:hover,
-.loma22:hover
+.loma22:hover,
+.sun1:hover,
+.lion1:hover
 {
     filter: drop-shadow(0 0 50px crimson);
 }
@@ -343,7 +345,9 @@ footer {
 .plavan,
 .plavan2,
 .loma,
-.loma22 {
+.loma22,
+.sun1,
+.lion1 {
     transition: .3s;
 }
 
@@ -942,7 +946,9 @@ footer div {
 #ifamvan,
 #ifamangel,
 #ifamchalam,
-#ifamdol {
+#ifamdol,
+#ifamlion,
+#ifamsun {
     position: fixed;
     right: -100%;
     visibility: hidden;
@@ -1885,5 +1891,39 @@ iframe{
     100% {
         transform: scale(1.4, 1) rotate(-45deg);
         left: 5%;
+    }
+}
+.lion1{
+    position: absolute;
+    width: 13%;
+    top: 2100px;
+    z-index: 66;
+    animation: 30s lionvai linear infinite;
+}
+@keyframes lionvai{
+    0%{
+        left: 10%;
+        transform: scale(-1,1);
+    }
+    33%{
+        left: 90%;
+        transform: scale(-1,1);
+    }
+    34%{
+        left: 90%;
+        transform: scale(1,1);
+    }
+    66%{
+        left: 50%;
+        top: 2600px;
+        transform: scale(1,1);
+    }
+    99%{
+        left: 10%;
+        transform: scale(1,1);
+    }
+    100%{
+        left: 10%;
+        transform: scale(-1,1);
     }
 }
