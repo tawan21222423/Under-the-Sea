@@ -3,9 +3,10 @@
     position: absolute;
     left: 10%;
     width: 80%;
-    transition: 2s;
+    transition: .5s;
     color: #333333;
-    animation: 0.5 slidedown linear;
+    animation: 0.5s slidedown linear;
+    text-align: center;
 }
 
 .warpper {
@@ -49,7 +50,7 @@ th {
 }
 
 .title:hover {
-    animation: 1s colorch alternate infinite;
+    animation: colorch .5s alternate infinite;
 }
 
 @keyframes slidedown {
@@ -58,17 +59,17 @@ th {
         opacity: 1;
     }
     100% {
-        top: 50px;
+        top: 200px;
         opacity: 1;
     }
 }
 
 @keyframes colorch {
     50% {
-        transform: scale(0.9, 0.9);
+        font-size: 90px;
     }
     100% {
-        transform: scale(1.1, 1.1);
+        font-size: 78px;
     }
 }
 
@@ -967,6 +968,7 @@ iframe{
     left: 95%;
     visibility: hidden;
     z-index: 901;
+    fill: rgb(56, 56, 56);
 }
 
 .plavan {
