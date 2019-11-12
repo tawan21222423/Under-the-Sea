@@ -232,8 +232,6 @@ body {
     position: absolute;
     top: 0%;
     left: 0%;
-    transform: translateZ(0px);
-    perspective: 1px;
 }
 
 .paka1 {
@@ -1582,10 +1580,6 @@ iframe{
         transform: scale(1, 1.1);
         left: 5%;
     }
-}
-.parallax__layer--back {
-    transform: translateZ(-1px) scale(2);
-    z-index: -1;    
 }
 .hill1 {
     width: 100%;
