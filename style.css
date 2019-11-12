@@ -73,6 +73,30 @@ th {
     }
 }
 
+.ul{
+    position: fixed;
+    right: 1rem;
+    top: 30%;
+    z-index: 500;
+    width: 10%;
+
+}
+
+.liSpan
+{
+    line-height: 2em;
+    padding: 1em 0;
+    color: white;
+}
+#navig3{
+    position: absolute;
+    top: 14000px;
+}
+#navig4{
+    position: absolute;
+    top: 19000px;
+}
+
 html,
 body {
     margin: 0;
@@ -81,8 +105,11 @@ body {
     width: 100%;
     overflow-x: hidden;
     position: relative;
+    scroll-behavior: smooth;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 #backload {
     position: fixed;
     background-color: white;
