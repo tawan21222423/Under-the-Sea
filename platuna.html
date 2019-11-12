@@ -20,13 +20,16 @@
     <title>Document</title>
 </head>
 
-<body style="font-family: 'Kanit', sans-serif; overflow-x: hidden;" para-back="url/to/image">
+<body style="font-family: 'Kanit', sans-serif; overflow-x: hidden;">
     <style>
         body {
             font: 18px sans-serif;
             margin-bottom: 5%;
-            background-color: rgb(231, 229, 229);
+            background-clip: ;
             overflow: hidden;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: rgb(131, 131, 131);
         }
 
         .wapp {
@@ -38,9 +41,11 @@
             width: 80vw;
             position: relative;
             left: 10%;
-            background-color: white;
-            padding-left: 10%;
-            padding-right: 10%;
+            backdrop-filter: blur(20px);
+            background-color: rgba(51, 51, 51, 0.5);  
+            padding-left: 5%;
+            color: white;
+            padding-right: 5%;
             border-radius: 20px;
         }
 
@@ -85,14 +90,14 @@
         }
 
         .wawa {
-            top: 80%;
+            top: 70%;
             position: fixed;
         }
 
         .wave {
             animation: wave 20s linear;
             animation-iteration-count: infinite;
-            fill: #2bd3eb;
+            fill: #162b2e;
         }
 
         #wave2 {
@@ -116,7 +121,17 @@
                 transform: translateX(-100%);
             }
         }
-
+        .card-img-top{
+            height: 100%;
+            border-radius: 20px;
+        }
+        .card{
+            background-color: #85a8ba;
+            color: rgb(255, 255, 255);
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            background-color: rgba(51, 51, 51, 0.5);   
+        }
         .parallax {
             perspective: 1px;
             height: 100vh;
@@ -178,6 +193,7 @@
         <div id="fade"></div>
 
     </footer>
+
     <div class="parallax">
         <div class="parallax__layer parallax__layer--base">
             <div class="title text-center">
