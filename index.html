@@ -282,6 +282,12 @@
             </iframe>
         <img src="pics/back.png" id="close">
     </div>
+    <div class="plakao"  onclick="myinfo(1,18)">
+        <img src="pics/f13.png" class="kao1">
+        <iframe src="Prakao.html" id="ifamkao">
+            </iframe>
+        <img src="pics/back.png" id="close">
+    </div>
 </body>
 <script>
     if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
@@ -533,6 +539,18 @@
             document.getElementById("ifammega").style.visibility = "hidden";
             document.getElementById("close").style.visibility = "hidden";
             document.getElementById("ifammega").style.right = "-100%";
+            document.getElementById("close").style.right = "-100%";
+        }
+        if (count == 1 && pla == 18) {
+            document.getElementById("ifamkao").style.visibility = "visible";
+            document.getElementById("close").style.visibility = "visible";
+            document.getElementById("ifamkao").style.right = "0%";
+            document.getElementById("close").style.right = "0%";
+            count = -1;
+        } else if (count == 0) {
+            document.getElementById("ifamkao").style.visibility = "hidden";
+            document.getElementById("close").style.visibility = "hidden";
+            document.getElementById("ifamkao").style.right = "-100%";
             document.getElementById("close").style.right = "-100%";
         }
     }
