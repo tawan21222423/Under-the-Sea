@@ -344,6 +344,51 @@ body {
     animation: tewadavai 15s linear infinite;
     opacity: 1;
 }
+.buu1{
+    position: absolute;
+    top: 1100px;
+    z-index: 40;
+    width: 5%;
+    transform: scale(0.2, 0.2);
+    animation: buuvai 20s linear infinite;
+    opacity: 1;
+}
+@keyframes buuvai {
+    0% {
+        top: 1000px;
+        left: 70%;
+        transform: scale(1, 1);
+    }
+    20% {
+        top: 1200px;
+        left: 40%;
+        transform: scale(1, 1);
+    }
+    58% {
+        top: 1400px;
+        left: 0%;
+        transform: scale(1, 1);
+    }
+    59% {
+        top: 1400px;
+        left: 0%;
+        transform: scale(1, 1);
+    }
+    60% {
+        top: 1400px;
+        transform: scale(-1, 1);
+    }
+    99% {
+        top: 1000px;
+        left: 70%;
+        transform: scale(-1, 1);
+    }
+    100% {
+        top: 1000px;
+        left: 70%;
+        transform: scale(1, 1);
+    }
+}
 
 footer {
     width: 100%;
@@ -379,7 +424,8 @@ footer {
 .hoi2:hover,
 .hoi3:hover,
 .puu1:hover,
-.puu2:hover{
+.puu2:hover,
+.buu1:hover{
     filter: drop-shadow(0 0 50px crimson);
 }
 
@@ -411,7 +457,8 @@ footer {
 .hoi2,
 .hoi3,
 .puu1,
-.puu2   {
+.puu2,
+.buu1   {
     transition: .3s;
 }
 
@@ -1016,7 +1063,8 @@ footer div {
 #ifamkra,
 #ifammoon,
 #ifampuu,
-#ifamhoi {
+#ifamhoi,
+#ifambuu {
     position: fixed;
     right: -100%;
     visibility: hidden;
