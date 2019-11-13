@@ -426,7 +426,8 @@ footer {
 .puu1:hover,
 .puu2:hover,
 .buu1:hover,
-.chi1:hover{
+.chi1:hover,
+.mega1:hover{
     filter: drop-shadow(0 0 50px crimson);
 }
 
@@ -460,7 +461,8 @@ footer {
 .puu1,
 .puu2,
 .buu1,
-.chi1   {
+.chi1,
+.mega1   {
     transition: .3s;
 }
 
@@ -1067,7 +1069,8 @@ footer div {
 #ifampuu,
 #ifamhoi,
 #ifambuu,
-#ifamchi {
+#ifamchi,
+#ifammega {
     position: fixed;
     right: -100%;
     visibility: hidden;
@@ -2327,8 +2330,22 @@ iframe {
         opacity: 0;
     }
 }
+@keyframes dubtid2{
+    0%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
 .plachi1{
-    animation: 5s linear dubtid infinite;
+    animation: 5s linear dubtid2 infinite;
 }
 .chi1{
     position: absolute;
@@ -2365,4 +2382,39 @@ iframe {
         top: 20500px;
         transform: scale(-1, 1);
     }
+}
+.mega1{
+    position: absolute;
+    top: 19500px;
+    width: 40%;
+    animation: megavai 50s linear infinite;
+}
+@keyframes megavai{
+    0% {
+        top: 19500px;
+        left: -15%;
+        transform: scale(-1, 1);
+    }
+    50% {
+        top: 19500px;
+        left: 90%;
+        transform: scale(-1, 1);
+    }
+    51% {
+        top: 19500px;
+        left: 90%;
+        transform: scale(1, 1);
+    }
+    99% {
+        top: 19500px;
+        left: -15%;
+        transform: scale(1, 1);
+    }
+    100% {
+        top: 19500px;
+        left: -15%;
+        transform: scale(-1, 1);
+    }
+}
+
 }
