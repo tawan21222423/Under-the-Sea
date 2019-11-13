@@ -2297,3 +2297,30 @@ iframe {
         transform: scale(1, 1);
     }
 }
+.tita{
+    position: absolute;
+    top: 20600px;
+    background-image: url("pics/tita.png");
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+    background-position: center;
+    animation: 3s linear dubtid infinite;
+}
+@keyframes dubtid{
+    0%{
+        opacity: 1;
+    }
+    1%{
+        opacity: 0;
+    }
+    8%{
+        opacity: 1;
+    }
+    92%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
