@@ -23,93 +23,166 @@
 <body style="font-family: 'Kanit', sans-serif; overflow-x: hidden;">
         <style>
                 body {
-                            font: 18px sans-serif;
-                            margin-bottom: 5%;
-                            background-color:rgb(231, 229, 229);
-                        }
-                
-                        .van {
-                            width: 80vw;
-                            position: relative;
-                            left: 10%;
-                            background-color: white;
-                            padding-left: 10%;
-                            padding-right: 10%;
-                            border-radius: 20px;
-                        }
-                
-                        .pragob {
-                            width: 86%;
-                            position: relative;
-                            left: 7%;
-                            border-radius: 5px;
-                        }
-                
-                        .title {
-                            width: 100vw;
-                            position: relative;
-                            height: 100vh;
-                            display: table-cell;
-                            vertical-align: middle;
-                            margin-top: 10%;
-                            color: rgb(63, 63, 63);
-                            font-size: 100px;
-                            text-align: center;
-                        }
-                
-                        .card {
-                            margin-top: 5%;
-                        }
-                
-                        footer div {
-                            background-color: var(--col-deepblue);
-                            margin: -5px 0px 0px 0px;
-                            padding: 0px;
-                            color: #fff;
-                            text-align: center;
-                            z-index: 33;
-                            
-                        }
-                        .svg {
-                            width: 100%;
-                            overflow: visible;
-                            z-index: -5;
-                            
-                        }
-                        .wawa{
-                            top:80%;
-                            position: fixed;
-                        }
-                        .wave {
-                            animation: wave 20s linear;
-                            animation-iteration-count: infinite;
-                            fill: #2bd3eb;
-                        }
-                
-                        #wave2 {
-                            animation-duration: 25s;
-                            animation-direction: reverse;
-                            opacity: .6;
-                        }
-                
-                        #wave3 {
-                            animation-duration: 35s;
-                            opacity: .3;
-                        }
-                
-                        #wave4 {
-                            animation-duration: 40s;
-                            opacity: .3;
-                        }
-                
-                        @keyframes wave {
-                            to {
-                                transform: translateX(-100%);
-                            }
-                        }
+            font: 18px sans-serif;
+            overflow: hidden;
+            background-attachment: fixed;
+            background-size: cover;
+            background-image: url("pics/sky.png");
+            background-position-y: 30%;
+        }
+
+        .wapp {
+            position: absolute;
+            transform: translateZ(999px) scale(.7);
+        }
+
+        .van {
+            width: 80vw;
+            position: relative;
+            left: 10%;
+            backdrop-filter: blur(20px);
+            background-color: rgba(51, 51, 51, 0.5);
+            padding-left: 5%;
+            color: white;
+            padding-right: 5%;
+            border-radius: 20px;
+        }
+
+        .pragob {
+            width: 86%;
+            position: relative;
+            left: 7%;
+            border-radius: 5px;
+        }
+
+        .title {
+            width: 100%;
+            position: relative;
+            height: 120%;
+            margin-top: -10%;
+            background-image: url("pics/nu");
+        }
+
+        .card {
+            margin-top: 5%;
+        }
+
+        footer div {
+            background-color: var(--col-deepblue);
+            margin: -5px 0px 0px 0px;
+            padding: 0px;
+            color: #fff;
+            text-align: center;
+            z-index: 33;
+
+        }
+
+        .svg {
+            width: 100%;
+            overflow: visible;
+            z-index: -5;
+
+        }
+
+        .wawa {
+            top: 70%;
+            position: fixed;
+        }
+
+        .wave {
+            animation: wave 20s linear;
+            animation-iteration-count: infinite;
+            fill: #3498db;
+        }
+
+        #wave2 {
+            animation-duration: 25s;
+            animation-direction: reverse;
+            opacity: .6;
+        }
+
+        #wave3 {
+            animation-duration: 35s;
+            opacity: .3;
+        }
+
+        #wave4 {
+            animation-duration: 40s;
+            opacity: .3;
+        }
+
+        @keyframes wave {
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .card-img-top {
+            height: 100%;
+            border-radius: 20px;
+        }
+
+        .card {
+            background-color: #85a8ba;
+            color: rgb(255, 255, 255);
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            background-color: rgba(51, 51, 51, 0.5);
+        }
+
+        .parallax {
+            perspective: 1px;
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .parallax__layer {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .parallax__layer--base {
+            transform: translateZ(0);
+        }
+
+        .parallax__layer--back {
+            top: 200%;
+            transform: translateZ(-2px);
+            z-index: -1;
+            left: -60%;
+        }
+
+        .parallax__layer--back2 {
+            top: 200%;
+            left: 160%;
+            transform: translateZ(-3px);
+            z-index: -1;
+        }
+
+        .tuni {
+            width: 10%;
+            transform: scale(-6, 6) rotate(25deg);
+        }
+
+        .tuni2 {
+            width: 10%;
+            transform: scale(6, 6) rotate(25deg);
+            position: absolute;
+            left: 120%;
+        }
+
+        .tt {
+            width: 100%;
+        }
                     </style> 
+                    <div class="parallax">
+                        <div class="parallax__layer parallax__layer--base">
     <div class="title">
-            วาฬหลังค่อม
+        <img src="pics/dolphin title.png" class="tt">
         </div>
         <footer>
                 <svg viewBox="0 0 80 998" class="wawa">
