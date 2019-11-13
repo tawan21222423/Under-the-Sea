@@ -1853,7 +1853,7 @@ iframe {
     top: 8000px;
     z-index: 67;
     width: 20%;
-    animation: moonvai 50s linear infinite;
+    animation: moonvai 53s linear infinite;
 }
 
 .moon2 {
@@ -1861,7 +1861,7 @@ iframe {
     top: 8000px;
     width: 20%;
     z-index: 67;
-    animation: moonvai2 56s linear infinite;
+    animation: moonvai2 50s linear infinite;
 }
 @keyframes sunvai {
     0% {
@@ -1939,37 +1939,37 @@ iframe {
 @keyframes moonvai {
     0% {
         top: 8900px;
-        left: 0%;
-        transform: scale(1, 1);
+        left: 80%;
+        transform: scale(-1, 1);
     }
     20% {
         top: 8200px;
         left: 40%;
-        transform: scale(1, 1);
+        transform: scale(-1, 1);
     }
     58% {
         top: 8800px;
-        left: 80%;
-        transform: scale(1, 1);
+        left: 0%;
+        transform: scale(-1, 1);
     }
     59% {
         top: 8800px;
-        left: 80%;
-        transform: scale(1, 1);
+        left: 0%;
+        transform: scale(-1, 1);
     }
     60% {
         top: 8800px;
-        transform: scale(-1, 1);
+        transform: scale(1, 1);
     }
     99% {
         top: 8900px;
-        left: 0%;
-        transform: scale(-1, 1);
+        left: 80%;
+        transform: scale(1, 1);
     }
     100% {
         top: 8900px;
-        left: 0%;
-        transform: scale(1, 1);
+        left: 80%;
+        transform: scale(-1, 1);
     }
 }
 
