@@ -37,17 +37,6 @@
             <img src="pics/n.gif" class="bir1">
             <img src="pics/n.gif" class="bir2">
             <img src="pics/n.gif" class="bir3">
-            <!-- <div class="lifeundersea">
-            หลายๆ คนอาจคิดว่าโลกยุคปัจจุบันมีสิ่งมีชีวิตหลงสำรวจอยู่น้อยเต็มที นั่นเป็นความเข้าใจผิด เพราะ
-            ยังมีสิ่งมีชีวิตที่มนุษย์ ยังไม่เคยเห็นอีกมากมาย โดยเฉพาะใต้ท้องทะเลลึก พื้นผิวโลกเป็นมหาสมุทรถึง 70%
-            และมีความลึกโดยเฉลี่ย 4 กิโลเมตร เมื่อเปรียบเทียบกับที่อื่นๆ
-            แล้วใต้ท้องทะเลลึกเป็นบริเวณ ที่หนาวเย็นมืดทึบและมีออกซิเจนน้อย สภาพแวดล้อมจึงเอื้อ ต่อการมีชีวิตน้อยมาก
-            แต่ที่นี่กลับมีสิ่งมีชีวิต ที่หลากหลายและมีรูปลักษณ์แปลกๆ ท้องทะเลลึกมีสิ่งมีชีวิตขนาดใหญ่ ไปจนถึงขนาดเล็ก
-            ตั้งแต่วาฬสเปิร์ม ปลาหมึกยักษ์
-            อาร์ชิทิวทิส ขนาด 13 เมตร ปลาหมึกยักษ์คอลอสซอล ขนาด 15 เมตร ปลาฉลามสลีปเปอร์ ไปจนกระทั่งถึง ปะการัง
-            ปลาหมึกขนาดเล็ก หนอน และแบคทีเรีย
-        </div>
-    -->
         </div>
 
         <img src="pics/boat.png" class="boat">
@@ -98,6 +87,13 @@
         <div id="fade"></div>
 
     </footer>
+    <div class="plabuu" onclick="myinfo(1,15)">
+        <img src="pics/f14.png" class="buu1">
+        <iframe src="BlueTang.html" id="ifambuu">
+
+            </iframe>
+            <img src="pics/back.png" id="close">
+    </div>
     <div id="planemo" onclick="myinfo(1,2)">
         <img src="pics/f4.png" class="nemo1">
         <img src="pics/f4.png" class="nemo2">
@@ -499,6 +495,18 @@
             document.getElementById("ifamhoi").style.visibility = "hidden";
             document.getElementById("close").style.visibility = "hidden";
             document.getElementById("ifamhoi").style.right = "-100%";
+            document.getElementById("close").style.right = "-100%";
+        }
+        if (count == 1 && pla == 15) {
+            document.getElementById("ifambuu").style.visibility = "visible";
+            document.getElementById("close").style.visibility = "visible";
+            document.getElementById("ifambuu").style.right = "0%";
+            document.getElementById("close").style.right = "0%";
+            count = -1;
+        } else if (count == 0) {
+            document.getElementById("ifambuu").style.visibility = "hidden";
+            document.getElementById("close").style.visibility = "hidden";
+            document.getElementById("ifambuu").style.right = "-100%";
             document.getElementById("close").style.right = "-100%";
         }
     }
