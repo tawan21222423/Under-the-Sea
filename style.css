@@ -443,7 +443,10 @@ footer {
 .buu1:hover,
 .chi1:hover,
 .mega1:hover,
-.kao1:hover {
+.kao1:hover,
+.tita1:hover,
+.dao1:hover,
+.tao1:hover {
     filter: drop-shadow(0 0 50px crimson);
 }
 
@@ -479,7 +482,10 @@ footer {
 .buu1,
 .chi1,
 .mega1,
-.kao1 {
+.kao1,
+.tita1,
+.dao1,
+.tao1 {
     transition: .3s;
 }
 
@@ -1168,7 +1174,8 @@ footer div {
 #ifambuu,
 #ifamchi,
 #ifammega,
-#ifamkao {
+#ifamkao,
+#ifamtita {
     position: fixed;
     right: -100%;
     visibility: hidden;
@@ -2588,14 +2595,11 @@ iframe {
     }
 }
 
-.tita {
+.tita1 {
     position: absolute;
-    top: 20600px;
-    background-image: url("pics/tita.png");
-    width: 100%;
-    height: 1000px;
-    background-size: cover;
-    background-position: center;
+    top: 20750px;
+    width: 45%;
+    height: auto;
     animation: 3s linear dubtid infinite;
 }
 
@@ -2756,4 +2760,60 @@ iframe {
         left: -0%;
         transform: scale(-1, 1);
     }
+}
+.tao1{
+    position: absolute;
+    width: 20%;
+    top:11000px;
+    animation: taovai 40s linear infinite;
+}
+@keyframes taovai {
+    0% {
+        top: 11000px;
+        left: 80%;
+        transform: scale(-1, 1);
+    }
+
+    20% {
+        top: 11700px;
+        left: 40%;
+        transform: scale(-1, 1);
+    }
+
+    58% {
+        top: 10900px;
+        left: 10%;
+        transform: scale(-1, 1);
+    }
+
+    59% {
+        top: 10900px;
+        left: 10%;
+        transform: scale(-1, 1);
+    }
+
+    60% {
+        top: 10900px;
+        transform: scale(1, 1);
+    }
+
+    99% {
+        top: 11000px;
+        left: 80%;
+        transform: scale(1, 1);
+    }
+
+    100% {
+        top: 11000px;
+        left: 80%;
+        transform: scale(-1, 1);
+    }
+}
+.dao1{
+    position: absolute;
+    top: 11860px;
+    left: 70%;
+    width: 10%;
+    z-index: 67;
+    filter: brightness(0.60);
 }
