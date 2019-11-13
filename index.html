@@ -268,7 +268,14 @@
     </div>
     <div class="tita">
     </div>
-
+    <div class="plachi" onclick="myinfo(1,16)">
+        <div class="plachi1">
+        <img src="pics/f17.png" class="chi1">
+        </div>
+        <iframe src="Chimeara.html" id="ifamchi">
+            </iframe>
+        <img src="pics/back.png" id="close">
+    </div>
 </body>
 <script>
     if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
@@ -496,6 +503,18 @@
             document.getElementById("ifambuu").style.visibility = "hidden";
             document.getElementById("close").style.visibility = "hidden";
             document.getElementById("ifambuu").style.right = "-100%";
+            document.getElementById("close").style.right = "-100%";
+        }
+        if (count == 1 && pla == 16) {
+            document.getElementById("ifamchi").style.visibility = "visible";
+            document.getElementById("close").style.visibility = "visible";
+            document.getElementById("ifamchi").style.right = "0%";
+            document.getElementById("close").style.right = "0%";
+            count = -1;
+        } else if (count == 0) {
+            document.getElementById("ifamchi").style.visibility = "hidden";
+            document.getElementById("close").style.visibility = "hidden";
+            document.getElementById("ifamchi").style.right = "-100%";
             document.getElementById("close").style.right = "-100%";
         }
     }
