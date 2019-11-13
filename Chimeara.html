@@ -1,0 +1,250 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body style="font-family: 'Kanit', sans-serif; overflow-x: hidden;">
+    <style>
+        body {
+            font: 18px sans-serif;
+            overflow: hidden;
+            background-attachment: fixed;
+            background-size: cover;
+            background-image: url("pics/sky.png");
+            background-position-y: 30%;
+        }
+
+        .wapp {
+            position: absolute;
+            transform: translateZ(999px) scale(.7);
+        }
+
+        .lomafish {
+            width: 80vw;
+            position: relative;
+            left: 10%;
+            backdrop-filter: blur(20px);
+            background-color: rgba(51, 51, 51, 0.5);
+            padding-left: 5%;
+            color: white;
+            padding-right: 5%;
+            border-radius: 20px;
+        }
+
+        .pragob {
+            width: 86%;
+            position: relative;
+            left: 7%;
+            border-radius: 5px;
+        }
+
+        .title {
+            width: 100%;
+            position: relative;
+            height: 120%;
+            margin-top: -10%;
+            background-image: url("pics/nu");
+        }
+
+        .card {
+            margin-top: 5%;
+        }
+
+        footer div {
+            background-color: var(--col-deepblue);
+            margin: -5px 0px 0px 0px;
+            padding: 0px;
+            color: #fff;
+            text-align: center;
+            z-index: 33;
+
+        }
+
+        .svg {
+            width: 100%;
+            overflow: visible;
+            z-index: -5;
+
+        }
+
+        .wawa {
+            top: 70%;
+            position: fixed;
+        }
+
+        .wave {
+            animation: wave 20s linear;
+            animation-iteration-count: infinite;
+            fill: #3498db;
+        }
+
+        #wave2 {
+            animation-duration: 25s;
+            animation-direction: reverse;
+            opacity: .6;
+        }
+
+        #wave3 {
+            animation-duration: 35s;
+            opacity: .3;
+        }
+
+        #wave4 {
+            animation-duration: 40s;
+            opacity: .3;
+        }
+
+        @keyframes wave {
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .card-img-top {
+            height: 100%;
+            border-radius: 20px;
+        }
+
+        .card {
+            background-color: #85a8ba;
+            color: rgb(255, 255, 255);
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            background-color: rgba(51, 51, 51, 0.5);
+        }
+
+        .parallax {
+            perspective: 1px;
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .parallax__layer {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .parallax__layer--base {
+            transform: translateZ(0);
+        }
+
+        .parallax__layer--back {
+            top: 200%;
+            transform: translateZ(-2px);
+            z-index: -1;
+            left: -60%;
+        }
+
+        .parallax__layer--back2 {
+            top: 200%;
+            left: 160%;
+            transform: translateZ(-3px);
+            z-index: -1;
+        }
+
+        .tuni {
+            width: 10%;
+            transform: scale(-2, 2) rotate(25deg);
+        }
+
+        .tuni2 {
+            width: 10%;
+            transform: scale(4, 4) rotate(25deg);
+            position: absolute;
+            left: 120%;
+        }
+
+        .tt {
+            width: 100%;
+        }
+    </style>
+    <footer>
+        <svg viewBox="0 0 80 998" class="wawa">
+            <defs>
+                <path id="wave" d="M 0,6 C
+                            20,4 20,6 40,6
+                            60,4 60,6 80,6
+                            100,4 100,6 120,6
+                            140,4 140,6 160,6
+                            180,4 180,6 200,6
+                            220,4 220,6 240,6
+                
+                
+                            v 95 h -350 z" />
+            </defs>
+            <use id="wave4" class="wave" xlink:href="#wave" x="0" y="-4"></use>
+            <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+            <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+            <use id="wave1" class="wave" xlink:href="#wave" x="0" y="2"></use>
+        </svg>
+        <div id="fade"></div>
+
+    </footer>
+    <div class="parallax">
+        <div class="parallax__layer parallax__layer--base">
+            <div class="title">
+                <img src="pics/jelly title.png" class="tt">
+            </div>
+            <div class=" container mx-auto">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="pics/Chimeara.jpg" class="card-img">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text">
+                                        ปลาคิเมียรา (อังกฤษ: Chimaera) หรือมีอีกชื่อที่เป็นที่รู้จักคือ ฉลามผี เป็นปลากระดูกอ่อนในลำดับ Chimaeriformes 
+                                        โดยปลาคิเมียรานั้นเป็นญาติห่างจากปลาฉลามเนื่องจากการวิวัฒนการของพวกมันนั้นแยกตัวออกมาจากฉลามตั้งแต่400ล้านปีที่แล้ว ในปัจจุบันนี้สามารถพบได้ตามทะเลลึก
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="pics/Chimeara1.jpg" class="card-img">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <h3>ลักษณะและอุปนิสัย</h3>
+                                    ปลาคิเมียราอาศัยอยู่ในทะเลลึกโดยอยู่ที่ระดับความลึกประมาณ 2600 เมตร ยกเว้นสกุล Callorhinchusซึ่งจะอาศัยอยู่บริเวณน้ำลึก 200 เมตร จึงทำให้พวกมันสามารถถูกจับมาแสดงโชว์ที่พิพิธภัณฑ์สัตว์น้ำ 
+                                    พวกมันมีลำตัวยาวและมีหัวขนาดใหญ่และมีช่องปิดเหงือกช่องเดียวเมื่อโดเต็มวัยอาจมีความยาวถึง150ซ.ม. พวกมันเป็นปลากระดูกอ่อนมีผิวหนังที่เรียบเนียนมีสีน้ำตาลถึงเทาและมีครีบหลังเป็นกระดูกอ่อน 
+                                    พวกมันมีลักษณะบางประการคล้ายปลาฉลามเช่นการปฏิสนธิภายในของเพศเมีย,การวางไข่แบบมีถุงหุ้มไข่และยังมีการใช้ประสาทสัมผัสทางไฟฟ้าในการหาเหยือเหมือนกัน 
+                                    ถึงจะมีลักษณะคล้ายปลาฉลามแต่มันมีสิ่งทีแตกต่างและแปลงออกไปคือปลาคิเมียราเพศผู้นั้นจะมีอวัยวะสืบพันธุ์ที่สามารถยืดหดได้อยู่บนหน้าผากของมัน อีกทั้งพวกมันยังมีครีบเอว 
+                                    และยังมีสิ่งที่แตกต่างจากฉลามอีกเช่นขากรรไกรรวมกับกระโหลกศีรษะ,มีการแยกกันระหว่างทวารหนักและอวัยวะเพศ,ไม่มีฟันที่แหลมคมและมีแผ่นปิดเหงือเหมือนปลากระดูกแข็ง
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="parallax__layer parallax__layer--back">
+            <img src="pics/j2.png" class="tuni">
+            <img src="pics/j1.png" class="tuni2">
+        </div>
+    </div>
+</body>
+
+</html>
