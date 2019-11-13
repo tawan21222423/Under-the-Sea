@@ -27,7 +27,7 @@
             overflow: hidden;
             background-attachment: fixed;
             background-size: cover;
-            background-image: url("pics/sky.png");
+            background-image: url("pics/nightsky.png");
             background-position-y: 30%;
         }
 
@@ -41,7 +41,7 @@
             position: relative;
             left: 10%;
             backdrop-filter: blur(20px);
-            background-color: rgba(51, 51, 51, 0.5);  
+            background-color: rgba(51, 51, 51, 0.5);
             padding-left: 5%;
             color: white;
             padding-right: 5%;
@@ -92,7 +92,7 @@
         .wave {
             animation: wave 20s linear;
             animation-iteration-count: infinite;
-            fill: #3498db;
+            fill: #003b94;
         }
 
         #wave2 {
@@ -116,17 +116,20 @@
                 transform: translateX(-100%);
             }
         }
-        .card-img-top{
+
+        .card-img-top {
             height: 100%;
             border-radius: 20px;
         }
-        .card{
+
+        .card {
             background-color: #85a8ba;
             color: rgb(255, 255, 255);
             border-radius: 20px;
             backdrop-filter: blur(20px);
-            background-color: rgba(51, 51, 51, 0.5);   
+            background-color: rgba(51, 51, 51, 0.5);
         }
+
         .parallax {
             perspective: 1px;
             height: 100vh;
@@ -147,30 +150,34 @@
         }
 
         .parallax__layer--back {
-            top:200%;
+            top: 200%;
             transform: translateZ(-2px);
             z-index: -1;
             left: -60%;
         }
+
         .parallax__layer--back2 {
-            top:200%;
+            top: 200%;
             left: 160%;
             transform: translateZ(-3px);
             z-index: -1;
         }
-        .tuni{
+
+        .tuni {
             width: 10%;
-            transform: scale(4) rotate(-25deg);
+            transform: scale(-4,4) rotate(25deg);
         }
-        .tuni2{
+
+        .tuni2 {
             width: 10%;
-            transform: scale(-4,4) rotate(-25deg);
+            transform: scale(4, 4) rotate(25deg);
             position: absolute;
             left: 120%;
         }
-        .tt{
-                width: 100%;
-            }
+
+        .tt {
+            width: 100%;
+        }
     </style>
     <footer>
         <svg viewBox="0 0 80 998" class="wawa">
@@ -198,14 +205,15 @@
     <div class="parallax">
         <div class="parallax__layer parallax__layer--base">
             <div class="title">
-                <img src="" class="tt">
+                <img src="pics/kao title.png" class="tt">
             </div>
             <div class="tunafish">
                 <br>
                 <br>
 
                 <br>
-                <p>วงศ์ปลากะรัง หรือ วงศ์ปลาเก๋า (อังกฤษ: Groupers, Sea basses) วงศ์ปลากระดูกแข็งวงศ์หนึ่ง ในอันดับปลากะพง จัดเป็นวงศ์ใหญ่ สามารถแบ่งออกเป็นวงศ์ย่อยได้อีกหลายวงศ์ (ดูในเนื้อหา) 
+                <p>วงศ์ปลากะรัง หรือ วงศ์ปลาเก๋า (อังกฤษ: Groupers, Sea basses) วงศ์ปลากระดูกแข็งวงศ์หนึ่ง
+                    ในอันดับปลากะพง จัดเป็นวงศ์ใหญ่ สามารถแบ่งออกเป็นวงศ์ย่อยได้อีกหลายวงศ์ (ดูในเนื้อหา)
                     พบได้ทั้งน้ำจืด, น้ำกร่อย และทะเล ใช้ชื่อวิทยาศาสตร์ว่า Serranidae
                 </p>
                 <br>
@@ -222,24 +230,49 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <p class="card-text">
-                                        เป็นปลากินเนื้อเป็นอาหาร มีรูปร่างโดยรวม ลำตัวยาวป้อม แบนข้างเล็กน้อย เกล็ดเล็ก สีตามตัว และครีบเป็นดอกดวง แต้ม หรือบั้ง ฉูดฉาดหรือคล้ำทึบแตกต่างกันขึ้นอยู่กับชนิดและขนาด ครีบหลังแบ่งเป็น 2 ตอน 
-                                        ตอนแรกเป็นก้านครีบแข็ง ตอนหลังเป็นครีบอ่อนมีลักษณะโปร่งใส มีเกล็ดขนาดเล็กเป็นแบบเรียบและแบบสาก ปากกว้าง มีฟันเล็กบนขากรรไกร เพดานปาก มีฟันเขี้ยวด้านหน้า ครีบท้องมีตำแหน่งอยู่ใต้หรืออยู่หน้าหรืออยู่หลังครีบอก
-                                        มีขนาดแตกต่างกันมากตั้งแต่มีความยาวเพียงไม่กี่เซนติเมตร จนถึง 2.5 หรือ 3 เมตร หนักถึง 400 กิโลกรัม คือ ปลาหมอทะเล (Epinephelus lanceolatus) ซึ่งเป็นชนิดที่ใหญ่ที่สุดที่พบในวงศ์นี้
-                                        ในบางชนิดสามารถปรับเปลี่ยนเพศได้ตามวัย เช่น ปลากะรังจุดน้ำตาล (E. malabaricus) ในวัยเล็กจะเป็นเพศเมีย แต่เมื่อโตขึ้นน้ำหนักราว 7 กิโลกรัม จะกลายเป็นเพศผู้
-                                        สำหรับปลาที่พบในทะเล มักมีพฤติกรรมชอบตามลำพังหรือเป็นคู่เพียงไม่กี่ตัวตามโขดหิน แนวปะการังหรือกองหิน กองซากปรักหักพังใต้น้ำ ออกหากินในเวลากลางคืน 
-                                        สามารถพบได้จนถึงบริเวณปากแม่น้ำ หรือป่าชายเลน มีความสำคัญทางเศรษฐกิจอย่างมาก โดยหลายชนิดนิยมบริโภคเป็นปลาเศรษฐกิจ เช่น ปลากะรังปากแม่น้ำ (E. tauvina) 
-                                        หรือ ปลาเก๋าเสือ (E. fuscoguttatus) เป็นต้น จึงมีการเพาะเลี้ยงเป็นปลาอาชีพ โดยนิยมเลี้ยงในกระชัง
-                                        มีชื่อสามัญในภาษาไทยอื่น ๆ เช่น "ปลาเก๋า" หรือ "ปลาตุ๊กแก" 
+                                    เป็นปลากินเนื้อเป็นอาหาร มีรูปร่างโดยรวม ลำตัวยาวป้อม แบนข้างเล็กน้อย เกล็ดเล็ก
+                                    สีตามตัว และครีบเป็นดอกดวง แต้ม หรือบั้ง
+                                    ฉูดฉาดหรือคล้ำทึบแตกต่างกันขึ้นอยู่กับชนิดและขนาด ครีบหลังแบ่งเป็น 2 ตอน
+                                    ตอนแรกเป็นก้านครีบแข็ง ตอนหลังเป็นครีบอ่อนมีลักษณะโปร่งใส
+                                    มีเกล็ดขนาดเล็กเป็นแบบเรียบและแบบสาก ปากกว้าง มีฟันเล็กบนขากรรไกร เพดานปาก
+                                    มีฟันเขี้ยวด้านหน้า ครีบท้องมีตำแหน่งอยู่ใต้หรืออยู่หน้าหรืออยู่หลังครีบอก
+                                    มีขนาดแตกต่างกันมากตั้งแต่มีความยาวเพียงไม่กี่เซนติเมตร จนถึง 2.5 หรือ 3 เมตร
+                                    หนักถึง 400 กิโลกรัม คือ ปลาหมอทะเล (Epinephelus lanceolatus)
                                 </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="pics/kaokao.jpg" class="card-img-top">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    ซึ่งเป็นชนิดที่ใหญ่ที่สุดที่พบในวงศ์นี้
+                                    ในบางชนิดสามารถปรับเปลี่ยนเพศได้ตามวัย เช่น ปลากะรังจุดน้ำตาล (E. malabaricus)
+                                    ในวัยเล็กจะเป็นเพศเมีย แต่เมื่อโตขึ้นน้ำหนักราว 7 กิโลกรัม จะกลายเป็นเพศผู้
+                                    สำหรับปลาที่พบในทะเล มักมีพฤติกรรมชอบตามลำพังหรือเป็นคู่เพียงไม่กี่ตัวตามโขดหิน
+                                    แนวปะการังหรือกองหิน กองซากปรักหักพังใต้น้ำ ออกหากินในเวลากลางคืน
+                                    สามารถพบได้จนถึงบริเวณปากแม่น้ำ หรือป่าชายเลน มีความสำคัญทางเศรษฐกิจอย่างมาก
+                                    โดยหลายชนิดนิยมบริโภคเป็นปลาเศรษฐกิจ เช่น ปลากะรังปากแม่น้ำ (E. tauvina)
+                                    หรือ ปลาเก๋าเสือ (E. fuscoguttatus) เป็นต้น จึงมีการเพาะเลี้ยงเป็นปลาอาชีพ
+                                    โดยนิยมเลี้ยงในกระชัง
+                                    มีชื่อสามัญในภาษาไทยอื่น ๆ เช่น "ปลาเก๋า" หรือ "ปลาตุ๊กแก"
                             </div>
                         </div>
                     </div>
                 </div>
-        <div class="parallax__layer parallax__layer--back">
-            <img src="pics/f1.png" class="tuni"> 
-            <img src="pics/f1.png" class="tuni2">
+            </div>
         </div>
-    </div>
+                        <div class="parallax__layer parallax__layer--back">
+                            <img src="pics/f13.png" class="tuni">
+                            <img src="pics/f13.png" class="tuni2">
+                        </div>
+                    </div>
 </body>
 <script>
 
