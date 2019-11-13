@@ -1,0 +1,266 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body style="font-family: 'Kanit', sans-serif; overflow-x: hidden;">
+    <style>
+        body {
+            font: 18px sans-serif;
+            overflow: hidden;
+            background-attachment: fixed;
+            background-size: cover;
+            background-image: url("pics/sky.png");
+            background-position-y: 30%;
+        }
+
+        .wapp {
+            position: absolute;
+            transform: translateZ(999px) scale(.7);
+        }
+
+        .tunafish {
+            width: 80vw;
+            position: relative;
+            left: 10%;
+            backdrop-filter: blur(20px);
+            background-color: rgba(51, 51, 51, 0.5);  
+            padding-left: 5%;
+            color: white;
+            padding-right: 5%;
+            border-radius: 20px;
+        }
+
+        .pragob {
+            width: 86%;
+            position: relative;
+            left: 7%;
+            border-radius: 5px;
+        }
+
+        .title {
+            width: 100%;
+            position: relative;
+            height: 120%;
+            margin-top: -10%;
+            background-image: url("pics/nu");
+        }
+
+        .card {
+            margin-top: 5%;
+        }
+
+        footer div {
+            background-color: var(--col-deepblue);
+            margin: -5px 0px 0px 0px;
+            padding: 0px;
+            color: #fff;
+            text-align: center;
+            z-index: 33;
+
+        }
+
+        .svg {
+            width: 100%;
+            overflow: visible;
+            z-index: -5;
+
+        }
+
+        .wawa {
+            top: 70%;
+            position: fixed;
+        }
+
+        .wave {
+            animation: wave 20s linear;
+            animation-iteration-count: infinite;
+            fill: #3498db;
+        }
+
+        #wave2 {
+            animation-duration: 25s;
+            animation-direction: reverse;
+            opacity: .6;
+        }
+
+        #wave3 {
+            animation-duration: 35s;
+            opacity: .3;
+        }
+
+        #wave4 {
+            animation-duration: 40s;
+            opacity: .3;
+        }
+
+        @keyframes wave {
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        .card-img-top{
+            height: 100%;
+            border-radius: 20px;
+        }
+        .card{
+            background-color: #85a8ba;
+            color: rgb(255, 255, 255);
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            background-color: rgba(51, 51, 51, 0.5);   
+        }
+        .parallax {
+            perspective: 1px;
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .parallax__layer {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .parallax__layer--base {
+            transform: translateZ(0);
+        }
+
+        .parallax__layer--back {
+            top:200%;
+            transform: translateZ(-2px);
+            z-index: -1;
+            left: -60%;
+        }
+        .parallax__layer--back2 {
+            top:200%;
+            left: 160%;
+            transform: translateZ(-3px);
+            z-index: -1;
+        }
+        .tuni{
+            width: 10%;
+            transform: scale(4) rotate(-25deg);
+        }
+        .tuni2{
+            width: 10%;
+            transform: scale(-4,4) rotate(-25deg);
+            position: absolute;
+            left: 120%;
+        }
+        .tt{
+                width: 100%;
+            }
+    </style>
+    <footer>
+        <svg viewBox="0 0 80 998" class="wawa">
+            <defs>
+                <path id="wave" d="M 0,6 C
+                    20,4 20,6 40,6
+                    60,4 60,6 80,6
+                    100,4 100,6 120,6
+                    140,4 140,6 160,6
+                    180,4 180,6 200,6
+                    220,4 220,6 240,6
+        
+        
+                    v 95 h -350 z" />
+            </defs>
+            <use id="wave4" class="wave" xlink:href="#wave" x="0" y="-4"></use>
+            <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+            <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+            <use id="wave1" class="wave" xlink:href="#wave" x="0" y="2"></use>
+        </svg>
+        <div id="fade"></div>
+
+    </footer>
+
+    <div class="parallax">
+        <div class="parallax__layer parallax__layer--base">
+            <div class="title">
+                <img src="" class="tt">
+            </div>
+            <div class="tunafish">
+                <br>
+                <br>
+
+                <br>
+                <p>ปลามูนฟิช หรือ ปลาพระจันทร์ หรือ ปลาโอปาห์[1] (อังกฤษ: Moon fish, Opah; ชื่อวิทยาศาสตร์: Lampris guttatus) ปลาทะเลกระดูกแข็งขนาดใหญ่ชนิดหนึ่ง ในวงศ์ปลามูนฟิช (Lampridae)
+                    <br>โดยถือเป็นปลาหนึ่งในสองชนิดที่ยังคงเหลือเผ่าพันธุ์อยู่ในปัจจุบันของวงศ์นี้ ซึ่งถือเป็นปลาที่ถือกำเนิดมาตั้งแต่ยุคปลายสมัยไมโอซีนมาจนถึงปัจจุบัน
+                    ปลามูนฟิช หรือ ปลาพระจันทร์ มีรูปร่างกลมแป้น แบนข้างมากเหมือนปลาจะละเม็ด กอรปกับตามผิวหนังจะมีจุดกลมสีขาวที่เมื่อสะท้อนกับแสงเมื่ออยู่ใต้น้ำแล้วจะมีความแวววาวดุจแสงจันทร์ จึงเป็นที่มาของชื่อสามัญ
+                    ครีบทุกครีบเป็นสีแดงสด มีขนาดใหญ่สุดได้ถึง 2 เมตร และมีน้ำหนักกว่า 270 กิโลกรัม แต่ขนาดโดยทั่วไปจะมีน้ำหนักประมาณ 40–80 กิโลกรัม
+                </p>
+                <br>
+                <br>
+            </div>
+
+            <div class=" container mx-auto">
+
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="pics/moonFish.jpg" class="card-img-top">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text">
+                                        ปลามูนฟิช เป็นปลาน้ำลึกในระดับความลึกของน้ำประมาณ 300–1,500 เมตร โดยพบในมหาสมุทรและทะเลเปิดเขตร้อนและกึ่งเขตร้อนทั่วโลก ได้ชื่อว่าเป็นปลาน้ำลึกที่มีสีสันสวยงามที่สุด หากินในเวลากลางคืน 
+                                        โดยกินแพลงก์ตอนสัตว์เป็นอาหาร[4] ด้วยเป็นปลาที่มีปากเล็กและไม่มีฟัน ปกติจะอาศัยอยู่ตามลำพังเพียงตัวเดียว แต่บางครั้งจะรวมฝูงไปกับปลาทูน่าและปลาในวงศ์ปลาอินทรีตัวอื่น ๆ ด้วย เป็นปลาที่ว่ายน้ำได้เชื่องช้า 
+                                        โดยว่ายน้ำได้เพียง 25 เซนติเมตร/วินาที และมีรายงานว่าว่ายน้ำได้เร็วที่สุดประมาณ 4 เมตร/วินาที[5] นอกจากนี้แล้ว ยังถือเป็นสัตว์เลือดอุ่น โดยสามารถรักษาอุณหภูมิของร่างกายให้อบอุ่นกว่าสภาพแวดล้อมใต้น้ำประมาณ 5 องศาเซลเซียส 
+                                        อีกทั้งยังมีเส้นเลือดบริเวณเนื้อเยื่อของเหงือก อยู่ในรูปแบบที่ทำให้เลือดเย็นจากบริเวณเหงือกไปสัมผัสเข้ากับเส้นเลือดอุ่นที่วิ่งสวนทางกันและด้วยกระบวนการนี้ทำให้เลือดที่ออกมาเป็นเลือดอุ่นโดยสามารถเพิ่มอุณหภูมิของหัวใจได้ 
+                                        ซึ่งช่วยทำให้สามารถว่ายลงไปได้ลึกกว่าปลาทั่วไปและอยู่ใต้ทะเลลึกได้นานกว่า
+                                        
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" container mx-auto">
+
+                        <div class="card">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="pics/moonFish1.jpg" class="card-img-top">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        จัดเป็นปลาหายาก และเป็นปลาเศรษฐกิจที่มีความสำคัญ เนื้อแน่นสีแดงสด มีรสชาติอร่อย และอุดมด้วยคุณค่าทางอาหาร คือ โอเมกา 3, โปรตีน, ไนอาซิน, วิตามินบี 6, วิตามินบี 12 แต่มีโซเดียมต่ำ 
+                                        และปลาทั้งตัวจะมีส่วนที่รับประทานได้เพียงร้อยละ 35 เท่านั้น ที่เหลือจะเป็นส่วนที่เนื้อที่แข็งและก้าง
+                                        เป็นปลาราคาแพง ราคาขายกันในประเทศไทยตกอยู่ที่กิโลกรัมละ 2,500 บาท โดยปลาส่วนมากที่จำหน่ายในประเทศไทยจะถูกนำเข้ามาจากนิวซีแลนด์
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        <div class="parallax__layer parallax__layer--back">
+            <img src="pics/f1.png" class="tuni"> 
+            <img src="pics/f1.png" class="tuni2">
+        </div>
+    </div>
+</body>
+<script>
+
+</script>
+
+</html>
