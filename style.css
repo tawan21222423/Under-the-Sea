@@ -374,7 +374,12 @@ footer {
 .kratong2:hover,
 .kratong3:hover,
 .moon1:hover,
-.moon2:hover {
+.moon2:hover,
+.hoi1:hover,
+.hoi2:hover,
+.hoi3:hover,
+.puu1:hover,
+.puu2:hover{
     filter: drop-shadow(0 0 50px crimson);
 }
 
@@ -401,7 +406,12 @@ footer {
 .kratong2,
 .kratong3,
 .moon1,
-.moon2 {
+.moon2,
+.hoi1,
+.hoi2,
+.hoi3,
+.puu1,
+.puu2   {
     transition: .3s;
 }
 
@@ -1004,7 +1014,9 @@ footer div {
 #ifamlion,
 #ifamsun,
 #ifamkra,
-#ifammoon {
+#ifammoon,
+#ifampuu,
+#ifamhoi {
     position: fixed;
     right: -100%;
     visibility: hidden;
@@ -1634,7 +1646,42 @@ iframe {
     opacity: 1;
     z-index: 66;
 }
+.puu1{
+    position: absolute;
+    top: 11800px;
+    width: 10%;
+    z-index: 67;
+}
 
+.puu2{
+    position: absolute;
+    top: 11800px;
+    width: 10%;
+    right: 5%;
+    z-index: 67;
+    transform: scale(-1,1);
+}
+.hoi1{
+    position: absolute;
+    top: 11800px;
+    width: 10%;
+    right: 50%;
+    z-index: 67;
+}
+.hoi2{
+    position: absolute;
+    top: 11820px;
+    width: 10%;
+    right: 60%;
+    z-index: 67;
+}
+.hoi3{
+    position: absolute;
+    top: 11810px;
+    width: 10%;
+    right: 40%;
+    z-index: 67;
+}
 .chalam1 {
     width: 40vw;
     top: 6500px;
