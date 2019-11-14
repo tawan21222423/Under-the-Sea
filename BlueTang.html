@@ -5,17 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <title>Document</title>
 </head>
@@ -29,43 +22,44 @@
             background-size: cover;
             background-image: url("pics/sky.png");
             background-position-y: 30%;
+            cursor: url(bc.cur), auto;
         }
-
+        
         .wapp {
             position: absolute;
             transform: translateZ(999px) scale(.7);
         }
-
+        
         .tunafish {
             width: 80vw;
             position: relative;
             left: 10%;
             backdrop-filter: blur(20px);
-            background-color: rgba(51, 51, 51, 0.5);  
+            background-color: rgba(51, 51, 51, 0.5);
             padding-left: 5%;
             color: white;
             padding-right: 5%;
             border-radius: 20px;
         }
-
+        
         .pragob {
             width: 86%;
             position: relative;
             left: 7%;
             border-radius: 5px;
         }
-
+        
         .title {
             width: 100%;
             position: relative;
             height: 120%;
             margin-top: -10%;
         }
-
+        
         .card {
             margin-top: 5%;
         }
-
+        
         footer div {
             background-color: var(--col-deepblue);
             margin: -5px 0px 0px 0px;
@@ -73,66 +67,67 @@
             color: #fff;
             text-align: center;
             z-index: 33;
-
         }
-
+        
         .svg {
             width: 100%;
             overflow: visible;
             z-index: -5;
-
         }
-
+        
         .wawa {
             top: 70%;
             position: fixed;
         }
-
+        
         .wave {
             animation: wave 20s linear;
             animation-iteration-count: infinite;
             fill: #3498db;
         }
-
+        
         #wave2 {
             animation-duration: 25s;
             animation-direction: reverse;
             opacity: .6;
         }
-
+        
         #wave3 {
             animation-duration: 35s;
             opacity: .3;
         }
-
+        
         #wave4 {
             animation-duration: 40s;
             opacity: .3;
         }
-
+        
         @keyframes wave {
             to {
                 transform: translateX(-100%);
             }
         }
-        .card-img-top{
+        
+        .card-img-top {
             height: 100%;
             border-radius: 20px;
         }
-        .card{
+        
+        .card {
             background-color: #85a8ba;
             color: rgb(255, 255, 255);
             border-radius: 20px;
             backdrop-filter: blur(20px);
-            background-color: rgba(51, 51, 51, 0.5);   
+            background-color: rgba(51, 51, 51, 0.5);
         }
+        
         .parallax {
             perspective: 1px;
             height: 100vh;
             overflow-x: hidden;
             overflow-y: auto;
         }
-
+        
         .parallax__layer {
             position: absolute;
             top: 0;
@@ -140,36 +135,40 @@
             bottom: 0;
             left: 0;
         }
-
+        
         .parallax__layer--base {
             transform: translateZ(0);
         }
-
+        
         .parallax__layer--back {
-            top:200%;
+            top: 200%;
             transform: translateZ(-2px);
             z-index: -1;
             left: -60%;
         }
+        
         .parallax__layer--back2 {
-            top:200%;
+            top: 200%;
             left: 160%;
             transform: translateZ(-3px);
             z-index: -1;
         }
-        .tuni{
+        
+        .tuni {
             width: 10%;
-            transform: scale(-4,4) rotate(25deg);
+            transform: scale(-4, 4) rotate(25deg);
         }
-        .tuni2{
+        
+        .tuni2 {
             width: 10%;
-            transform: scale(4,4) rotate(25deg);
+            transform: scale(4, 4) rotate(25deg);
             position: absolute;
             left: 120%;
         }
-        .tt{
-                width: 100%;
-            }
+        
+        .tt {
+            width: 100%;
+        }
     </style>
     <footer>
         <svg viewBox="0 0 80 998" class="wawa">
@@ -208,14 +207,14 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <p class="card-text">
-                                    ปลาขี้ตังเบ็ดฟ้า หรือชื่อที่นิยมเรียกกันในวงการปลาสวยงามว่า ปลาบลูแทง (อังกฤษ: blue tang, regal tang, palette surgeonfish, royal blue tang, hippo tang, flagtail surgeonfish, blue surgeonfish, Pacific regal blue tang) 
+                                    ปลาขี้ตังเบ็ดฟ้า หรือชื่อที่นิยมเรียกกันในวงการปลาสวยงามว่า ปลาบลูแทง (อังกฤษ: blue tang, regal tang, palette surgeonfish, royal blue tang, hippo tang, flagtail surgeonfish, blue surgeonfish, Pacific regal blue tang)
                                     <br>เป็นปลาทะเลที่อาศัยตามแนวปะการังที่มีสีสันสดใส จึงนิยมเลี้ยงเป็นปลาสวยงาม จัดอยู่ในวงศ์ปลาขี้ตังเบ็ด (Acanthuridae) จัดเป็นปลาเพียงชนิดเดียวในสกุล Paracanthurus
-                                    </p>
-                                        </p>
-                                    </div>
-                                </div>
+                                </p>
+                                </p>
                             </div>
                         </div>
+                    </div>
+                </div>
                 <div class="card">
                     <div class="row no-gutters">
                         <div class="col-md-4">
@@ -224,26 +223,23 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <p class="card-text">
-                                        ปลาขี้ตังเบ็ดฟ้ามีลำตัวสีน้ำเงินเข้ม หางสีเหลือง มีลายสีดำคล้ายจานสี ปลาที่มีลำตัวส่วนล่างเป็นสีเหลืองพบในตะวันตกจนถึงกลางมหาสมุทรอินเดีย 
-                                        มีลำตัวยาว 31 เซนติเมตร มีการกระจายพันธุ์กว้าง พบได้ตลอดภูมิภาคอินโด-แปซิฟิก อย่างตามแนวปะการังในแอฟริกาตะวันออก, ประเทศญี่ปุ่น, ประเทศซามัว, นิวแคลิโดเนีย และเกรตแบร์ริเออร์รีฟ 
-                                        ปลาขี้ตังเบ็ดฟ้ายังไม่ได้รับการประเมินสถานะการอนุรักษ์โดยสหภาพนานาชาติเพื่อการอนุรักษ์ธรรมชาติและทรัพยากรธรรมชาติ (IUCN) 
-                                        ในตู้เลี้ยง ปลาขี้ตังเบ็ดฟ้าได้รับความนิยมไม่ใช่เฉพาะแค่ความสวยงาม แต่ยังสามารถกำจัดตะไคร่น้ำประเภทต่าง ๆ ที่ขึ้นในตู้ (ซึ่งทำให้แลดูสกปรกและอาจส่งผลต่อการเจริญเติบโตของปะการัง) 
-                                        ได้เป็นอย่างดีอีกด้วย เนื่องจากเป็นปลาที่กินพืชเป็นอาหารหลัก และในธรรมชาติ ถือเป็นปลาที่มีความสำคัญต่อระบบนิเวศ
-                                        </p>
-                                    </div>
-                                </div>
+                                    ปลาขี้ตังเบ็ดฟ้ามีลำตัวสีน้ำเงินเข้ม หางสีเหลือง มีลายสีดำคล้ายจานสี ปลาที่มีลำตัวส่วนล่างเป็นสีเหลืองพบในตะวันตกจนถึงกลางมหาสมุทรอินเดีย มีลำตัวยาว 31 เซนติเมตร มีการกระจายพันธุ์กว้าง พบได้ตลอดภูมิภาคอินโด-แปซิฟิก อย่างตามแนวปะการังในแอฟริกาตะวันออก,
+                                    ประเทศญี่ปุ่น, ประเทศซามัว, นิวแคลิโดเนีย และเกรตแบร์ริเออร์รีฟ ปลาขี้ตังเบ็ดฟ้ายังไม่ได้รับการประเมินสถานะการอนุรักษ์โดยสหภาพนานาชาติเพื่อการอนุรักษ์ธรรมชาติและทรัพยากรธรรมชาติ (IUCN) ในตู้เลี้ยง ปลาขี้ตังเบ็ดฟ้าได้รับความนิยมไม่ใช่เฉพาะแค่ความสวยงาม
+                                    แต่ยังสามารถกำจัดตะไคร่น้ำประเภทต่าง ๆ ที่ขึ้นในตู้ (ซึ่งทำให้แลดูสกปรกและอาจส่งผลต่อการเจริญเติบโตของปะการัง) ได้เป็นอย่างดีอีกด้วย เนื่องจากเป็นปลาที่กินพืชเป็นอาหารหลัก และในธรรมชาติ ถือเป็นปลาที่มีความสำคัญต่อระบบนิเวศ
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
         <div class="parallax__layer parallax__layer--back">
-            <img src="pics/f14.png" class="tuni"> 
+            <img src="pics/f14.png" class="tuni">
             <img src="pics/f14.png" class="tuni2">
         </div>
     </div>
 </body>
 <script>
-
 </script>
 
 </html>

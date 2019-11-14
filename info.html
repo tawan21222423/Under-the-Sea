@@ -20,29 +20,29 @@
                 </div>
                 <div class="details">
                     <h2>
-                    นายธนิศร์ สัลเลขนันท์
-                    <br>
-                    <span class="job-title">รหัสนักศึกษา : 61070081</span></h2>
+                        นายธนิศร์ สัลเลขนันท์
+                        <br>
+                        <span class="job-title">รหัสนักศึกษา : 61070081</span></h2>
 
                 </div>
             </div>
         </div>
         <div class="card-wrapper">
 
-                <div class="card">
-    
-                    <div class="card-image">
-                        <img src="pics/get.jpg" alt="profile one">
-                    </div>
-                    <div class="details">
-                        <h2>
-                                นายนราวิชญ์ พัทรพันธ์
+            <div class="card">
+
+                <div class="card-image">
+                    <img src="pics/get.jpg" alt="profile one">
+                </div>
+                <div class="details">
+                    <h2>
+                        นายนราวิชญ์ พัทรพันธ์
                         <br>
                         <span class="job-title">รหัสนักศึกษา : 61070081</span></h2>
-    
-                    </div>
+
                 </div>
             </div>
+        </div>
     </div>
 </body>
 <style>
@@ -51,25 +51,27 @@
         margin: 0;
         box-sizing: border-box;
     }
-
+    
     body {
         font-family: "Open Sans", sans-serif;
         background: #333;
+        cursor: url(bc.cur), auto;
     }
-
+    
     .container {
         max-width: 900px;
         display: flex;
         justify-content: space-evenly;
         margin: 0 auto;
+        cursor: url(bc.cur), auto;
     }
-
+    
     .card-wrapper {
         width: 400px;
         height: 500px;
         position: relative;
     }
-
+    
     .card {
         position: absolute;
         top: 50%;
@@ -83,7 +85,7 @@
         cursor: pointer;
         transition: 0.5s;
     }
-
+    
     .card .card-image {
         position: absolute;
         top: 0px;
@@ -94,16 +96,17 @@
         background-color: #000;
         transition: 0.5s;
     }
-
+    
     .card:hover img {
         opacity: 0.4;
         transition: 0.5s;
     }
-
+    
     .card:hover .card-image {
         transform: translateY(-100px);
         transition: all 0.9s;
     }
+    
     .details {
         position: absolute;
         bottom: 0;
@@ -114,18 +117,17 @@
         z-index: 1;
         padding: 0px;
     }
-
+    
     .details h2 {
         margin: 30px 0;
         padding: 0;
         text-align: center;
     }
-
+    
     .details h2 .job-title {
         color: #333;
         font-weight: 300;
     }
-
 </style>
 
 </html>

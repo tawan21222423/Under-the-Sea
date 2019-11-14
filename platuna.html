@@ -5,17 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <title>Document</title>
 </head>
@@ -29,43 +22,44 @@
             background-size: cover;
             background-image: url("pics/sky.png");
             background-position-y: 30%;
+            cursor: url(bc.cur), auto;
         }
-
+        
         .wapp {
             position: absolute;
             transform: translateZ(999px) scale(.7);
         }
-
+        
         .tunafish {
             width: 80vw;
             position: relative;
             left: 10%;
             backdrop-filter: blur(20px);
-            background-color: rgba(51, 51, 51, 0.5);  
+            background-color: rgba(51, 51, 51, 0.5);
             padding-left: 5%;
             color: white;
             padding-right: 5%;
             border-radius: 20px;
         }
-
+        
         .pragob {
             width: 86%;
             position: relative;
             left: 7%;
             border-radius: 5px;
         }
-
+        
         .title {
             width: 100%;
             position: relative;
             height: 120%;
             margin-top: -10%;
         }
-
+        
         .card {
             margin-top: 5%;
         }
-
+        
         footer div {
             background-color: var(--col-deepblue);
             margin: -5px 0px 0px 0px;
@@ -73,66 +67,67 @@
             color: #fff;
             text-align: center;
             z-index: 33;
-
         }
-
+        
         .svg {
             width: 100%;
             overflow: visible;
             z-index: -5;
-
         }
-
+        
         .wawa {
             top: 70%;
             position: fixed;
         }
-
+        
         .wave {
             animation: wave 20s linear;
             animation-iteration-count: infinite;
             fill: #3498db;
         }
-
+        
         #wave2 {
             animation-duration: 25s;
             animation-direction: reverse;
             opacity: .6;
         }
-
+        
         #wave3 {
             animation-duration: 35s;
             opacity: .3;
         }
-
+        
         #wave4 {
             animation-duration: 40s;
             opacity: .3;
         }
-
+        
         @keyframes wave {
             to {
                 transform: translateX(-100%);
             }
         }
-        .card-img-top{
+        
+        .card-img-top {
             height: 100%;
             border-radius: 20px;
         }
-        .card{
+        
+        .card {
             background-color: #85a8ba;
             color: rgb(255, 255, 255);
             border-radius: 20px;
             backdrop-filter: blur(20px);
-            background-color: rgba(51, 51, 51, 0.5);   
+            background-color: rgba(51, 51, 51, 0.5);
         }
+        
         .parallax {
             perspective: 1px;
             height: 100vh;
             overflow-x: hidden;
             overflow-y: auto;
         }
-
+        
         .parallax__layer {
             position: absolute;
             top: 0;
@@ -140,36 +135,40 @@
             bottom: 0;
             left: 0;
         }
-
+        
         .parallax__layer--base {
             transform: translateZ(0);
         }
-
+        
         .parallax__layer--back {
-            top:200%;
+            top: 200%;
             transform: translateZ(-2px);
             z-index: -1;
             left: -60%;
         }
+        
         .parallax__layer--back2 {
-            top:200%;
+            top: 200%;
             left: 160%;
             transform: translateZ(-3px);
             z-index: -1;
         }
-        .tuni{
+        
+        .tuni {
             width: 10%;
             transform: scale(4) rotate(-25deg);
         }
-        .tuni2{
+        
+        .tuni2 {
             width: 10%;
-            transform: scale(-4,4) rotate(-25deg);
+            transform: scale(-4, 4) rotate(-25deg);
             position: absolute;
             left: 120%;
         }
-        .tt{
-                width: 100%;
-            }
+        
+        .tt {
+            width: 100%;
+        }
     </style>
     <footer>
         <svg viewBox="0 0 80 998" class="wawa">
@@ -209,13 +208,10 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <p class="card-text">
-                                    <p>ปลาทูน่า หรือ ปลาโอ (อังกฤษ: tuna; ญี่ปุ่น: ツナ) เป็นปลาทะเลกลุ่มหนึ่ง ในเผ่า
-                                        Thunnini วงศ์ Scombridae โดยเฉพาะในสกุล Thunnus จัดเป็นปลาเศรษฐกิจที่มีความสำคัญมาก
-                                        <br>เนื้อของปลาทูน่าจะมีสีชมพูหรือแดงเข้ม ต่างจากปลาทั่วไปที่มักจะมีเนื้อสีขาว
-                                        นิยมเอามาทำเป็นปลากระป๋อง หรือปรุงสดต่าง ๆ เช่น ซาชิมิ
-                                        ปลาทูน่า มีลักษณะรวม คือ อาศัยอยู่เป็นฝูงในทะเลหรือมหาสมุทรห่างจากชายฝั่ง มีรูปร่างเพรียวคล้ายกระสวย
+                                    <p>ปลาทูน่า หรือ ปลาโอ (อังกฤษ: tuna; ญี่ปุ่น: ツナ) เป็นปลาทะเลกลุ่มหนึ่ง ในเผ่า Thunnini วงศ์ Scombridae โดยเฉพาะในสกุล Thunnus จัดเป็นปลาเศรษฐกิจที่มีความสำคัญมาก
+                                        <br>เนื้อของปลาทูน่าจะมีสีชมพูหรือแดงเข้ม ต่างจากปลาทั่วไปที่มักจะมีเนื้อสีขาว นิยมเอามาทำเป็นปลากระป๋อง หรือปรุงสดต่าง ๆ เช่น ซาชิมิ ปลาทูน่า มีลักษณะรวม คือ อาศัยอยู่เป็นฝูงในทะเลหรือมหาสมุทรห่างจากชายฝั่ง มีรูปร่างเพรียวคล้ายกระสวย
                                         บริเวณฐานครีบหูมีกลุ่มเกล็ดเล็ก ๆ ครีบหางเว้าลึก เป็นปลาที่ว่ายน้ำได้รวดเร็วว่องไวมาก
-                                </p>
+                                    </p>
                             </div>
                         </div>
                     </div>
@@ -229,13 +225,8 @@
                             <div class="card-body">
                                 <h5 class="card-title">1. ปลาทูน่าครีบเหลือง (Yellowfin Tuna)</h5>
                                 <p class="card-text">
-                                    ชื่อวิทยาศาสตร์ Thunnus albacares เป็นปลาทูน่าขนาดใหญ่ ชอบอาศัยในมหาสมุทรเขตร้อน
-                                    และอบอุ่น
-                                    ในระดับความลึกตั้งแต่ผิวตื้นไปจนถึงลึก 300 เมตร ในช่วงอุณหภูมิ 18-31 องศาเซลเซียส
-                                    เนื้อทูน่าครีบเหลืองจะมีสีแดง
-                                    แต่เมื่อถูกความร้อนจะเปลี่ยนเป็นสีขาว เนื้อแน่น ไม่ยุ่ย
-                                    นิยมนำมารับประทานสดหรือทำเป็นทูน่ากระป๋อง
-                                    แต่นิยมรองมาจากทูน่าครีบยาว
+                                    ชื่อวิทยาศาสตร์ Thunnus albacares เป็นปลาทูน่าขนาดใหญ่ ชอบอาศัยในมหาสมุทรเขตร้อน และอบอุ่น ในระดับความลึกตั้งแต่ผิวตื้นไปจนถึงลึก 300 เมตร ในช่วงอุณหภูมิ 18-31 องศาเซลเซียส เนื้อทูน่าครีบเหลืองจะมีสีแดง แต่เมื่อถูกความร้อนจะเปลี่ยนเป็นสีขาว เนื้อแน่น
+                                    ไม่ยุ่ย นิยมนำมารับประทานสดหรือทำเป็นทูน่ากระป๋อง แต่นิยมรองมาจากทูน่าครีบยาว
                                 </p>
                             </div>
                         </div>
@@ -251,12 +242,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">2. ปลาทูน่าตาโต (Bigeye Tuna)</h5>
                                 <p class="card-text">
-                                    ชื่อวิทยาศาสตร์ Thunnus obesus จัดเป็นปลาทูน่าขนาดใหญ่ ชอบอาศัยในมหาสมุทรเขตร้อน
-                                    และเขตอบอุ่น
-                                    ชอบว่ายน้ำในระดับผิวน้ำจนถึงระดับความลึก 250 เมตร
-                                    เนื้อปลามีสีแดง
-                                    และเมื่อโดนความร้อนจะไม่เปลี่ยนเป็นสีขาวเหมือนปลาทูน่าครีบเหลือง
-                                    จึงไม่นิยมทำเป็นอาหารกระป๋อง
+                                    ชื่อวิทยาศาสตร์ Thunnus obesus จัดเป็นปลาทูน่าขนาดใหญ่ ชอบอาศัยในมหาสมุทรเขตร้อน และเขตอบอุ่น ชอบว่ายน้ำในระดับผิวน้ำจนถึงระดับความลึก 250 เมตร เนื้อปลามีสีแดง และเมื่อโดนความร้อนจะไม่เปลี่ยนเป็นสีขาวเหมือนปลาทูน่าครีบเหลือง จึงไม่นิยมทำเป็นอาหารกระป๋อง
                                     นิยมนำมารับประทานดิบหรือปรุงเป็นอาหารมากกว่า
                                 </p>
                             </div>
@@ -272,12 +258,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">3. ปลาทูน่าครีบยาว (Longfin Tuna)</h5>
                                 <p class="card-text">
-                                    มีชื่อวิทยาศาสตร์ Thunnus alallunga จัดเป็นปลาทูน่าขนาดใหญ่ อาศัยในมหาสมุทรเขตร้อน
-                                    และเขตอบอุ่น
-                                    อาศัยในระดับผิวน้ำจนถึงกลางน้ำที่ระดับความลึก 600 เมตร
-                                    มีเนื้อแน่น รสมันอร่อย จนได้รับขนานนามว่า ไก่ทะเล
-                                    เนื้อเมื่อโดนความร้อนจะเปลี่ยนเป็นสีขาว
-                                    นิยมนำมาผลิตอาหารกระป๋องหรือประกอบอาหาร
+                                    มีชื่อวิทยาศาสตร์ Thunnus alallunga จัดเป็นปลาทูน่าขนาดใหญ่ อาศัยในมหาสมุทรเขตร้อน และเขตอบอุ่น อาศัยในระดับผิวน้ำจนถึงกลางน้ำที่ระดับความลึก 600 เมตร มีเนื้อแน่น รสมันอร่อย จนได้รับขนานนามว่า ไก่ทะเล เนื้อเมื่อโดนความร้อนจะเปลี่ยนเป็นสีขาว นิยมนำมาผลิตอาหารกระป๋องหรือประกอบอาหาร
                                 </p>
                             </div>
                         </div>
@@ -292,13 +273,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">4. ปลาทูน่าครีบสีน้ำเงินใต้ (Southern Bluefin Tuna)</h5>
                                 <p class="card-text">
-                                    มีชื่อวิทยาศาสตร์ Thunnus maccoyii เป็นปลาทูน่าขนาดใหญ่ อาศัยในแถบเขตร้อน และอบอุ่น
-                                    พบแพร่กระจายมากทางตะวันตก
-                                    และตะวันตกเฉียงเหนือของประเทศออสเตรเลีย แถบเกาะทัสมาเนีย และประเทศนิวซีแลนด์
-                                    อุณหภูมิน้ำในช่วง
-                                    13.5-25.5
-                                    องศาเซลเซียส
-                                    มักนำมารับประทานสดหรือนำมาประกอบอาหารมากกว่าทำเป็นอาหารกระป๋อง
+                                    มีชื่อวิทยาศาสตร์ Thunnus maccoyii เป็นปลาทูน่าขนาดใหญ่ อาศัยในแถบเขตร้อน และอบอุ่น พบแพร่กระจายมากทางตะวันตก และตะวันตกเฉียงเหนือของประเทศออสเตรเลีย แถบเกาะทัสมาเนีย และประเทศนิวซีแลนด์ อุณหภูมิน้ำในช่วง 13.5-25.5 องศาเซลเซียส มักนำมารับประทานสดหรือนำมาประกอบอาหารมากกว่าทำเป็นอาหารกระป๋อง
                                 </p>
                             </div>
                         </div>
@@ -314,16 +289,8 @@
                             <div class="card-body">
                                 <h5 class="card-title">5. ปลาทูน่าครีบสีน้ำเงินเหนือ (Northern Bluefin Tuna)</h5>
                                 <p class="card-text">
-                                    มีชื่อวิทยาศาสตร์ Thunnus thynnus จัดเป็นปลาทูน่าขนาดใหญ่ อาศัยในแถบเขตร้อน
-                                    และอบอุ่น
-                                    พบแพร่กระจายเป็น 2
-                                    กลุ่ม คือ
-                                    กลุ่มแรกทางมหาสมุทรแอตแลนติกฝั่งตะวันตก และตะวันออก,
-                                    ทางตอนใต้อ่าวเม็กซิโก-ทะเลแคริบเบียน,
-                                    เวเนซุเอร่า-บราซิล, ทะเลเมดิเตอเรเนียน, ทะเลแอฟริกาใต้ กลุ่มที่ 2
-                                    พบทางแถบมหาสมุทรแปซิฟิกจากอลาสก้าจนถึงทางใต้ของแคลิฟอร์เนีย
-                                    และฝั่งตะวันตกจากเกาะซาคารินจนถึงทางใต้ของทะเลโอค็อตสะกะ และทางตอนเหนือของฟิลิปปินส์
-                                    มักนำมารับประทานสดหรือนำมาประกอบอาหารมากกว่าทำเป็นอาหารกระป๋อง
+                                    มีชื่อวิทยาศาสตร์ Thunnus thynnus จัดเป็นปลาทูน่าขนาดใหญ่ อาศัยในแถบเขตร้อน และอบอุ่น พบแพร่กระจายเป็น 2 กลุ่ม คือ กลุ่มแรกทางมหาสมุทรแอตแลนติกฝั่งตะวันตก และตะวันออก, ทางตอนใต้อ่าวเม็กซิโก-ทะเลแคริบเบียน, เวเนซุเอร่า-บราซิล, ทะเลเมดิเตอเรเนียน, ทะเลแอฟริกาใต้
+                                    กลุ่มที่ 2 พบทางแถบมหาสมุทรแปซิฟิกจากอลาสก้าจนถึงทางใต้ของแคลิฟอร์เนีย และฝั่งตะวันตกจากเกาะซาคารินจนถึงทางใต้ของทะเลโอค็อตสะกะ และทางตอนเหนือของฟิลิปปินส์ มักนำมารับประทานสดหรือนำมาประกอบอาหารมากกว่าทำเป็นอาหารกระป๋อง
                                 </p>
                             </div>
                         </div>
@@ -338,12 +305,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">6. ปลาโอแถบ (Skipjack Tuna)</h5>
                                 <p class="card-text">
-                                    มีชื่อวิทยาศาสตร์ Kutsuwonus peramis จัดเป็นปลาทูน่าขนาดเล็ก อาศัยในแถบเขตร้อน
-                                    และอบอุ่น ชอบว่ายน้ำในระดับผิวน้ำตื้นจนถึงความลึก 260 เมตร อุณหภูมิน้ำ 20-24
-                                    องศาเซลเซียส
-
-                                    มักนำมารับประทานสดหรือนำมาทำปลากระป๋องทูน่า จัดเป็นปลาที่มีการจับ
-                                    และนำมาแปรรูปมากที่สุดของพันธุ์ปลาทูน่า
+                                    มีชื่อวิทยาศาสตร์ Kutsuwonus peramis จัดเป็นปลาทูน่าขนาดเล็ก อาศัยในแถบเขตร้อน และอบอุ่น ชอบว่ายน้ำในระดับผิวน้ำตื้นจนถึงความลึก 260 เมตร อุณหภูมิน้ำ 20-24 องศาเซลเซียส มักนำมารับประทานสดหรือนำมาทำปลากระป๋องทูน่า จัดเป็นปลาที่มีการจับ และนำมาแปรรูปมากที่สุดของพันธุ์ปลาทูน่า
                                 </p>
                             </div>
                         </div>
@@ -358,17 +320,8 @@
                             <div class="card-body">
                                 <h5 class="card-title">7. ปลาโอดำ (Lungtail Tuna)</h5>
                                 <p class="card-text">
-                                    มี ชื่อวิทยาศาสตร์ Thunnus tunggol จัดเป็นปลาทูน่าขนาดเล็ก อาศัยในแถบเขตร้อน
-                                    และอบอุ่น
-                                    ชอบว่ายน้ำในระดับผิวน้ำตื้นจนถึงความลึก 200 เมตร
-                                    พบกระจายมากในแถบประเทศญี่ปุ่น ประเทศเอเชียตะวันออกเฉียงใต้ ประเทศปาปัวกีนี
-                                    ประเทศออสเตรเลีย
-                                    ไทย อินเดีย
-                                    เป็นต้น
-
-                                    ปลาโอแถบ พบขนาดใหญ่สุดประมาณ 130 เซนติเมตร น้ำหนักประมาณ 30-35 กิโลกรัม
-                                    ขนาดทั่วไปที่พบมีความยาวประมาณ 40-70
-                                    เซนติเมตร มักนำมารับประทานสดหรือนำมาทำปลากระป๋องทูน่า
+                                    มี ชื่อวิทยาศาสตร์ Thunnus tunggol จัดเป็นปลาทูน่าขนาดเล็ก อาศัยในแถบเขตร้อน และอบอุ่น ชอบว่ายน้ำในระดับผิวน้ำตื้นจนถึงความลึก 200 เมตร พบกระจายมากในแถบประเทศญี่ปุ่น ประเทศเอเชียตะวันออกเฉียงใต้ ประเทศปาปัวกีนี ประเทศออสเตรเลีย ไทย อินเดีย เป็นต้น ปลาโอแถบ
+                                    พบขนาดใหญ่สุดประมาณ 130 เซนติเมตร น้ำหนักประมาณ 30-35 กิโลกรัม ขนาดทั่วไปที่พบมีความยาวประมาณ 40-70 เซนติเมตร มักนำมารับประทานสดหรือนำมาทำปลากระป๋องทูน่า
                                 </p>
                             </div>
                         </div>
@@ -377,13 +330,12 @@
             </div>
         </div>
         <div class="parallax__layer parallax__layer--back">
-            <img src="pics/f1.png" class="tuni"> 
+            <img src="pics/f1.png" class="tuni">
             <img src="pics/f1.png" class="tuni2">
         </div>
     </div>
 </body>
 <script>
-
 </script>
 
 </html>

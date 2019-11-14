@@ -5,17 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
@@ -28,13 +21,14 @@
             background-size: cover;
             background-color: rgb(29, 29, 29);
             background-position-y: 30%;
+            cursor: url(bc.cur), auto;
         }
-
+        
         .wapp {
             position: absolute;
             transform: translateZ(999px) scale(.7);
         }
-
+        
         .lomafish {
             width: 80vw;
             position: relative;
@@ -46,25 +40,25 @@
             padding-right: 5%;
             border-radius: 20px;
         }
-
+        
         .pragob {
             width: 86%;
             position: relative;
             left: 7%;
             border-radius: 5px;
         }
-
+        
         .title {
             width: 100%;
             position: relative;
             height: 120%;
             margin-top: -10%;
         }
-
+        
         .card {
             margin-top: 5%;
         }
-
+        
         footer div {
             background-color: var(--col-deepblue);
             margin: -5px 0px 0px 0px;
@@ -72,54 +66,52 @@
             color: #fff;
             text-align: center;
             z-index: 33;
-
         }
-
+        
         .svg {
             width: 100%;
             overflow: visible;
             z-index: -5;
-
         }
-
+        
         .wawa {
             top: 70%;
             position: fixed;
         }
-
+        
         .wave {
             animation: wave 20s linear;
             animation-iteration-count: infinite;
             fill: #1f5d86;
         }
-
+        
         #wave2 {
             animation-duration: 25s;
             animation-direction: reverse;
             opacity: .6;
         }
-
+        
         #wave3 {
             animation-duration: 35s;
             opacity: .3;
         }
-
+        
         #wave4 {
             animation-duration: 40s;
             opacity: .3;
         }
-
+        
         @keyframes wave {
             to {
                 transform: translateX(-100%);
             }
         }
-
+        
         .card-img {
             height: 100%;
             border-radius: 20px;
         }
-
+        
         .card {
             background-color: #85a8ba;
             color: rgb(255, 255, 255);
@@ -127,14 +119,14 @@
             backdrop-filter: blur(20px);
             background-color: rgba(51, 51, 51, 0.5);
         }
-
+        
         .parallax {
             perspective: 1px;
             height: 100vh;
             overflow-x: hidden;
             overflow-y: auto;
         }
-
+        
         .parallax__layer {
             position: absolute;
             top: 0;
@@ -142,37 +134,37 @@
             bottom: 0;
             left: 0;
         }
-
+        
         .parallax__layer--base {
             transform: translateZ(0);
         }
-
+        
         .parallax__layer--back {
             top: 200%;
             transform: translateZ(-2px);
             z-index: -1;
             left: -60%;
         }
-
+        
         .parallax__layer--back2 {
             top: 200%;
             left: 160%;
             transform: translateZ(-3px);
             z-index: -1;
         }
-
+        
         .tuni {
             width: 10%;
             transform: scale(-8, 8) rotate(25deg);
         }
-
+        
         .tuni2 {
             width: 10%;
             transform: scale(8, 8) rotate(25deg);
             position: absolute;
             left: 120%;
         }
-
+        
         .tt {
             width: 100%;
         }
@@ -213,16 +205,9 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <p class="card-text">
-                                    ปลาฉลามเมกาเมาท์ (อังกฤษ: Megamouth shark; ชื่อวิทยาศาสตร์: Megachasma pelagios)
-                                    เป็นปลาฉลามน้ำลึกขนาดใหญ่ที่พบได้ยากมาก หลังจากพบครั้งแรกเมื่อ ค.ศ. 1976
-                                    จากการติดกับสมอของเรือรบ AFB 14 ของกองทัพเรือสหรัฐ
-                                    เมื่อกว้านขึ้นมา
-                                    พบเป็นซากปลาฉลามขนาดใหญ่ที่ไม่มีใครรู้จักเหมือนสัตว์ประหลาดขนาดความยาวประมาณ 4.5
-                                    เมตร น้ำหนักราว 3-4 ตัน มีจุดเด่น คือ ปากที่กว้างใหญ่มากและฟันซี่แหลม ๆ
-                                    เหมือนเข็มอยู่ทั้งหมด 7 แถว
-                                    ซึ่งมีความยาวไม่เกิน 5 มิลลิเมตร นักวิทยาศาสตร์เมื่อได้ศึกษาแล้วพบว่าเป็นปลาชนิดใหม่
-                                    และมีจุดที่แตกต่างไปจากปลาฉลามทั่วไป จึงจัดให้อยู่ในสกุล Megachasma และวงศ์
-                                    Megachasmidae ซึ่งยังมีเพียงชนิดนี้ชนิดเดียวเท่านั้น
+                                    ปลาฉลามเมกาเมาท์ (อังกฤษ: Megamouth shark; ชื่อวิทยาศาสตร์: Megachasma pelagios) เป็นปลาฉลามน้ำลึกขนาดใหญ่ที่พบได้ยากมาก หลังจากพบครั้งแรกเมื่อ ค.ศ. 1976 จากการติดกับสมอของเรือรบ AFB 14 ของกองทัพเรือสหรัฐ เมื่อกว้านขึ้นมา พบเป็นซากปลาฉลามขนาดใหญ่ที่ไม่มีใครรู้จักเหมือนสัตว์ประหลาดขนาดความยาวประมาณ
+                                    4.5 เมตร น้ำหนักราว 3-4 ตัน มีจุดเด่น คือ ปากที่กว้างใหญ่มากและฟันซี่แหลม ๆ เหมือนเข็มอยู่ทั้งหมด 7 แถว ซึ่งมีความยาวไม่เกิน 5 มิลลิเมตร นักวิทยาศาสตร์เมื่อได้ศึกษาแล้วพบว่าเป็นปลาชนิดใหม่ และมีจุดที่แตกต่างไปจากปลาฉลามทั่วไป
+                                    จึงจัดให้อยู่ในสกุล Megachasma และวงศ์ Megachasmidae ซึ่งยังมีเพียงชนิดนี้ชนิดเดียวเท่านั้น
                                 </p>
                             </div>
                         </div>
@@ -236,20 +221,10 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <p class="card-text">
-                                    ปัจจุบัน เป็นปลาที่ยังพบได้น้อย โดยมีรายงานการพบเห็นและเก็บตัวอย่าง 39 ครั้ง
-                                    และมีการบันทึกภาพไว้ได้ 3 ครั้ง (ตามข้อมูลเมื่อเดือนพฤษภาคม ค.ศ. 2007) โดย 1 ใน 3
-                                    ของการพบตัวอย่างปรากฏในเขตน่านน้ำญี่ปุ่น
-                                    ปลาฉลามชนิดนี้กินแพลงก์ตอนเป็นอาหารเหมือนปลาฉลามบาสกิ้น และปลาฉลามวาฬ
-                                    โดยมีปากกว้างใหญ่เพื่อกลืนเอาน้ำเข้าไปมาก ๆ
-                                    แล้วกรองน้ำออกให้เหลือแต่แพลงก์ตอนและแมงกะพรุน
-                                    ส่วนหัวขนาดใหญ่และริมฝีปากเป็นผิวหนังเหนียวจัดเป็นลักษณะเด่นของปลาฉลามชนิดนี้
-                                    นอกจากนี้แล้ว จากการสังเกตของนักวิทยาศาสตร์ ดร.ลีห์ตัน อาร์. เทย์เลอร์
-                                    ซึ่งเป็นผู้ตรวจซากของปลาฉลามเมกาเมาท์ครั้งแรกที่ถูกพบในปี ค.ศ. 1976
-                                    พบว่าในเพดานปากกรามบนจะมีพื้นผิวสีเงินแวววาวและจะสะท้อนแสงให้สว่างได้มากยิ่งขึ้นเมื่อต้องกับแสง
-                                    สันนิษฐานว่ามีไว้สำหรับเรืองแสงในน้ำลึกเพื่อล่อเหยื่อ
-                                    ซึ่งได้แก่ แพลงก์ตอน และกุ้งเคอยชนิดต่าง ๆ ให้เข้ามาเล่นกับแสงและอ้าปากกินเป็นอาหาร
-                                    ในเวลากลางคืนที่เมื่อกุ้งเคอยขึ้นมาใกล้ผิวน้ำในระดับความลึกไม่เกิน 20 เมตร
-                                    เพื่อกินอาหาร ปลาฉลามเมกาเมาท์ก็จะว่ายตามขึ้นมาเพื่อกินกุ้งเคอยด้วย
+                                    ปัจจุบัน เป็นปลาที่ยังพบได้น้อย โดยมีรายงานการพบเห็นและเก็บตัวอย่าง 39 ครั้ง และมีการบันทึกภาพไว้ได้ 3 ครั้ง (ตามข้อมูลเมื่อเดือนพฤษภาคม ค.ศ. 2007) โดย 1 ใน 3 ของการพบตัวอย่างปรากฏในเขตน่านน้ำญี่ปุ่น ปลาฉลามชนิดนี้กินแพลงก์ตอนเป็นอาหารเหมือนปลาฉลามบาสกิ้น
+                                    และปลาฉลามวาฬ โดยมีปากกว้างใหญ่เพื่อกลืนเอาน้ำเข้าไปมาก ๆ แล้วกรองน้ำออกให้เหลือแต่แพลงก์ตอนและแมงกะพรุน ส่วนหัวขนาดใหญ่และริมฝีปากเป็นผิวหนังเหนียวจัดเป็นลักษณะเด่นของปลาฉลามชนิดนี้ นอกจากนี้แล้ว จากการสังเกตของนักวิทยาศาสตร์
+                                    ดร.ลีห์ตัน อาร์. เทย์เลอร์ ซึ่งเป็นผู้ตรวจซากของปลาฉลามเมกาเมาท์ครั้งแรกที่ถูกพบในปี ค.ศ. 1976 พบว่าในเพดานปากกรามบนจะมีพื้นผิวสีเงินแวววาวและจะสะท้อนแสงให้สว่างได้มากยิ่งขึ้นเมื่อต้องกับแสง สันนิษฐานว่ามีไว้สำหรับเรืองแสงในน้ำลึกเพื่อล่อเหยื่อ
+                                    ซึ่งได้แก่ แพลงก์ตอน และกุ้งเคอยชนิดต่าง ๆ ให้เข้ามาเล่นกับแสงและอ้าปากกินเป็นอาหาร ในเวลากลางคืนที่เมื่อกุ้งเคอยขึ้นมาใกล้ผิวน้ำในระดับความลึกไม่เกิน 20 เมตร เพื่อกินอาหาร ปลาฉลามเมกาเมาท์ก็จะว่ายตามขึ้นมาเพื่อกินกุ้งเคอยด้วย
                                 </p>
                             </div>
                         </div>

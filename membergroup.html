@@ -7,17 +7,10 @@
     <title>Document</title>
 
     <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <style>
         body {
             background-image: url("pics/sky.png");
@@ -25,9 +18,9 @@
             background-repeat: no-repeat;
             overflow-x: hidden;
             position: relative;
+            cursor: url(bc.cur), auto;
         }
-
-
+        
         footer div {
             background-color: var(--col-deepblue);
             margin: -5px 0px 0px 0px;
@@ -35,60 +28,58 @@
             color: #fff;
             text-align: center;
             z-index: 33;
-
         }
-
+        
         .svg {
             width: 100%;
             overflow: visible;
             z-index: 5;
-
         }
-
+        
         .wawa {
             top: 75%;
             position: fixed;
         }
-
+        
         .wawa2 {
             top: 75%;
             position: fixed;
             z-index: -2;
         }
-
-
+        
         .wave {
             animation: wave 20s linear;
             animation-iteration-count: infinite;
             fill: #003674;
         }
-
+        
         #wave2 {
             animation-duration: 25s;
             animation-direction: reverse;
             opacity: .6;
         }
-
+        
         #wave3 {
             animation-duration: 35s;
             opacity: .3;
         }
-
+        
         #wave4 {
             animation-duration: 40s;
             opacity: .3;
         }
-
+        
         @keyframes wave {
             to {
                 transform: translateX(-100%);
             }
         }
+        
         .card {
             margin: 1%;
             width: 30vw;
         }
-
+        
         .title {
             width: 50vw;
             height: 20vh;
@@ -103,19 +94,21 @@
             backdrop-filter: blur(20px);
             transition: 0.5s;
         }
-        .title:hover{
+        
+        .title:hover {
             background-color: rgba(66, 66, 66, 0.26);
         }
-        .title:active{
-            transform: scale(0.8,0.8);
+        
+        .title:active {
+            transform: scale(0.8, 0.8);
         }
+        
         .asw {
             width: 100%;
             left: 10%;
             position: absolute;
-
         }
-
+        
         .card {
             transition: 0.3s;
             backdrop-filter: blur(20px);
@@ -124,11 +117,11 @@
             font-size: 22px;
             border-radius: 20px;
         }
-
+        
         .card:hover {
             transform: scale(1.1);
         }
-
+        
         .card-img-top {
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;

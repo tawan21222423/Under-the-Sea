@@ -5,17 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <title>Document</title>
 </head>
@@ -29,43 +22,44 @@
             background-size: cover;
             background-color: rgb(29, 29, 29);
             background-position-y: 30%;
+            cursor: url(bc.cur), auto;
         }
-
+        
         .wapp {
             position: absolute;
             transform: translateZ(999px) scale(.7);
         }
-
+        
         .tunafish {
             width: 80vw;
             position: relative;
             left: 10%;
             backdrop-filter: blur(20px);
-            background-color: rgba(51, 51, 51, 0.5);  
+            background-color: rgba(51, 51, 51, 0.5);
             padding-left: 5%;
             color: white;
             padding-right: 5%;
             border-radius: 20px;
         }
-
+        
         .pragob {
             width: 86%;
             position: relative;
             left: 7%;
             border-radius: 5px;
         }
-
+        
         .title {
             width: 100%;
             position: relative;
             height: 120%;
             margin-top: -10%;
         }
-
+        
         .card {
             margin-top: 5%;
         }
-
+        
         footer div {
             background-color: var(--col-deepblue);
             margin: -5px 0px 0px 0px;
@@ -73,69 +67,71 @@
             color: #fff;
             text-align: center;
             z-index: 33;
-
         }
-
+        
         .svg {
             width: 100%;
             overflow: visible;
             z-index: -5;
-
         }
-
+        
         .wawa {
             top: 70%;
             position: fixed;
         }
-
+        
         .wave {
             animation: wave 20s linear;
             animation-iteration-count: infinite;
             fill: #660404;
         }
-
+        
         #wave2 {
             animation-duration: 25s;
             animation-direction: reverse;
             opacity: .6;
         }
-
+        
         #wave3 {
             animation-duration: 35s;
             opacity: .3;
         }
-
+        
         #wave4 {
             animation-duration: 40s;
             opacity: .3;
         }
-
+        
         @keyframes wave {
             to {
                 transform: translateX(-100%);
             }
         }
-        .card-img-top{
+        
+        .card-img-top {
             height: 100%;
             border-radius: 20px;
         }
-        .card-img{
+        
+        .card-img {
             border-radius: 20px;
         }
-        .card{
+        
+        .card {
             background-color: #85a8ba;
             color: rgb(255, 255, 255);
             border-radius: 20px;
             backdrop-filter: blur(20px);
-            background-color: rgba(51, 51, 51, 0.5);   
+            background-color: rgba(51, 51, 51, 0.5);
         }
+        
         .parallax {
             perspective: 1px;
             height: 100vh;
             overflow-x: hidden;
             overflow-y: auto;
         }
-
+        
         .parallax__layer {
             position: absolute;
             top: 0;
@@ -143,36 +139,40 @@
             bottom: 0;
             left: 0;
         }
-
+        
         .parallax__layer--base {
             transform: translateZ(0);
         }
-
+        
         .parallax__layer--back {
-            top:200%;
+            top: 200%;
             transform: translateZ(-2px);
             z-index: -1;
             left: -60%;
         }
+        
         .parallax__layer--back2 {
-            top:200%;
+            top: 200%;
             left: 160%;
             transform: translateZ(-3px);
             z-index: -1;
         }
-        .tuni{
+        
+        .tuni {
             width: 10%;
-            transform: scale(-4,4) rotate(25deg);
+            transform: scale(-4, 4) rotate(25deg);
         }
-        .tuni2{
+        
+        .tuni2 {
             width: 10%;
-            transform: scale(4,4) rotate(25deg);
+            transform: scale(4, 4) rotate(25deg);
             position: absolute;
             left: 120%;
         }
-        .tt{
-                width: 100%;
-            }
+        
+        .tt {
+            width: 100%;
+        }
     </style>
     <footer>
         <svg viewBox="0 0 80 998" class="wawa">
@@ -204,25 +204,23 @@
             </div>
 
             <div class=" container mx-auto">
-                    <div class="card">
-                            <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <img src="pics/fangg.jpg" class="card-img-top">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <p class="card-text">
-                                                ปลาแฟงค์ทูธ (อังกฤษ: fangtooth ) เป็นปลาทะเลลึกชนิดหนึ่ง อาศัยอยู่ในมหาสมุทรแปซิฟิกเขตร้อนและมหาสมุทรแอตแลนติก มีรูปร่างประหลาดและน่ากลัว พวกมันเขี้ยวยาว 2 ซี่ ตัวที่โตเต็มวัยมีหลากสีตั้งแต่ 
-                                                น้ำตาลแก่ จนถึงดำ ในขณะที่ตัวที่อายุยังน้อยมีลักษณะต่างกันโดยสิ้นเชิง เพราะมีสีเทาสว่างและมีหนามยาวบนหัวหรือ ดวงตาของมันมีขนาดเล็กขากรรไกรขนาดใหญ่และเขี้ยวที่ยาวและคม รูปร่างเหมือนสัตว์ประหลาด 
-                                                ตัวโตเต็มวัยของมันก็มีขนาดความยาวแค่ 6 นิ้ว แถมมีลำตัวสั้นและหัวขนาดใหญ่
-                                                <br><br>
-                                                แฟงค์ทูธถูกตั้งชื่อตามตัวปลาที่มีฟันยาวและคม เหมือนเขี้ยวเรียงตัวกันอยู่ในปากขนาดใหญ่ แฟงค์ทูธเป็นอีกสายพันธุ์สุดขั้วที่อาศัยอยู่ใต้ทะเลลึกลงไปถึง 16,000 ฟุต ซึ่งความลึกระดับนี้มีแรงดันน้ำสูงและอุณหภูมิต่ำ 
-                                                อาหารเป็นสิ่งหายาก ดังนั้นแฟงค์ทูธจึงกินทุกอย่างที่หาได้ และอาหารส่วนใหญ่ก็ตกลงมาจากทะเลด้านบน
-                                        </p>
-                                    </div>
-                                </div>
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="pics/fangg.jpg" class="card-img-top">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    ปลาแฟงค์ทูธ (อังกฤษ: fangtooth ) เป็นปลาทะเลลึกชนิดหนึ่ง อาศัยอยู่ในมหาสมุทรแปซิฟิกเขตร้อนและมหาสมุทรแอตแลนติก มีรูปร่างประหลาดและน่ากลัว พวกมันเขี้ยวยาว 2 ซี่ ตัวที่โตเต็มวัยมีหลากสีตั้งแต่ น้ำตาลแก่ จนถึงดำ ในขณะที่ตัวที่อายุยังน้อยมีลักษณะต่างกันโดยสิ้นเชิง
+                                    เพราะมีสีเทาสว่างและมีหนามยาวบนหัวหรือ ดวงตาของมันมีขนาดเล็กขากรรไกรขนาดใหญ่และเขี้ยวที่ยาวและคม รูปร่างเหมือนสัตว์ประหลาด ตัวโตเต็มวัยของมันก็มีขนาดความยาวแค่ 6 นิ้ว แถมมีลำตัวสั้นและหัวขนาดใหญ่
+                                    <br><br> แฟงค์ทูธถูกตั้งชื่อตามตัวปลาที่มีฟันยาวและคม เหมือนเขี้ยวเรียงตัวกันอยู่ในปากขนาดใหญ่ แฟงค์ทูธเป็นอีกสายพันธุ์สุดขั้วที่อาศัยอยู่ใต้ทะเลลึกลงไปถึง 16,000 ฟุต ซึ่งความลึกระดับนี้มีแรงดันน้ำสูงและอุณหภูมิต่ำ
+                                    อาหารเป็นสิ่งหายาก ดังนั้นแฟงค์ทูธจึงกินทุกอย่างที่หาได้ และอาหารส่วนใหญ่ก็ตกลงมาจากทะเลด้านบน
+                                </p>
                             </div>
                         </div>
+                    </div>
+                </div>
 
                 <div class="card">
                     <div class="row no-gutters">
@@ -232,11 +230,10 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <p class="card-text">
-                                    พวกมันมีฟันขนาดใหญ่ที่ไม่เข้ากับรูปร่าง หัวและกรามมีขนาดใหญ่มีลักษณะเปราะบางมีรอยบวมและรอยหยักที่ถูกปกคลุมด้วยผิวหนังบาง ๆ มีสีน้ำตาลเข้มจนถึงสีดำและมีการบีบอัดตามแนวขวางลึกตรงใบหน้าและค่อย ๆ เรียวเล็กลงไปเรื่อย ๆ 
-                                    จนถึงหางมีดวงตาค่อนข้างเล็กอยู่บนหัว ครีบมีขนาดเล็กเรียบง่าย เกล็ดจะฝังอยู่ในผิวหนังและมีรูปแบบเป็นแผ่นบาง ๆ
-                                    <br><br>
-                                    ช่วงตัวอ่อนและวัยเจริญพันธุ์จะอยู่บริเวณน้ำที่มีความลึกระหว่าง 200 ถึง 2,000 เมตร (660 และ 6,560 ฟุต) จากนั้นจะมีการโยกย้ายถิ่นเหมือนปลาทะเลลึกชนิดอื่นในช่วงโตเต็มวัยซึ่งจะพบได้บ่อยบริเวณน้ำลึก 5,000 เมตร (16,000 ฟุต) 
-                                    และจะขึ้นมาบนผิวน้ำในเวลาเย็น อาจรวมกันเป็นฝูงหรือมาแค่ตัวเดียวเพื่อหาอาหารและจะกลับลงน้ำลึกในเวลาเช้า
+                                    พวกมันมีฟันขนาดใหญ่ที่ไม่เข้ากับรูปร่าง หัวและกรามมีขนาดใหญ่มีลักษณะเปราะบางมีรอยบวมและรอยหยักที่ถูกปกคลุมด้วยผิวหนังบาง ๆ มีสีน้ำตาลเข้มจนถึงสีดำและมีการบีบอัดตามแนวขวางลึกตรงใบหน้าและค่อย ๆ เรียวเล็กลงไปเรื่อย ๆ จนถึงหางมีดวงตาค่อนข้างเล็กอยู่บนหัว
+                                    ครีบมีขนาดเล็กเรียบง่าย เกล็ดจะฝังอยู่ในผิวหนังและมีรูปแบบเป็นแผ่นบาง ๆ
+                                    <br><br> ช่วงตัวอ่อนและวัยเจริญพันธุ์จะอยู่บริเวณน้ำที่มีความลึกระหว่าง 200 ถึง 2,000 เมตร (660 และ 6,560 ฟุต) จากนั้นจะมีการโยกย้ายถิ่นเหมือนปลาทะเลลึกชนิดอื่นในช่วงโตเต็มวัยซึ่งจะพบได้บ่อยบริเวณน้ำลึก 5,000 เมตร (16,000
+                                    ฟุต) และจะขึ้นมาบนผิวน้ำในเวลาเย็น อาจรวมกันเป็นฝูงหรือมาแค่ตัวเดียวเพื่อหาอาหารและจะกลับลงน้ำลึกในเวลาเช้า
                                 </p>
                             </div>
                         </div>
@@ -250,8 +247,8 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <p class="card-text">
-                                    ความถี่และเวลาในการวางไข่ของปลาแฟงค์ทูธนั้นยังไม่เป็นที่แน่นอนเวลาปลาแฟงค์ทูธวางไข่พวกมันจะทิ้งไข่เอาไวจนพวกมันฟักออกมาเองพอปลาแฟงค์ทูธที่มีขนาดประมาณ 8 เซนติเมตร (3.1 นิ้ว) พวกมันจะว่ายลงไปในน้ำลึกตั้งแต่เดือนมิถุนายนถึงเดือนสิงหาคม 
-                                    เมื่อปลาแฟงค์ทูธมีความยาว 16 ซม. (6.3 นิ้ว) นั้นจะเริ่มเข้าสู่ช่วงโตเต็มวัย แต่การเวลาในการเจริญเติบโตนั้นจะช้าเช่นเดียวกับปลาทะเลน้ำลึกชนิดอื่นๆ
+                                    ความถี่และเวลาในการวางไข่ของปลาแฟงค์ทูธนั้นยังไม่เป็นที่แน่นอนเวลาปลาแฟงค์ทูธวางไข่พวกมันจะทิ้งไข่เอาไวจนพวกมันฟักออกมาเองพอปลาแฟงค์ทูธที่มีขนาดประมาณ 8 เซนติเมตร (3.1 นิ้ว) พวกมันจะว่ายลงไปในน้ำลึกตั้งแต่เดือนมิถุนายนถึงเดือนสิงหาคม เมื่อปลาแฟงค์ทูธมีความยาว
+                                    16 ซม. (6.3 นิ้ว) นั้นจะเริ่มเข้าสู่ช่วงโตเต็มวัย แต่การเวลาในการเจริญเติบโตนั้นจะช้าเช่นเดียวกับปลาทะเลน้ำลึกชนิดอื่นๆ
                                 </p>
                             </div>
                         </div>
@@ -260,13 +257,12 @@
             </div>
         </div>
         <div class="parallax__layer parallax__layer--back">
-            <img src="pics/fang.png" class="tuni"> 
+            <img src="pics/fang.png" class="tuni">
             <img src="pics/fang.png" class="tuni2">
         </div>
     </div>
 </body>
 <script>
-
 </script>
 
 </html>

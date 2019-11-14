@@ -83,6 +83,10 @@ th {
     fill: rgb(255, 255, 255, 0);
 }
 
+.sli:hover {
+    cursor: url(rc.cur), auto;
+}
+
 .ul {
     position: fixed;
     right: 1rem;
@@ -256,7 +260,7 @@ body {
     position: absolute;
     opacity: 0.3;
     top: 1700px;
-    left: -20;
+    left: -35px;
     z-index: 34;
 }
 
@@ -445,6 +449,7 @@ footer {
 .fang1:hover,
 .fang2:hover {
     filter: drop-shadow(0 0 50px crimson);
+    cursor: url(rc.cur), auto;
 }
 
 .plaangler,
@@ -1116,9 +1121,11 @@ footer div {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
-audio{
+
+audio {
     position: absolute;
 }
+
 iframe {
     width: 100%;
     height: 100%;
@@ -1131,6 +1138,13 @@ iframe {
     visibility: hidden;
     z-index: 901;
     width: 10%;
+    opacity: 0.8;
+    transition: 0.3;
+}
+
+#close:hover {
+    cursor: url(rc.cur), auto;
+    opacity: 1;
 }
 
 .plavan {
@@ -2670,6 +2684,7 @@ iframe {
     background-color: rgb(43, 43, 43);
     color: rgb(216, 216, 216);
     border: white 2px solid;
+    cursor: url(rc.cur), auto;
 }
 
 audio {
