@@ -2669,6 +2669,7 @@ iframe {
     border: white 2px solid;
 }
 
-.bgs {
+audio {
     padding: 15px;
+    position: absolute;
 }
