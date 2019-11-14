@@ -3,6 +3,7 @@
     position: relative;
     height: 120%;
     margin-top: -10%;
+    z-index: 99;
 }
 .tt {
     width: 100%;
@@ -1198,7 +1199,8 @@ footer div {
 #ifamtita,
 #ifamkrapun,
 #ifamdao,
-#ifamtao {
+#ifamtao,
+#ifamfang {
     position: fixed;
     right: -100%;
     visibility: hidden;
@@ -2908,7 +2910,7 @@ iframe {
     }
 
     58% {
-        top: 19900px;
+        top: 18600px;
         left: 80%;
         transform: scale(-1, 1);
     }

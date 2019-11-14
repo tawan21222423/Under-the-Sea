@@ -27,7 +27,7 @@
             overflow: hidden;
             background-attachment: fixed;
             background-size: cover;
-            background-image: url("pics/sky.png");
+            background-color: rgb(29, 29, 29);
             background-position-y: 30%;
         }
 
@@ -92,7 +92,7 @@
         .wave {
             animation: wave 20s linear;
             animation-iteration-count: infinite;
-            fill: #3498db;
+            fill: #660404;
         }
 
         #wave2 {
@@ -118,6 +118,9 @@
         }
         .card-img-top{
             height: 100%;
+            border-radius: 20px;
+        }
+        .card-img{
             border-radius: 20px;
         }
         .card{
@@ -160,11 +163,11 @@
         }
         .tuni{
             width: 10%;
-            transform: scale(4) rotate(-25deg);
+            transform: scale(-4,4) rotate(25deg);
         }
         .tuni2{
             width: 10%;
-            transform: scale(-4,4) rotate(-25deg);
+            transform: scale(4,4) rotate(25deg);
             position: absolute;
             left: 120%;
         }
@@ -198,25 +201,29 @@
     <div class="parallax">
         <div class="parallax__layer parallax__layer--base">
             <div class="title">
-                <img src="" class="tt">
-            </div>
-            <div class="tunafish">
-                <br>
-                <br>
-
-                <br>
-                <p> ปลาแฟงค์ทูธ (อังกฤษ: fangtooth ) เป็นปลาทะเลลึกชนิดหนึ่ง อาศัยอยู่ในมหาสมุทรแปซิฟิกเขตร้อนและมหาสมุทรแอตแลนติก มีรูปร่างประหลาดและน่ากลัว พวกมันเขี้ยวยาว 2 ซี่ ตัวที่โตเต็มวัยมีหลากสีตั้งแต่ 
-                    น้ำตาลแก่ จนถึงดำ ในขณะที่ตัวที่อายุยังน้อยมีลักษณะต่างกันโดยสิ้นเชิง เพราะมีสีเทาสว่างและมีหนามยาวบนหัวหรือ ดวงตาของมันมีขนาดเล็กขากรรไกรขนาดใหญ่และเขี้ยวที่ยาวและคม รูปร่างเหมือนสัตว์ประหลาด 
-                    ตัวโตเต็มวัยของมันก็มีขนาดความยาวแค่ 6 นิ้ว แถมมีลำตัวสั้นและหัวขนาดใหญ่
-                    <br><br>
-                    แฟงค์ทูธถูกตั้งชื่อตามตัวปลาที่มีฟันยาวและคม เหมือนเขี้ยวเรียงตัวกันอยู่ในปากขนาดใหญ่ แฟงค์ทูธเป็นอีกสายพันธุ์สุดขั้วที่อาศัยอยู่ใต้ทะเลลึกลงไปถึง 16,000 ฟุต ซึ่งความลึกระดับนี้มีแรงดันน้ำสูงและอุณหภูมิต่ำ 
-                    อาหารเป็นสิ่งหายาก ดังนั้นแฟงค์ทูธจึงกินทุกอย่างที่หาได้ และอาหารส่วนใหญ่ก็ตกลงมาจากทะเลด้านบน
-                </p>
-                <br>
-                <br>
+                <img src="pics/fang title.png" class="tt">
             </div>
 
             <div class=" container mx-auto">
+                    <div class="card">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="pics/fangg.jpg" class="card-img-top">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                                ปลาแฟงค์ทูธ (อังกฤษ: fangtooth ) เป็นปลาทะเลลึกชนิดหนึ่ง อาศัยอยู่ในมหาสมุทรแปซิฟิกเขตร้อนและมหาสมุทรแอตแลนติก มีรูปร่างประหลาดและน่ากลัว พวกมันเขี้ยวยาว 2 ซี่ ตัวที่โตเต็มวัยมีหลากสีตั้งแต่ 
+                                                น้ำตาลแก่ จนถึงดำ ในขณะที่ตัวที่อายุยังน้อยมีลักษณะต่างกันโดยสิ้นเชิง เพราะมีสีเทาสว่างและมีหนามยาวบนหัวหรือ ดวงตาของมันมีขนาดเล็กขากรรไกรขนาดใหญ่และเขี้ยวที่ยาวและคม รูปร่างเหมือนสัตว์ประหลาด 
+                                                ตัวโตเต็มวัยของมันก็มีขนาดความยาวแค่ 6 นิ้ว แถมมีลำตัวสั้นและหัวขนาดใหญ่
+                                                <br><br>
+                                                แฟงค์ทูธถูกตั้งชื่อตามตัวปลาที่มีฟันยาวและคม เหมือนเขี้ยวเรียงตัวกันอยู่ในปากขนาดใหญ่ แฟงค์ทูธเป็นอีกสายพันธุ์สุดขั้วที่อาศัยอยู่ใต้ทะเลลึกลงไปถึง 16,000 ฟุต ซึ่งความลึกระดับนี้มีแรงดันน้ำสูงและอุณหภูมิต่ำ 
+                                                อาหารเป็นสิ่งหายาก ดังนั้นแฟงค์ทูธจึงกินทุกอย่างที่หาได้ และอาหารส่วนใหญ่ก็ตกลงมาจากทะเลด้านบน
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                 <div class="card">
                     <div class="row no-gutters">
@@ -251,9 +258,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
         <div class="parallax__layer parallax__layer--back">
-            <img src="pics/f1.png" class="tuni"> 
-            <img src="pics/f1.png" class="tuni2">
+            <img src="pics/fang.png" class="tuni"> 
+            <img src="pics/fang.png" class="tuni2">
         </div>
     </div>
 </body>
