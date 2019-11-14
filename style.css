@@ -1194,7 +1194,9 @@ footer div {
 #ifammega,
 #ifamkao,
 #ifamtita,
-#ifamkrapun {
+#ifamkrapun,
+#ifamdao,
+#ifamtao {
     position: fixed;
     right: -100%;
     visibility: hidden;
