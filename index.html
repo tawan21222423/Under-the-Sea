@@ -34,16 +34,17 @@
         <img src="pics/co4.png" class="paka4-1">
         <img src="pics/co4.png" class="paka4-2">
     </div>
-    <div class="bgs">
-        <audio controls autoplay loop>
-                <source src="So_Long.mp3">
-                </audio>
-    </div>
+
+
+
     <div class="jadtum">
         <div class="jad-title">
             จัดทำโดย
         </div>
     </div>
+    <audio id="bgAudio" controls autoplay loop>       
+            <source src="So_Long.mp3" >             
+        </audio>
     <footer>
         <svg viewBox="0 0 120 28" class="wawa">
             <defs>
@@ -647,6 +648,8 @@
         document.getElementById("loader").style.display = "none";
         document.getElementById("backload").style.display = "none";
     }
+    backgroundAudio = document.getElementById("bgAudio");
+    backgroundAudio.volume = 0.5;
 </script>
 
 </html>
