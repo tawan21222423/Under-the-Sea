@@ -454,7 +454,9 @@ footer {
 .krapun5:hover,
 .krapun6:hover,
 .krapun7:hover,
-.krapun8:hover {
+.krapun8:hover,
+.fang1:hover,
+.fang2:hover {
 
     filter: drop-shadow(0 0 50px crimson);
 }
@@ -502,7 +504,9 @@ footer {
 .krapun5,
 .krapun6,
 .krapun7,
-.krapun8
+.krapun8,
+.fang1,
+.fang2
  {
     transition: .3s;
 }
@@ -2837,4 +2841,100 @@ iframe {
     width: 10%;
     z-index: 67;
     filter: brightness(0.60);
+}
+.fang1{
+    position: absolute;
+    top: 19000px;
+    width: 10%;
+    animation: fang1vai 30s linear infinite;
+}
+.fang2{
+    position: absolute;
+    top: 18500px;
+    width: 10%;
+    animation: fang1vai 30s linear infinite;
+}
+@keyframes fang1vai {
+    0% {
+        top: 18500px;
+        left: 80%;
+        transform: scale(1, 1);
+    }
+
+    20% {
+        top: 19100px;
+        left: 40%;
+        transform: scale(1, 1);
+    }
+
+    58% {
+        top: 18900px;
+        left: 10%;
+        transform: scale(1, 1);
+    }
+
+    59% {
+        top: 18900px;
+        left: 10%;
+        transform: scale(1, 1);
+    }
+
+    60% {
+        top: 18900px;
+        transform: scale(-1, 1);
+    }
+
+    99% {
+        top: 18500px;
+        left: 80%;
+        transform: scale(-1, 1);
+    }
+
+    100% {
+        top: 18500px;
+        left: 80%;
+        transform: scale(1, 1);
+    }
+}
+@keyframes fang2vai {
+    0% {
+        top: 18800px;
+        left: 10%;
+        transform: scale(1, 1);
+    }
+
+    20% {
+        top: 18600px;
+        left: 40%;
+        transform: scale(1, 1);
+    }
+
+    58% {
+        top: 19900px;
+        left: 80%;
+        transform: scale(1, 1);
+    }
+
+    59% {
+        top: 18600px;
+        left: 80%;
+        transform: scale(1, 1);
+    }
+
+    60% {
+        top: 18600px;
+        transform: scale(-1, 1);
+    }
+
+    99% {
+        top: 18800px;
+        left: 10%;
+        transform: scale(-1, 1);
+    }
+
+    100% {
+        top: 18800px;
+        left: 10%;
+        transform: scale(1, 1);
+    }
 }
