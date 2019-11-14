@@ -1,0 +1,279 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body style="font-family: 'Kanit', sans-serif; overflow-x: hidden;">
+    <style>
+        body {
+            font: 18px sans-serif;
+            overflow: hidden;
+            background-attachment: fixed;
+            background-size: cover;
+            background-image: url("pics/sky.png");
+            background-position-y: 30%;
+        }
+
+        .wapp {
+            position: absolute;
+            transform: translateZ(999px) scale(.7);
+        }
+
+        .tunafish {
+            width: 80vw;
+            position: relative;
+            left: 10%;
+            backdrop-filter: blur(20px);
+            background-color: rgba(51, 51, 51, 0.5);  
+            padding-left: 5%;
+            color: white;
+            padding-right: 5%;
+            border-radius: 20px;
+        }
+
+        .pragob {
+            width: 86%;
+            position: relative;
+            left: 7%;
+            border-radius: 5px;
+        }
+
+        .title {
+            width: 100%;
+            position: relative;
+            height: 120%;
+            margin-top: -10%;
+            background-image: url("pics/nu");
+        }
+
+        .card {
+            margin-top: 5%;
+        }
+
+        footer div {
+            background-color: var(--col-deepblue);
+            margin: -5px 0px 0px 0px;
+            padding: 0px;
+            color: #fff;
+            text-align: center;
+            z-index: 33;
+
+        }
+
+        .svg {
+            width: 100%;
+            overflow: visible;
+            z-index: -5;
+
+        }
+
+        .wawa {
+            top: 70%;
+            position: fixed;
+        }
+
+        .wave {
+            animation: wave 20s linear;
+            animation-iteration-count: infinite;
+            fill: #3498db;
+        }
+
+        #wave2 {
+            animation-duration: 25s;
+            animation-direction: reverse;
+            opacity: .6;
+        }
+
+        #wave3 {
+            animation-duration: 35s;
+            opacity: .3;
+        }
+
+        #wave4 {
+            animation-duration: 40s;
+            opacity: .3;
+        }
+
+        @keyframes wave {
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        .card-img-top{
+            height: 100%;
+            border-radius: 20px;
+        }
+        .card{
+            background-color: #85a8ba;
+            color: rgb(255, 255, 255);
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            background-color: rgba(51, 51, 51, 0.5);   
+        }
+        .parallax {
+            perspective: 1px;
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .parallax__layer {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .parallax__layer--base {
+            transform: translateZ(0);
+        }
+
+        .parallax__layer--back {
+            top:200%;
+            transform: translateZ(-2px);
+            z-index: -1;
+            left: -60%;
+        }
+        .parallax__layer--back2 {
+            top:200%;
+            left: 160%;
+            transform: translateZ(-3px);
+            z-index: -1;
+        }
+        .tuni{
+            width: 10%;
+            transform: scale(4) rotate(-25deg);
+        }
+        .tuni2{
+            width: 10%;
+            transform: scale(-4,4) rotate(-25deg);
+            position: absolute;
+            left: 120%;
+        }
+        .tt{
+                width: 100%;
+            }
+    </style>
+    <footer>
+        <svg viewBox="0 0 80 998" class="wawa">
+            <defs>
+                <path id="wave" d="M 0,6 C
+                    20,4 20,6 40,6
+                    60,4 60,6 80,6
+                    100,4 100,6 120,6
+                    140,4 140,6 160,6
+                    180,4 180,6 200,6
+                    220,4 220,6 240,6
+        
+        
+                    v 95 h -350 z" />
+            </defs>
+            <use id="wave4" class="wave" xlink:href="#wave" x="0" y="-4"></use>
+            <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+            <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+            <use id="wave1" class="wave" xlink:href="#wave" x="0" y="2"></use>
+        </svg>
+        <div id="fade"></div>
+
+    </footer>
+
+    <div class="parallax">
+        <div class="parallax__layer parallax__layer--base">
+            <div class="title">
+                <img src="" class="tt">
+            </div>
+            <div class="tunafish">
+                <br>
+                <br>
+
+                <br>
+                <p> ดาวทะเล หรือ ปลาดาว เป็นสัตว์ทะเลไม่มีกระดูกสันหลัง ที่อยู่ในชั้น Asteroidea ลักษณะทั่วไป มีลำตัวแยกเป็นห้าแฉกคล้ายรูปดาวเรียกว่า แขน ส่วนกลาง 
+                    มีลักษณะเป็นจานกลม ด้านหลังมีตุ่มหินปูน ขนาดเล็กกระจายอยู่ทั่วไป มีปากอยู่ด้านล่างบริเวณ จุดกึ่งกลางของ ลำตัว ใต้แขนแต่ละข้างมีหนวดสั้น ๆ เรียงตามส่วนยาว 
+                    ของแขนเป็นคู่ ๆ มีลักษณะเป็นกล้ามเนื้อที่เหนียวและแข็งแรงเรียกว่า โปเดีย ใช้สำหรับยึดเกาะกับเคลื่อนที่ มีสีต่าง ๆ ออกไป ทั้ง ขาว, ชมพู, แดง, ดำ, ม่วง หรือน้ำเงิน เป็นต้น 
+                    พบอยู่ตามชายฝั่งทะเล โขดหิน และบางส่วนอาจพบได้ถึงพื้นทะเลลึก กินหอยสองฝา โดยเฉพาะ หอยนางรม, กุ้ง, ปู หนอน และ สัตว์ไม่มีกระดูกสันหลังอื่น ๆ เช่น ฟองน้ำหรือปะการัง เป็นอาหาร
+                </p>
+                <br>
+                <br>
+            </div>
+
+            <div class=" container mx-auto">
+
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="pics/StarFish.jpg" class="card-img">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    ดาวทะเล พบอยู่ในทะเลทั่วโลก ทั้ง มหาสมุทรแปซิฟิก, แอตแลนติก, มหาสมุทรอินเดีย รวมทั้งในเขตขั้วโลกด้วยอย่าง มหาสมุทรอาร์กติก และแอนตาร์กติกา
+                                    <br><br>
+                                    ดาวทะเลสืบพันธุ์ได้ทั้งแบบอาศัยเพศและไม่อาศัยเพศ โดยมีทั้งเพศผู้และเพศเมีย การปฏิสนธิเกิดภายนอกตัว ระยะแรกตัวอ่อนจะดำรงชีวิตแบบแพลงก์ตอนสัตว์ จากนั้นจะเริ่มพัฒนาตัวแล้วจมตัวลงเพื่อหาที่ยึดเกาะแล้วเจริญเป็นตัวเต็มวัย 
+                                    ส่วนการสืบพันธุ์แบบไม่อาศัยเพศ ในบางชนิดเมื่อแขนถูกตัดขาดลง จะพัฒนาตรงส่วนนั้นกลายเป็นดาวทะเลตัวใหม่เกิดขึ้น และตัวที่ขาดก็จะงอกชิ้นใหม่ขึ้นมาได้จนสมบูรณ์ แต่กระบวนการเหล่านี้ต้องใช้เวลาเป็นปี
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="pics/StarFish1.jpg" class="card-img">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text">
+                                        การเคลื่อนที่ของดาวทะเล เนื่องจากดาวทะเลเป็นสัตว์ไม่มีกระดูกสันหลัง มีโครงแข็งที่ผิวนอก ไม่ได้ยึดเกาะกับกล้ามเนื้อ จึงมีระบบการเคลื่อนที่ด้วยระบบท่อน้ำ จากท่อวงแหวนจะมีท่อน้ำแยกออกไปในแขน 
+                                        เรียกท่อนี้ว่า เรเดียลแคแนล ทางด้านข้างของเรเดียลคาแนล มีท่อแยกไปยังทิวบ์ฟีต การยืดและหดของทิวบ์ฟิตจะเกิดขึ้นหลาย ๆ ครั้ง และมีความสัมพันธ์กันทำให้เกิดการเคลื่อนที่ไปได้
+                                        <br><br>
+                                        ดาวทะเลมีความสัมพันธ์ต่อมนุษย์ในแง่ ของการใช้ซากเป็นเครื่องประดับตกแต่งบ้านเพื่อความสวยงาม อีกทั้งในบางวัฒนธรรมเช่น จีน มีการใช้ดาวทะเลเพื่อปรุงเป็นยา รวมทั้งใช้ปิ้งย่างเป็นอาหาร 
+                                        อีกทั้งยังนิยมเลี้ยงเป็นสัตว์เลี้ยงภายในตู้ปลาเพื่อความเพลิดเพลินอีกด้วย
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="pics/StarFish2.jpg" class="card-img-top">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text">
+                                        ดาวทะเล ถึงปัจจุบันนี้พบอยู่ด้วยประมาณ 1,800 ชนิด กระจายอยู่ในอันดับต่าง ๆ 7 อันดับ (ดูในตาราง) ซึ่งดาวทะเลขนาดเล็กอาจมีความกว้างเพียง 1 เซนติเมตร 
+                                        และขนาดใหญ่ที่สุดอาจยาวได้ถึง 1 เมตร และในบางชนิดอาจมีแขนได้มากกว่า 5 แขน
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <div class="parallax__layer parallax__layer--back">
+            <img src="pics/f1.png" class="tuni"> 
+            <img src="pics/f1.png" class="tuni2">
+        </div>
+    </div>
+</body>
+<script>
+
+</script>
+
+</html>

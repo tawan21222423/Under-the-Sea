@@ -446,7 +446,16 @@ footer {
 .kao1:hover,
 .tita1:hover,
 .dao1:hover,
-.tao1:hover {
+.tao1:hover,
+.krapun1:hover,
+.krapun2:hover,
+.krapun3:hover,
+.krapun4:hover,
+.krapun5:hover,
+.krapun6:hover,
+.krapun7:hover,
+.krapun8:hover {
+
     filter: drop-shadow(0 0 50px crimson);
 }
 
@@ -485,7 +494,16 @@ footer {
 .kao1,
 .tita1,
 .dao1,
-.tao1 {
+.tao1,
+.krapun1,
+.krapun2,
+.krapun3,
+.krapun4,
+.krapun5,
+.krapun6,
+.krapun7,
+.krapun8
+ {
     transition: .3s;
 }
 
@@ -1175,7 +1193,8 @@ footer div {
 #ifamchi,
 #ifammega,
 #ifamkao,
-#ifamtita {
+#ifamtita,
+#ifamkrapun {
     position: fixed;
     right: -100%;
     visibility: hidden;
