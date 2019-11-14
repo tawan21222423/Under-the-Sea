@@ -1,14 +1,12 @@
 .title {
-    font-size: 78px;
-    position: absolute;
-    left: 10%;
-    width: 80%;
-    transition: .5s;
-    color: #333333;
-    animation: 0.5s slidedown linear;
-    text-align: center;
+    width: 100%;
+    position: relative;
+    height: 120%;
+    margin-top: -10%;
 }
-
+.tt {
+    width: 100%;
+}
 .warpper {
     overflow-x: hidden;
 }
@@ -2852,7 +2850,7 @@ iframe {
     position: absolute;
     top: 18500px;
     width: 10%;
-    animation: fang1vai 30s linear infinite;
+    animation: fang2vai 30s linear infinite;
 }
 @keyframes fang1vai {
     0% {
@@ -2900,41 +2898,41 @@ iframe {
     0% {
         top: 18800px;
         left: 10%;
-        transform: scale(1, 1);
+        transform: scale(-1, 1);
     }
 
     20% {
         top: 18600px;
         left: 40%;
-        transform: scale(1, 1);
+        transform: scale(-1, 1);
     }
 
     58% {
         top: 19900px;
         left: 80%;
-        transform: scale(1, 1);
+        transform: scale(-1, 1);
     }
 
     59% {
         top: 18600px;
         left: 80%;
-        transform: scale(1, 1);
+        transform: scale(-1, 1);
     }
 
     60% {
         top: 18600px;
-        transform: scale(-1, 1);
+        transform: scale(1, 1);
     }
 
     99% {
         top: 18800px;
         left: 10%;
-        transform: scale(-1, 1);
+        transform: scale(1, 1);
     }
 
     100% {
         top: 18800px;
         left: 10%;
-        transform: scale(1, 1);
+        transform: scale(-1, 1);
     }
 }
