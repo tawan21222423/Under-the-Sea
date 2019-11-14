@@ -5,96 +5,225 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <style>
         body {
-            font-family: 'Prompt', sans-serif;
-            background-color: rgb(64, 214, 248);
+            background-image: url("pics/sky.png");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+            position: relative;
         }
 
-        .circle {
-            border: 3px solid #ffffff;
-            border-radius: 50%;
-        }
 
-        p {
-            font-size: 25px;
-        }
-
-        h1 {
-            font-size: 50px;
-        }
-
-        h2 {
+        footer div {
+            background-color: var(--col-deepblue);
+            margin: -5px 0px 0px 0px;
+            padding: 0px;
+            color: #fff;
             text-align: center;
-            font-family: Gadget;
-            color: black;
-            font-size: 100px;
-            letter-spacing: 2px;
-            background-color: #ff8080;
-            margin-top: 1px;
+            z-index: 33;
+
         }
-        p{
-    
-            margin-top: 2px;
-            background-color: #f7c7c7;
-            font-size: 25px;
-            font-family: serif;
-            letter-spacing: 2px;
-            text-align: center;
-            width: 90%;
+
+        .svg {
+            width: 100%;
+            overflow: visible;
+            z-index: 5;
+
         }
-        img{
+
+        .wawa {
+            top: 75%;
+            position: fixed;
+        }
+
+        .wawa2 {
+            top: 75%;
+            position: fixed;
+            z-index: -2;
+        }
+
+
+        .wave {
+            animation: wave 20s linear;
+            animation-iteration-count: infinite;
+            fill: #003674;
+        }
+
+        #wave2 {
+            animation-duration: 25s;
+            animation-direction: reverse;
+            opacity: .6;
+        }
+
+        #wave3 {
+            animation-duration: 35s;
+            opacity: .3;
+        }
+
+        #wave4 {
+            animation-duration: 40s;
+            opacity: .3;
+        }
+
+        @keyframes wave {
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        .card {
+            margin: 1%;
+            width: 30vw;
+        }
+
+        .title {
+            width: 50vw;
+            height: 20vh;
+            position: relative;
+            left: 25%;
             text-align: center;
+            font-size: 6vw;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            border-radius: 25px;
+            border: 2px solid black;
+            backdrop-filter: blur(20px);
+            transition: 0.5s;
+        }
+        .title:hover{
+            background-color: rgba(66, 66, 66, 0.26);
+        }
+        .title:active{
+            transform: scale(0.8,0.8);
+        }
+        .asw {
+            width: 100%;
+            left: 10%;
+            position: absolute;
+
+        }
+
+        .card {
+            transition: 0.3s;
+            backdrop-filter: blur(20px);
+            background-color: rgba(51, 51, 51, 0.5);
+            color: rgb(255, 255, 255);
+            font-size: 22px;
+            border-radius: 20px;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .card-img-top {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
         }
     </style>
 </head>
 
-<body>
-    <center>
-        <h2>สมาชิกในกลุ่ม</h2>
-        <table style="width:80%">
-            <tr>
-                <th>
-                    <div>
-                        <img src="thanis.jpg" class="circle" height="300px">
-                        <p>นายธนิศร์ สัลเลขนันท์ <br>รหัสนักศึกษา 61070081</p>
-                    </div>
-                </th>
-                <th>
-                    <div>
-                        <img src="get.jpg" class="circle" height="300px">
-                        <p>นายนราวิชญ์ พัทรพันธ์<br>รหัสนักศึกษา 61070099</p>
-                    </div>
-                </th>
-                <th>
-                    <div>
-                        <img src="ply.jpg" class="circle" height="300px">
-                        <p>นางสาวนวพร จรัสตระกูล<br>รหัสนักศึกษา 61070101</p>
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <th><br><br></th>
-            </tr>
-        </table>
-        <table style="width:50%">
-            <tr>
-                <th>
-                    <div>
-                        <img src="tawan.jpg" class="circle" height="300px">
-                        <p>นายปรัชญา เอี่ยมอำภา<br>รหัสนักศึกษา 61070117</p>
-                    </div>
-                </th>
-                <th>
-                    <div>
-                        <img src="poom.jpg" class="circle" height="300px">
-                        <p>นายภูมิพัฒน์ วาวงศ์มูล<br>รหัสนักศึกษา 61070170</p>
-                    </div>
-                </th>
-            </tr>
-        </table>
-    </center>
+<body style="font-family: 'Kanit', sans-serif; overflow-x: hidden;">
+    <footer>
+        <svg viewBox="0 0 80 998" class="wawa">
+            <defs>
+                <path id="wave" d="M 0,6 C
+                            20,4 20,6 40,6
+                            60,4 60,6 80,6
+                            100,4 100,6 120,6
+                            140,4 140,6 160,6
+                            180,4 180,6 200,6
+                            220,4 220,6 240,6
+                
+                
+                            v 95 h -350 z" />
+            </defs>
+
+            <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+            <use id="wave1" class="wave" xlink:href="#wave" x="0" y="2"></use>
+        </svg>
+        <svg viewBox="0 0 80 998" class="wawa2">
+            <defs>
+                <path id="wave" d="M 0,6 C
+                                20,4 20,6 40,6
+                                60,4 60,6 80,6
+                                100,4 100,6 120,6
+                                140,4 140,6 160,6
+                                180,4 180,6 200,6
+                                220,4 220,6 240,6
+                    
+                    
+                                v 95 h -350 z" />
+            </defs>
+
+            <use id="wave4" class="wave" xlink:href="#wave" x="0" y="-4"></use>
+            <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+        </svg>
+
+        <div id="fade"></div>
+
+    </footer>
+    <div class="title">
+        <span class="align-middle">สมาชิกในกลุ่ม</span>
+    </div>
+    <div class="asw">
+        <div class="row no-gutters">
+            <div class="card " style="width: 18rem;">
+                <img src="pics/thanis.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">นายธนิศร์ สัลเลขนันท์
+                        <br>รหัสนักศึกษา : 61070081</p>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem;">
+                <img src="pics/get.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">นายนราวิชญ์ พัทรพันธ์
+                        <br>รหัสนักศึกษา 61070099</p>
+                </div>
+            </div>
+
+            <div class="card " style="width: 18rem;">
+                <img src="pics/ply.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">นางสาวนวพร จรัสตระกูล
+                        <br>รหัสนักศึกษา 61070101</p>
+                </div>
+            </div>
+
+            <div class="card " style="width: 18rem;">
+                <img src="pics/tawan.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">นายปรัชญา เอี่ยมอำภา</h5>
+                        <br>รหัสนักศึกษา 61070117</p>
+                </div>
+            </div>
+
+            <div class="card " style="width: 18rem;">
+                <img src="pics/poom.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">นายภูมิพัฒน์ วาวงศ์มูล
+                        <br>รหัสนักศึกษา 61070170</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
 
 </html>
