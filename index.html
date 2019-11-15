@@ -36,11 +36,11 @@
     </div>
 
 
-    <audio id="bgAudio" controls autoplay loop>       
-            <source src="So_Long.mp3" >             
-    
-    
-        </audio>
+    <audio id="bgAudio" controls autoplay loop>
+        <source src="So_Long.mp3">
+
+
+    </audio>
     <div class="jadtum" onclick="myinfo(1,23)">
         <div class="jad-title">
             จัดทำโดย
@@ -50,7 +50,7 @@
     </div>
     <iframe src="membergroup.html" id="ifammem">
 
-                </iframe>
+    </iframe>
     <footer>
         <svg viewBox="0 0 120 28" class="wawa">
             <defs>
@@ -95,7 +95,7 @@
         <img src="pics/f14.png" class="buu1">
         <iframe src="BlueTang.html" id="ifambuu">
 
-            </iframe>
+        </iframe>
         <img src="pics/back.png" id="close">
     </div>
     <div id="planemo" onclick="myinfo(1,2)">
@@ -140,7 +140,7 @@
         <img src="pics/f12.png" class="kratong3">
         <iframe src="Kratong.html" id="ifamkra">
 
-                </iframe>
+        </iframe>
         <img src="pics/back.png" id="close">
     </div>
     <div class="hill">
@@ -153,7 +153,7 @@
         <img src="pics/f10.png" class="moon2">
         <iframe src="MoonFish.html" id="ifammoon">
 
-                </iframe>
+        </iframe>
         <img src="pics/back.png" id="close">
     </div>
 
@@ -178,7 +178,7 @@
         <img src="pics/j3.png" class="krapun8">
         <iframe src="jelly.html" id="ifamkrapun">
 
-            </iframe>
+        </iframe>
         <img src="pics/back.png" id="close">
 
     </div>
@@ -208,7 +208,7 @@
         <img src="pics/f19.png" class="fang2">
         <iframe src="FankTooth.html" id="ifamfang">
 
-            </iframe>
+        </iframe>
         <img src="pics/back.png" id="close">
     </div>
     <div class="chalam" onclick="myinfo(1,7)">
@@ -264,7 +264,7 @@
         <img src="pics/k1.png" class="puu2">
         <iframe src="KingCrab.html" id="ifampuu">
 
-            </iframe>
+        </iframe>
         <img src="pics/back.png" id="close">
     </div>
     <div class="hoimain" onclick="myinfo(1,14)">
@@ -273,7 +273,7 @@
         <img src="pics/k2.png" class="hoi3">
         <iframe src="SeaUrchin.html" id="ifamhoi">
 
-                </iframe>
+        </iframe>
         <img src="pics/back.png" id="close">
     </div>
     <div id="navig3"></div>
@@ -295,7 +295,7 @@
     <div class="tita" onclick="myinfo(1,19)">
         <img src="pics/tita.png" class="tita1">
         <iframe src="titanic.html" id="ifamtita">
-                </iframe>
+        </iframe>
         <img src="pics/back.png" id="close">
     </div>
     <div class="plachi" onclick="myinfo(1,16)">
@@ -303,19 +303,19 @@
             <img src="pics/f17.png" class="chi1">
         </div>
         <iframe src="Chimeara.html" id="ifamchi">
-            </iframe>
+        </iframe>
         <img src="pics/back.png" id="close">
     </div>
     <div class="plamega" onclick="myinfo(1,17)">
         <img src="pics/f18.png" class="mega1">
         <iframe src="MegaShark.html" id="ifammega">
-            </iframe>
+        </iframe>
         <img src="pics/back.png" id="close">
     </div>
     <div class="plakao" onclick="myinfo(1,18)">
         <img src="pics/f13.png" class="kao1">
         <iframe src="Prakao.html" id="ifamkao">
-            </iframe>
+        </iframe>
         <img src="pics/back.png" id="close">
     </div>
     <div class="dao" onclick="myinfo(1,20)">
@@ -332,49 +332,6 @@
     </div>
 </body>
 <script>
-    if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
-    window.onmousewheel = document.onmousewheel = wheel;
-
-    function wheel(event) {
-        var delta = 0;
-        if (event.wheelDelta) delta = event.wheelDelta / 40;
-        else if (event.detail) delta = -event.detail / 40;
-
-        handle(delta);
-        if (event.preventDefault) event.preventDefault();
-        event.returnValue = false;
-    }
-
-    var goUp = true;
-    var end = null;
-    var interval = null;
-
-    function handle(delta) {
-        var animationInterval = 20; //controls the scroll animation after scroll is done
-        var scrollSpeed = 20; //controls the scroll animation after scroll is done
-
-        if (end == null) {
-            end = $(window).scrollTop();
-        }
-        end -= 20 * delta;
-        goUp = delta > 0;
-
-        if (interval == null) {
-            interval = setInterval(function() {
-                var scrollTop = $(window).scrollTop();
-                var step = Math.round((end - scrollTop) / scrollSpeed);
-                if (scrollTop <= 0 ||
-                    scrollTop >= $(window).prop("scrollHeight") - $(window).height() ||
-                    goUp && step > -1 ||
-                    !goUp && step < 1) {
-                    clearInterval(interval);
-                    interval = null;
-                    end = null;
-                }
-                $(window).scrollTop(scrollTop + step);
-            }, animationInterval);
-        }
-    }
     let count = 0;
 
     function myinfo(i, pla) {
